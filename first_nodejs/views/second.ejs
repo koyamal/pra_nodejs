@@ -2,13 +2,17 @@
 <html>
   <head>
     <meta charset="utf-8">
+    <link rel="stylesheet" href="/css/style.css">
     <title>Hello World</title>
     <script src="/send_url.js"></script>
   </head>
   <body>
+    <%- include('header.ejs'); %>
     <h1>Welcome to Second page!</h1>
     <p><%= itemId %></p>
-    <p><%= userInfo.name %></p>
+    <% usersInfo.forEach((userInfo =>{ %>
+      <p><%= userInfo.name + "," + userInfo.id %></p>
+    <% })); %>    
   <div>
     <a href="/">Go To Top page!</a>
   </div>

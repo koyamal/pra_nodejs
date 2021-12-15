@@ -4,6 +4,7 @@ const res = require('express/lib/response');
 const mysql = require('mysql');
 
 const app = express();
+app.use(express.static('public'));
 
 const connection = mysql.createConnection({
   host: 'localhost',
@@ -28,7 +29,7 @@ app.get('/second/:id', (req, res) =>{
   connection.query(
     'SELECT * FROM users',
     (error, results) =>{
-      res.render('second.ejs', {itemId: req.params.id, userInfo: results[0]});
+      res.render('second.ejs', {itemId: req.params.id, usersInfo: results});
     }
   );
 });

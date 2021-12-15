@@ -1,0 +1,15 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+h1{
+    color: red;
+}
+
+header div{
+    background-color: dimgrey;
+    color: white;
+    opacity: 0.8;
+    font-size: 25px;
+}
