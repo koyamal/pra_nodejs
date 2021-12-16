@@ -12,4 +12,22 @@ header div{
     color: white;
     opacity: 0.8;
     font-size: 25px;
+    height: 50px;
+}
+
+header li{
+    list-style: none;
+}
+
+header ul{
+    float: right;
+}
+
+.title{
+    float: left;
+    padding-right: 200px;
+}
+
+.username{
+    float: left;
 }

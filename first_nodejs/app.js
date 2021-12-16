@@ -2,10 +2,19 @@ const express = require('express');
 const req = require('express/lib/request');
 const res = require('express/lib/response');
 const mysql = require('mysql');
+const bodyParser = require('body-parser');
+const session = require('express-session');
 
 const app = express();
 app.use(express.static('public'));
-
+app.use(bodyParser.urlencoded({ extended: true }));
+app.use(
+  session({
+    secret: 'my_secret_key',
+    resave: false,
+    saveUninitialized: false,
+  })
+);
 const connection = mysql.createConnection({
   host: 'localhost',
   user: 'root',
@@ -21,6 +30,14 @@ connection.connect((err) => {
   console.log('success');
 });
 
+app.use((req, res, next) =>{
+  if (req.session.userName === undefined){
+    res.locals.userName = "Guest";
+  }else{
+    res.locals.userName = req.session.userName;
+  }
+  next();
+});
 app.get('/', (req, res) => {
   res.render('index.ejs');
 });
@@ -32,6 +49,38 @@ app.get('/second/:id', (req, res) =>{
       res.render('second.ejs', {itemId: req.params.id, usersInfo: results});
     }
   );
+});
+
+app.get('/login', (req, res) =>{
+  res.render('login.ejs')
+});
+
+app.post('/login', (req, res) =>{
+  const email = req.body.email;
+  const password = req.body.password;
+  connection.query(
+    'SELECT * FROM users WHERE email = ?',
+    [email],
+    (error, results) =>{
+      if (results.length > 0){
+        if (results[0].password === password){
+          req.session.userName = results[0].name;
+          console.log(results[0].name + ", Welcome!");
+        } else {
+          console.log("Login failed password error!");
+        }
+      } else {
+        console.log("Login failed email error!");
+      }
+      res.redirect('/');
+    }
+  );
+});
+
+app.get('/logout', (req, res) =>{
+  req.session.destroy((error) =>{
+    res.redirect('/');
+  });
 });
 
 app.listen(3000);
