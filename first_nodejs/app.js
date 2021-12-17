@@ -33,8 +33,10 @@ connection.connect((err) => {
 app.use((req, res, next) =>{
   if (req.session.userName === undefined){
     res.locals.userName = "Guest";
+    res.locals.isLogin = false;
   }else{
     res.locals.userName = req.session.userName;
+    res.locals.isLogin = true;
   }
   next();
 });
