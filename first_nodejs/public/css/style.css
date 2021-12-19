@@ -33,5 +33,17 @@ header ul{
 }
 
 .login{
-    color: white;
+    text-align: center;
+    margin-right: 30px;   
+    background-color: forestgreen;
+}
+
+.login:hover{
+    background-color: rgb(28, 168, 28);
+}
+
+.login a{
+    display: inline-block;
+    width: 100px;
+    height: 50px;
 }
