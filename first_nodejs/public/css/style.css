@@ -46,4 +46,16 @@ header ul{
     display: inline-block;
     width: 100px;
     height: 50px;
+    color: white;
+}
+
+.changepage{
+    padding: 5px 0;
+    background-color: forestgreen;
+    opacity: 0.8;
+    color: white;
+}
+
+.changepage:hover{
+    background-color: rgb(28, 168, 28);
 }
