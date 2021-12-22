@@ -28,6 +28,11 @@ header ul{
     padding-right: 200px;
 }
 
+.toplink{
+    color: white;
+    text-decoration: none;
+}
+
 .username{
     float: left;
 }
