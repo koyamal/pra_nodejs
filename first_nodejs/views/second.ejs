@@ -9,7 +9,8 @@
   <body>
     <%- include('header.ejs'); %>
     <h1>Welcome to Second page!</h1>
-    <p><%= itemId %></p>
+    <p>itemId = <%= itemId %></p>
+    <p>Registered Users</p>
     <% usersInfo.forEach((userInfo =>{ %>
       <p><%= userInfo.name + "," + userInfo.id %></p>
     <% })); %>    
