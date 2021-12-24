@@ -31,6 +31,8 @@ header ul{
 .toplink{
     color: white;
     text-decoration: none;
+    height: 50px;
+    display: inline-block;
 }
 
 .username{
