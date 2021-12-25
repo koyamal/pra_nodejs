@@ -66,3 +66,8 @@ header ul{
 .changepage:hover{
     background-color: rgb(28, 168, 28);
 }
+
+.userlist{
+    list-style: disc;
+    padding-left: 30px;
+}
