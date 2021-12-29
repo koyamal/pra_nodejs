@@ -23,6 +23,21 @@ header ul{
     float: right;
 }
 
+footer{
+    background-color: dimgrey;
+    color: white;
+    opacity: 0.8;
+    font-size: 15px;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+footer div{
+    float: right;
+    padding-right: 30px;
+}
+
 .title{
     float: left;
     padding-right: 200px;
