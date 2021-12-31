@@ -42,12 +42,13 @@ footer div{
     float: left;
     padding-right: 200px;
     padding-top:5px;
+
 }
 
 .toplink{
     color: white;
     text-decoration: none;
-    height: 50px;
+    height: 45px;
     display: inline-block;
 }
 
