@@ -45,7 +45,7 @@ footer div{
 }
 
 .toplink:hover{
-    text-decoration:underline;
+    text-decoration: underline;
 }
 
 .toplink{
@@ -76,6 +76,14 @@ footer div{
     height: 45px;
     color: white;
     margin-top: 5px;
+}
+
+.underline{
+    text-decoration: none;
+}
+
+.underline:hover{
+    text-decoration: underline;
 }
 
 .changepage{
