@@ -11,13 +11,21 @@
     <h1>Welcome to Second page!</h1>
     <p>itemId = <%= itemId %></p>
     <p>Registered Users</p>
-    <ul class="userlist">
+    <table border="1">
+      <tr>
+        <th>Id</th><th>Name</th>
+      </tr>
       <% usersInfo.forEach((userInfo =>{ %>
-        <li>
-          <%= userInfo.name + "," + userInfo.id %>
-        </li>
-      <% })); %>
-    </ul>
+        <tr>
+          <th>
+            <%= userInfo.id %>
+          </th>
+          <th>
+            <%= userInfo.name %>
+          </th>
+        </tr>
+      <% })); %>      
+    </table>
     <div class="btm">
       <a class="changepage underline" href="/">Go To Top page!</a>
     </div>
