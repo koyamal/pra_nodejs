@@ -54,7 +54,7 @@ app.get('/second/:id', (req, res) =>{
 });
 
 app.get('/login', (req, res) =>{
-  res.render('login.ejs')
+  res.render('login.ejs', {msg: ""});
 });
 
 app.post('/login', (req, res) =>{
@@ -68,13 +68,15 @@ app.post('/login', (req, res) =>{
         if (results[0].password === password){
           req.session.userName = results[0].name;
           console.log(results[0].name + ", Welcome!");
+          res.redirect('/');
         } else {
           console.log("Login failed password error!");
+          res.render('login.ejs', {msg: "Login failed password error!"});
         }
       } else {
         console.log("Login failed email error!");
+        res.render('login.ejs', {msg: "Login failed email error!"});
       }
-      res.redirect('/');
     }
   );
 });
