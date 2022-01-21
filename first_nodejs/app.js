@@ -71,11 +71,11 @@ app.post('/login', (req, res) =>{
           res.redirect('/');
         } else {
           console.log("Login failed password error!");
-          res.render('login.ejs', {msg: "Login failed password error!"});
+          res.render('login.ejs', {msg: "Login Error, Try Again!"});
         }
       } else {
         console.log("Login failed email error!");
-        res.render('login.ejs', {msg: "Login failed email error!"});
+        res.render('login.ejs', {msg: "Login Error, Try Again!"});
       }
     }
   );

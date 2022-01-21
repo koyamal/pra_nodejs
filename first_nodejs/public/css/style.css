@@ -78,6 +78,10 @@ footer div{
     margin-top: 5px;
 }
 
+.msg_error{
+    color: red;
+}
+
 .underline{
     text-decoration: none;
 }

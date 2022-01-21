@@ -10,7 +10,7 @@
     <%- include('header.ejs'); %>
     <h1>Welcome to Login page!</h1>
     <% if( msg !== ""){ %>
-      <p><%= msg %></p>
+      <p class="msg_error"><%= msg %></p>
     <% } %>
     <form action="/login" method="post">
         <p>e-mail</p>
