@@ -4,6 +4,7 @@ const res = require('express/lib/response');
 const mysql = require('mysql');
 const bodyParser = require('body-parser');
 const session = require('express-session');
+const { NULL } = require('mysql/lib/protocol/constants/types');
 
 const app = express();
 app.use(express.static('public'));
@@ -60,25 +61,29 @@ app.get('/login', (req, res) =>{
 app.post('/login', (req, res) =>{
   const email = req.body.email;
   const password = req.body.password;
-  connection.query(
-    'SELECT * FROM users WHERE email = ?',
-    [email],
-    (error, results) =>{
-      if (results.length > 0){
-        if (results[0].password === password){
-          req.session.userName = results[0].name;
-          console.log(results[0].name + ", Welcome!");
-          res.redirect('/');
+  if (email === ""){
+    res.render('login.ejs', {msg: "Input your e-mail address!"});
+  }else{
+    connection.query(
+      'SELECT * FROM users WHERE email = ?',
+      [email],
+      (error, results) =>{
+        if (results.length > 0){
+          if (results[0].password === password){
+            req.session.userName = results[0].name;
+            console.log(results[0].name + ", Welcome!");
+            res.redirect('/');
+          } else {
+            console.log("Login failed password error!");
+            res.render('login.ejs', {msg: "Login Error, Try Again!"});
+          }
         } else {
-          console.log("Login failed password error!");
+          console.log("Login failed email error!");
           res.render('login.ejs', {msg: "Login Error, Try Again!"});
         }
-      } else {
-        console.log("Login failed email error!");
-        res.render('login.ejs', {msg: "Login Error, Try Again!"});
       }
-    }
-  );
+    );
+  }
 });
 
 app.get('/logout', (req, res) =>{
