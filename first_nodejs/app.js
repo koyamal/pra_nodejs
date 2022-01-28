@@ -62,7 +62,7 @@ app.post('/login', (req, res) =>{
   const email = req.body.email;
   const password = req.body.password;
   if (email === ""){
-    res.render('login.ejs', {msg: "Input your e-mail address!"});
+    res.render('login.ejs', {msg: "Error: Input your e-mail address!"});
   }else{
     connection.query(
       'SELECT * FROM users WHERE email = ?',
