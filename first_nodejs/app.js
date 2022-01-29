@@ -75,11 +75,11 @@ app.post('/login', (req, res) =>{
             res.redirect('/');
           } else {
             console.log("Login failed password error!");
-            res.render('login.ejs', {msg: "Error: Your e-mail or password is incorrect."});
+            res.render('login.ejs', {msg: "Error: Your e-mail or password is incorrect!"});
           }
         } else {
           console.log("Login failed email error!");
-          res.render('login.ejs', {msg: "Error: Your e-mail or password is incorrect."});
+          res.render('login.ejs', {msg: "Error: Your e-mail or password is incorrect!"});
         }
       }
     );
