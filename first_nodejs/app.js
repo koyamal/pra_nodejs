@@ -71,14 +71,14 @@ app.post('/login', (req, res) =>{
         if (results.length > 0){
           if (results[0].password === password){
             req.session.userName = results[0].name;
-            console.log(results[0].name + ", Welcome!");
+            console.log("Login: " + results[0].name);
             res.redirect('/');
           } else {
-            console.log("Login failed password error!");
+            console.log("Login failed password error");
             res.render('login.ejs', {msg: "Error: Your e-mail or password is incorrect!"});
           }
         } else {
-          console.log("Login failed email error!");
+          console.log("Login failed e-mail error");
           res.render('login.ejs', {msg: "Error: Your e-mail or password is incorrect!"});
         }
       }
