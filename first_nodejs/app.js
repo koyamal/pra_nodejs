@@ -49,6 +49,7 @@ app.get('/second/:id', (req, res) =>{
   connection.query(
     'SELECT * FROM users',
     (error, results) =>{
+      console.log(results);
       res.render('second.ejs', {itemId: req.params.id, usersInfo: results});
     }
   );
@@ -85,6 +86,26 @@ app.post('/login', (req, res) =>{
       }
     );
   }
+});
+
+app.get('/singup', (req, res) =>{
+  res.render('singup.ejs', {msg: ""});
+});
+
+app.post('/singup', (req, res) =>{
+  const uname = req.body.username;
+  const email = req.body.email;
+  const password = req.body.password;
+  //console.log(uname + email + password);
+  connection.query(
+    'INSERT INTO users(name, email, password) values(?, ?, ?)',
+    [uname, email, password],
+    (error, results) =>{
+      console.log(results);
+      console.log(error);
+      res.render('index.ejs');
+    }
+  );
 });
 
 app.get('/logout', (req, res) =>{

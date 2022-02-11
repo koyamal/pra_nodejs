@@ -8,22 +8,19 @@
   </head>
   <body>
     <%- include('header.ejs'); %>
-    <h1>Welcome to Login page!</h1>
-    <% if( msg !== ""){ %>
-      <p class="msg_error"><%= msg %></p>
-    <% } %>
-    <form action="/login" method="post">
+    <h1>Welcome to Sing up page!</h1>
+    
+    <form action="/singup" method="post">
+        <p>name</p>
+        <input type="text" name="username">
         <p>e-mail</p>
         <input type="text" name="email">
         <p>password</p>
         <input type="password" name="password">
         <div>
-            <input type="submit" value="Login">
+            <input type="submit" value="Singup">
         </div>
     </form>
-    <div class="btm">
-      <a class="changepage underline" href="/singup">Sing up</a>
-  </div>
 
     <div class="btm">
         <a class="changepage underline" href="/">Go To Top page</a>
