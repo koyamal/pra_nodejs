@@ -49,7 +49,7 @@ app.get('/second/:id', (req, res) =>{
   connection.query(
     'SELECT * FROM users',
     (error, results) =>{
-      console.log(results);
+      //console.log(results);
       res.render('second.ejs', {itemId: req.params.id, usersInfo: results});
     }
   );
