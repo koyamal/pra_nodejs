@@ -114,4 +114,9 @@ app.get('/logout', (req, res) =>{
   });
 });
 
+app.get('/mypage', (req, res) =>{
+  res.render('mypage.ejs')
+
+});
+
 app.listen(3000);
