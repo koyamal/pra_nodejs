@@ -8,7 +8,10 @@
   </head>
   <body>
     <%- include('header.ejs'); %>
-    <%- locals.userName %>
+    <p>id: <%- locals.userInfo.id %></p>
+    <p>name: <%- locals.userInfo.name %></p>
+    <p>email: <%- locals.userInfo.email %></p>
+    <p>password: <%- locals.userInfo.password %></p>
     <div class="btm">
         <a class="changepage underline" href="/">Top page</a>
     </div>

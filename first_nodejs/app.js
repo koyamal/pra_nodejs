@@ -37,6 +37,7 @@ app.use((req, res, next) =>{
     res.locals.isLogin = false;
   }else{
     res.locals.userName = req.session.userName;
+    res.locals.userInfo = req.session.userInfo;
     res.locals.isLogin = true;
   }
   next();
@@ -73,6 +74,7 @@ app.post('/login', (req, res) =>{
         if (results.length > 0){
           if (results[0].password === password){
             req.session.userName = results[0].name;
+            req.session.userInfo = results[0];
             console.log("Login: " + results[0].name);
             res.redirect('/');
           } else {
