@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="/css/style.css">
+    <title>Pra_Node.js</title>
+    <script src="/send_url.js"></script>
+  </head>
+  <body>
+    <%- include('header.ejs'); %>
+    <p>Delete <%- locals.userInfo.name %> ?</p>
+    <div class="btm">
+        <a class="changepage underline" href="/delete">Delete</a>
+    </div>
+    <div class="btm">
+      <a class="changepage underline" href="/">Cancel</a>
+    </div>
+    <%- include('footer.ejs'); %>
+  </body>
+</html>

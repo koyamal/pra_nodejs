@@ -121,7 +121,7 @@ app.get('/mypage', (req, res) =>{
 });
 
 app.get('/delete', (req, res)=>{
-  res.render('mypage.ejs');
+  res.render('delete.ejs');
 });
 
 app.listen(3000);
