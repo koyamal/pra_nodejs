@@ -98,16 +98,21 @@ app.post('/singup', (req, res) =>{
   const uname = req.body.username;
   const email = req.body.email;
   const password = req.body.password;
+  if (email === "" || password === "" || uname === ""){
+    console.log("Error: Singup failed");
+    res.render('singup.ejs', {msg: "Error!"});
+  }else{
+    connection.query(
+      'INSERT INTO users(name, email, password) values(?, ?, ?)',
+      [uname, email, password],
+      (error, results) =>{
+        console.log(results);
+        console.log(error);
+        res.render('index.ejs');
+      }
+    );
+  }
   //console.log(uname + email + password);
-  connection.query(
-    'INSERT INTO users(name, email, password) values(?, ?, ?)',
-    [uname, email, password],
-    (error, results) =>{
-      console.log(results);
-      console.log(error);
-      res.render('index.ejs');
-    }
-  );
 });
 
 app.get('/logout', (req, res) =>{

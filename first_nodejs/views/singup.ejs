@@ -9,7 +9,9 @@
   <body>
     <%- include('header.ejs'); %>
     <h1>Welcome to Sing up page!</h1>
-    
+    <% if( msg !== ""){ %>
+      <p class="msg_error"><%= msg %></p>
+    <% } %>
     <form action="/singup" method="post">
         <p>name</p>
         <input type="text" name="username">
