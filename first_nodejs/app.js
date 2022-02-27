@@ -100,7 +100,7 @@ app.post('/singup', (req, res) =>{
   const password = req.body.password;
   if (email === "" || password === "" || uname === ""){
     console.log("Error: Singup failed");
-    res.render('singup.ejs', {msg: "Error!"});
+    res.render('singup.ejs', {msg: "Error: Input User Info(name, e-mail, password)"});
   }else{
     connection.query(
       'INSERT INTO users(name, email, password) values(?, ?, ?)',
