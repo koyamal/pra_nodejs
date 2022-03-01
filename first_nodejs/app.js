@@ -108,7 +108,7 @@ app.post('/singup', (req, res) =>{
       (error, results) =>{
         console.log(results);
         console.log(error);
-        res.render('index.ejs');
+        res.render('complete_singup.ejs', {msg: "Singup Successfully!"});
       }
     );
   }
