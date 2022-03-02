@@ -108,7 +108,7 @@ app.post('/singup', (req, res) =>{
       (error, results) =>{
         console.log(results);
         console.log(error);
-        res.render('complete_singup.ejs', {msg: "Singup Successfully!"});
+        res.render('message.ejs', {msg: "Singup Successfully!"});
       }
     );
   }
@@ -127,6 +127,19 @@ app.get('/mypage', (req, res) =>{
 
 app.get('/delete', (req, res)=>{
   res.render('delete.ejs');
+});
+
+app.get('/complete_delete', (req, res) =>{
+  connection.query(
+    'DELETE FROM users WHERE email = ?',
+    [res.locals.userInfo.email],
+    (error, results) =>{
+      //console.log(results);
+      req.session.destroy((error) =>{
+        res.render('message.ejs', {msg: "Delete: " + res.locals.userName + ", Successfully!"});
+      });
+    }
+  );
 });
 
 app.listen(3000);
