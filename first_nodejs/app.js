@@ -50,7 +50,7 @@ app.get('/second/:id', (req, res) =>{
   connection.query(
     'SELECT * FROM users',
     (error, results) =>{
-      //console.log(results);
+      console.log(results[0]);
       res.render('second.ejs', {itemId: req.params.id, usersInfo: results});
     }
   );
@@ -108,7 +108,17 @@ app.post('/singup', (req, res) =>{
       (error, results) =>{
         console.log(results);
         console.log(error);
-        res.render('message.ejs', {msg: "Singup Successfully!"});
+        connection.query(
+          'SELECT * FROM users WHERE email = ?',
+          [email],
+          (error02, results02) =>{
+            console.log(results02);
+            req.session.userName = results02[0].name;
+            req.session.userInfo = results02[0];
+            res.redirect('/');
+          }
+        );
+        //res.render('message.ejs', {msg: "Singup Successfully!"});
       }
     );
   }
