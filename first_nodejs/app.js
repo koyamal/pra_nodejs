@@ -28,7 +28,7 @@ connection.connect((err) => {
     console.log('error connecting: ' + err.stack);
     return;
   }
-  console.log('success');
+  console.log('Connection Successfully!');
 });
 
 app.use((req, res, next) =>{
