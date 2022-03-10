@@ -40,6 +40,8 @@ app.use((req, res, next) =>{
     res.locals.userInfo = req.session.userInfo;
     res.locals.isLogin = true;
   }
+  //console.log('app.use');
+  //console.log(req.session.userName)
   next();
 });
 app.get('/', (req, res) => {
@@ -146,6 +148,8 @@ app.get('/complete_delete', (req, res) =>{
     (error, results) =>{
       //console.log(results);
       req.session.destroy((error) =>{
+        //console.log("before message");
+        //console.log(res.locals.userName)
         res.render('message.ejs', {msg: "Delete: " + res.locals.userName + ", Successfully!"});
       });
     }
