@@ -120,11 +120,9 @@ app.post('/singup', (req, res) =>{
             res.redirect('/');
           }
         );
-        //res.render('message.ejs', {msg: "Singup Successfully!"});
       }
     );
   }
-  //console.log(uname + email + password);
 });
 
 app.get('/logout', (req, res) =>{
@@ -146,7 +144,6 @@ app.get('/complete_delete', (req, res) =>{
     'DELETE FROM users WHERE email = ?',
     [res.locals.userInfo.email],
     (error, results) =>{
-      //console.log(results);
       req.session.destroy((error) =>{
         //console.log("before message");
         //console.log(res.locals.userName)
