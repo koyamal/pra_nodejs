@@ -146,7 +146,8 @@ app.get('/complete_delete', (req, res) =>{
     (error, results) =>{
       req.session.destroy((error) =>{
         //console.log("before message");
-        //console.log(res.locals.userName)
+        //console.log(res.locals.userName);
+        console.log("after session destroy");
         res.render('message.ejs', {msg: "Delete: " + res.locals.userName + ", Successfully!"});
       });
     }
