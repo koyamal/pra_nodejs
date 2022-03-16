@@ -32,16 +32,20 @@ connection.connect((err) => {
 });
 
 app.use((req, res, next) =>{
+  console.log("appuse: " + res.locals.userName);
+  console.log("out44: " + req.session.deleteUser);
   if (req.session.userName === undefined){
     res.locals.userName = "Guest";
     res.locals.isLogin = false;
+    res.locals.deleteUser = req.session.deleteUser;
   }else{
     res.locals.userName = req.session.userName;
+    res.locals.deleteUser = req.session.userName;
     res.locals.userInfo = req.session.userInfo;
     res.locals.isLogin = true;
   }
   //console.log('app.use');
-  //console.log(req.session.userName)
+  //console.log(req.session.userName);
   next();
 });
 app.get('/', (req, res) => {
@@ -147,11 +151,25 @@ app.get('/complete_delete', (req, res) =>{
       req.session.destroy((error) =>{
         //console.log("before message");
         //console.log(res.locals.userName);
+        console.log(res.locals.deleteUser);
         console.log("after session destroy");
-        res.render('message.ejs', {msg: "Delete: " + res.locals.userName + ", Successfully!"});
       });
+      console.log("out:" + res.locals.deleteUser);
+      console.log("out:" + req.session);
+      //req.session.deleteUser = "test";
+      //req.session.deleteUser = res.locals.deleteUser;
+      //res.redirect('/after_delete');
     }
   );
+  req.session.deleteUser = res.locals.deleteUser;
+  console.log("out22: " + req.session.deleteUser);
+  console.log("out2:" + req.session);
+  res.redirect('/after_delete');
+});
+
+app.get('/after_delete', (req, res) =>{
+  console.log("out33: " + res.locals.deleteUser);
+  res.render('message.ejs', {msg: "Delete: " + res.locals.deleteUser + ", Successfully!"});
 });
 
 app.listen(3000);
