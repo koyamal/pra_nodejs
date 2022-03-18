@@ -174,4 +174,13 @@ app.post('/complete_delete_by_admin', (req, res) =>{
   );
 });
 
+app.get('/view_fruits', (req, res) =>{
+  connection.query(
+    'SELECT * FROM fruits;',
+    (error, results) =>{
+      res.render('viewfruits.ejs',{fruits: results});
+    }
+  );
+});
+
 app.listen(3000);
