@@ -183,9 +183,27 @@ app.get('/view_fruits', (req, res) =>{
   );
 });
 
-app.post('/select_fruits', (req, res) =>{
+app.post('/delete_fruits', (req, res) =>{
   console.log(req.body.fruits);
-  res.redirect('/');
+  const fruits = req.body.fruits;
+  if (typeof(fruits) === "string"){
+    connection.query(
+      'DELETE FROM fruits WHERE name = ?;',
+      [fruits],
+      (error, results) =>{
+      }
+    );
+  }else if(fruits !== undefined){
+    fruits.forEach((fruit) =>{
+      connection.query(
+        'DELETE FROM fruits WHERE name = ?;',
+        [fruit],
+        (error, results) =>{
+        }
+      );
+    })
+  }
+  res.redirect('/view_fruits');
 });
 
 app.listen(3000);
