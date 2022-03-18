@@ -1,3 +1,12 @@
 <% fruits.forEach((fruit) =>{ %>
     <p><%= fruit.id %> : <%= fruit.name %></p>
 <% }) %>
+
+<form action="/select_fruits" method="post">
+    <% fruits.forEach((fruit) =>{ %>
+        <p>
+            <input type="checkbox" name="fruits" value=<%= fruit.name %>> <%= fruit.name %>
+        </p>
+    <% }) %>
+    <input type="submit" value="Select">
+</form>

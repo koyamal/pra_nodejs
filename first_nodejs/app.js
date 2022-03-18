@@ -183,4 +183,9 @@ app.get('/view_fruits', (req, res) =>{
   );
 });
 
+app.post('/select_fruits', (req, res) =>{
+  console.log(req.body.fruits);
+  res.redirect('/');
+});
+
 app.listen(3000);
