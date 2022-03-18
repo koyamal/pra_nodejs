@@ -155,4 +155,23 @@ app.get('/after_delete', (req, res) =>{
   res.render('message.ejs', {msg: "Delete: " + deleteUser + ", Successfully!"});
 });
 
+app.get('/delete_by_admin', (req, res) =>{
+  connection.query(
+    'SELECT * FROM users',
+    (error, results) =>{
+      res.render('deletebyadmin.ejs', {itemId: req.params.id, usersInfo: results});
+    }
+  );
+});
+
+app.post('/complete_delete_by_admin', (req, res) =>{
+  connection.query(
+    'DELETE FROM users WHERE id = ?',
+    [req.body.id],
+    (error, results) =>{
+      res.redirect('/delete_by_admin');
+    }
+  );
+});
+
 app.listen(3000);

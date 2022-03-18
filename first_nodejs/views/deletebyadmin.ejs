@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="/css/style.css">
+    <title>Pra_Node.js(page 2)</title>
+    <script src="/send_url.js"></script>
+  </head>
+  <body>
+    <%- include('header.ejs'); %>
+    <h1>Welcome to Delete users page !</h1>
+
+    <p>Registered Users</p>
+    <table border="2">
+      <tr>
+        <th>Id</th><th>Name</th>
+      </tr>
+      <% usersInfo.forEach((userInfo =>{ %>
+        <tr>
+          <th>
+            <%= userInfo.id %>
+          </th>
+          <th>
+            <%= userInfo.name %>
+          </th>
+        </tr>
+      <% })); %>      
+    </table>
+    <form class="deleteusers" action="/complete_delete_by_admin" method="post">
+        <p>Delete User's Id</p>
+        <input type="number" name="id">
+        <div>
+            <input type="submit" value="Delete">
+        </div>
+    </form>
+    <div class="btm">
+      <a class="changepage underline" href="/">Top page!</a>
+    </div>
+    <%- include('footer.ejs'); %>
+  </body>
+</html>

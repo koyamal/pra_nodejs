@@ -12,9 +12,15 @@
     <p>name: <%- locals.userInfo.name %></p>
     <p>email: <%- locals.userInfo.email %></p>
     <p>password: <%- locals.userInfo.password %></p>
+    <p>admin: <%- locals.userInfo.admin %></p>
+    <% if(locals.userInfo.admin){ %>
     <div class="btm">
-        <a class="changepage underline" href="/delete">Delete user!</a>
+        <a class="changepage underline" href="/delete_by_admin">Delete users!</a>
     </div>
+    <% } %>
+    <div class="btm">
+      <a class="changepage underline" href="/delete">Delete <%= locals.userInfo.name%>!</a>
+  </div>
     <div class="btm">
       <a class="changepage underline" href="/">Top page!</a>
     </div>
