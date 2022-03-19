@@ -207,7 +207,6 @@ app.post('/delete_fruits', (req, res) =>{
 });
 
 app.post('/delete_fruits_link/:name',(req, res) =>{
-  console.log(req.params.name);
   connection.query(
     'DELETE FROM fruits WHERE name = ?',
     [req.params.name],
@@ -218,8 +217,13 @@ app.post('/delete_fruits_link/:name',(req, res) =>{
 });
 
 app.post('/add_fruit', (req, res) =>{
-  console.log(req.body.fruitname);
-  res.redirect('/view_fruits');
+  connection.query(
+    'INSERT INTO fruits (name) VALUES (?);',
+    [req.body.fruitname],
+    (error, results) =>{
+      res.redirect('/view_fruits');
+    }
+  );
 });
 
 app.listen(3000);
