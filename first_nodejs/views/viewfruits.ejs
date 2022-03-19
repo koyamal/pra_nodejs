@@ -10,6 +10,16 @@
     <% }) %>
     <input type="submit" value="Delete">
 </form>
+<ul>
+    <% fruits.forEach((fruit) =>{ %>
+        <li>
+            <%= fruit.name %>
+            <form action="/delete_fruits_link/<%= fruit.name %>" method="post">
+                <input type="submit" value="delete">
+            </form>
+        </li>
+    <% }) %>
+</ul>
 
 <div class="btm">
     <a class="changepage underline" href="/">Top page!</a>

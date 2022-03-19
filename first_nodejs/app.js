@@ -206,4 +206,9 @@ app.post('/delete_fruits', (req, res) =>{
   res.redirect('/view_fruits');
 });
 
+app.post('/delete_fruits_link/:name',(req, res) =>{
+  console.log(req.params.name);
+  res.redirect('/view_fruits');
+});
+
 app.listen(3000);
