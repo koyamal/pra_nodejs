@@ -118,3 +118,16 @@ footer div{
     margin-top: 20px;
     margin-bottom: 20px;
 }
+
+.item_list{
+    margin-top: 10px;
+    display: flex;
+}
+
+.item_name{
+    width: 70px;
+}
+
+.item_btm{
+    margin-left: 10px;
+}
