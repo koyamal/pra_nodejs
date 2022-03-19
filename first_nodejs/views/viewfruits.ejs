@@ -8,12 +8,14 @@
   </head>
   <body>
     <%- include('header.ejs'); %>
-    <div>
+    <div class="fruitpage">
+        <h3>Fruits List</h3>
         <% fruits.forEach((fruit) =>{ %>
             <p><%= fruit.id %> : <%= fruit.name %></p>
         <% }) %>
     </div>
-    <div>
+    <div class="fruitpage">
+        <h3>Delete Fruits</h3>
         <form action="/delete_fruits" method="post">
             <% fruits.forEach((fruit) =>{ %>
                 <p>
@@ -23,7 +25,8 @@
             <input type="submit" value="Delete">
         </form>
     </div>
-    <div>
+    <div class="fruitpage">
+        <h3>Delete Fruit</h3>
         <ul>
             <% fruits.forEach((fruit) =>{ %>
                 <li class="item_list">
@@ -39,13 +42,14 @@
             <% }) %>
         </ul>
     </div>
-    <div>
+    <div class="fruitpage">
+        <h3>Add Fruit</h3>
         <form action="/add_fruit" method="post">
             <input type="text" name="fruitname">
             <input type="submit" value="add">
         </form>
     </div>
-    <div class="btm">
+    <div class="btm fruitpage">
         <a class="changepage underline" href="/">Top page!</a>
     </div>
     <%- include('footer.ejs'); %>

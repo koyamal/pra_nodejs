@@ -120,7 +120,7 @@ footer div{
 }
 
 .item_list{
-    margin-top: 10px;
+    margin-bottom: 5px;
     display: flex;
 }
 
@@ -130,4 +130,8 @@ footer div{
 
 .item_btm{
     margin-left: 10px;
+}
+
+.fruitpage{
+    margin-bottom: 15px;
 }
