@@ -217,4 +217,9 @@ app.post('/delete_fruits_link/:name',(req, res) =>{
   );
 });
 
+app.post('/add_fruit', (req, res) =>{
+  console.log(req.body.fruitname);
+  res.redirect('/view_fruits');
+});
+
 app.listen(3000);

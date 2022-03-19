@@ -8,31 +8,43 @@
   </head>
   <body>
     <%- include('header.ejs'); %>
-    <% fruits.forEach((fruit) =>{ %>
-        <p><%= fruit.id %> : <%= fruit.name %></p>
-        <% }) %>
-    <form action="/delete_fruits" method="post">
+    <div>
         <% fruits.forEach((fruit) =>{ %>
-            <p>
-                <input type="checkbox" name="fruits" value=<%= fruit.name %>> <%= fruit.name %>
-            </p>
+            <p><%= fruit.id %> : <%= fruit.name %></p>
         <% }) %>
-        <input type="submit" value="Delete">
-    </form>
-    <ul>
-        <% fruits.forEach((fruit) =>{ %>
-            <li class="item_list">
-                <div class="item_name">
-                    <%= fruit.name %>
-                </div>
-                <div class="item_btm">
-                    <form action="/delete_fruits_link/<%= fruit.name %>" method="post">
-                        <input type="submit" value="delete">
-                    </form>
-                </div>
-            </li>
-        <% }) %>
-    </ul>
+    </div>
+    <div>
+        <form action="/delete_fruits" method="post">
+            <% fruits.forEach((fruit) =>{ %>
+                <p>
+                    <input type="checkbox" name="fruits" value=<%= fruit.name %>> <%= fruit.name %>
+                </p>
+            <% }) %>
+            <input type="submit" value="Delete">
+        </form>
+    </div>
+    <div>
+        <ul>
+            <% fruits.forEach((fruit) =>{ %>
+                <li class="item_list">
+                    <div class="item_name">
+                        <%= fruit.name %>
+                    </div>
+                    <div class="item_btm">
+                        <form action="/delete_fruits_link/<%= fruit.name %>" method="post">
+                            <input type="submit" value="delete">
+                        </form>
+                    </div>
+                </li>
+            <% }) %>
+        </ul>
+    </div>
+    <div>
+        <form action="/add_fruit" method="post">
+            <input type="text" name="fruitname">
+            <input type="submit" value="add">
+        </form>
+    </div>
     <div class="btm">
         <a class="changepage underline" href="/">Top page!</a>
     </div>
