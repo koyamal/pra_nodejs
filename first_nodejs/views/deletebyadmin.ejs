@@ -9,7 +9,7 @@
   <body>
     <%- include('header.ejs'); %>
     <h1>Welcome to Delete users page !</h1>
-
+    <h3>Delete by User's ID</h3>
     <p>Registered Users</p>
     <table border="2">
       <tr>
@@ -27,7 +27,6 @@
       <% })); %>    
     </table>
     <form class="deleteusers" action="/complete_delete_by_admin" method="post">
-        <h3>Delete by User's ID</h3>
         <input type="number" name="id">
         <div>
             <input type="submit" value="Delete">
