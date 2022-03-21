@@ -13,12 +13,18 @@
       <p class="msg_error"><%= msg %></p>
     <% } %>
     <form action="/singup" method="post">
-        <p>name</p>
+      <div class="input_label">
+        <p>name :</p>
         <input type="text" name="username">
-        <p>e-mail</p>
+      </div>
+      <div class="input_label">
+        <p>e-mail :</p>
         <input type="text" name="email">
-        <p>password</p>
+      </div>
+      <div class="input_label">
+        <p>password :</p>
         <input type="password" name="password">
+      </div>
         <div>
             <input type="submit" value="Singup">
         </div>

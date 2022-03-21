@@ -135,3 +135,16 @@ footer div{
 .fruitpage{
     margin-bottom: 15px;
 }
+
+.input_label{
+    display: flex;
+    margin-bottom: 10px;
+}
+
+.input_label input{
+    margin-left: 15px;
+}
+
+.input_label p{
+    width: 90px;
+}

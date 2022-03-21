@@ -13,10 +13,14 @@
       <p class="msg_error"><%= msg %></p>
     <% } %>
     <form action="/login" method="post">
-        <p>E-mail</p>
+      <div class="input_label">
+        <p>E-mail :</p>
         <input type="text" name="email">
-        <p>Password</p>
+      </div>
+      <div class="input_label">
+        <p>Password :</p>
         <input type="password" name="password">
+      </div>
         <div>
             <input type="submit" value="Login">
         </div>
