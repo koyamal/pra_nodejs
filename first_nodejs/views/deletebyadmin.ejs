@@ -24,15 +24,32 @@
             <%= userInfo.name %>
           </th>
         </tr>
-      <% })); %>      
+      <% })); %>    
     </table>
     <form class="deleteusers" action="/complete_delete_by_admin" method="post">
-        <p>Delete User's Id</p>
+        <h3>Delete by User's ID</h3>
         <input type="number" name="id">
         <div>
             <input type="submit" value="Delete">
         </div>
     </form>
+    <div class="">
+      <h3>Delete User by Buttom</h3>
+      <ul>
+          <% usersInfo.forEach((userInfo) =>{ %>
+              <li class="item_list">
+                  <div class="item_name">
+                    <%= userInfo.id %> : <%= userInfo.name %>
+                  </div>
+                  <div class="item_btm">
+                      <form action="/delete_by_admin_link/<%= userInfo.id %>" method="post">
+                          <input type="submit" value="delete">
+                      </form>
+                  </div>
+              </li>
+          <% }) %>
+      </ul>
+  </div>
     <div class="btm">
       <a class="changepage underline" href="/">Top page!</a>
     </div>

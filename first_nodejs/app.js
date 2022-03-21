@@ -174,6 +174,16 @@ app.post('/complete_delete_by_admin', (req, res) =>{
   );
 });
 
+app.post('/delete_by_admin_link/:id', (req, res) =>{
+  connection.query(
+    'DELETE FROM users WHERE id = ?',
+    [req.params.id],
+    (error, results) =>{
+      res.redirect('/delete_by_admin');
+    }
+  );
+});
+
 app.get('/view_fruits', (req, res) =>{
   connection.query(
     'SELECT * FROM fruits;',
