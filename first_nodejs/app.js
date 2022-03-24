@@ -80,10 +80,14 @@ app.post('/login', (req, res) =>{
             res.redirect('/');
           } else {
             console.log("Login failed password error");
+            console.log("  - Inputed email: " + email);
+            console.log("  - Inputed password: " + password);
             res.render('login.ejs', {msg: "Error: Your e-mail or password is incorrect!"});
           }
         } else {
           console.log("Login failed e-mail error");
+          console.log("  - Inputed email: " + email);
+          console.log("  - Inputed password: " + password);
           res.render('login.ejs', {msg: "Error: Your e-mail or password is incorrect!"});
         }
       }
