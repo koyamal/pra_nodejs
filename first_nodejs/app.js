@@ -33,7 +33,7 @@ connection.connect((err) => {
   console.log('Connection Successfully!');
 });
 
-const mode = 1;
+const mode = 0;
 
 app.use((req, res, next) =>{
   if(mode === 1){
@@ -58,7 +58,7 @@ app.use((req, res, next) =>{
   if(mode === 1){
     console.log("2");
   }
-  // next();
+  next();
 });
 
 app.get('/', (req, res) => {
