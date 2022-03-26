@@ -33,7 +33,7 @@ connection.connect((err) => {
   console.log('Connection Successfully!');
 });
 
-const mode = 1;
+const mode = 0;
 
 app.use((req, res, next) =>{
   if(mode === 1){
@@ -302,6 +302,13 @@ app.post('/add_fruit', (req, res) =>{
       res.redirect('/view_fruits');
     }
   );
+});
+
+app.use((req, res, next) =>{
+  if(mode === 1){
+    console.log("fin.");
+  }
+  next();
 });
 
 app.listen(3000);
