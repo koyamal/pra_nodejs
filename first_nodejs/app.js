@@ -33,6 +33,15 @@ connection.connect((err) => {
   console.log('Connection Successfully!');
 });
 
+const mode = 1;
+
+app.use((req, res, next) =>{
+  if(mode === 1){
+    console.log("1");
+  }
+  next();
+});
+
 app.use((req, res, next) =>{
   if (req.session.userName === undefined){
     res.locals.userName = "Guest";
@@ -44,11 +53,32 @@ app.use((req, res, next) =>{
   }
   next();
 });
+
+app.use((req, res, next) =>{
+  if(mode === 1){
+    console.log("2");
+  }
+  next();
+});
+
 app.get('/', (req, res) => {
+  if(mode === 1){
+    console.log("/");
+  }
   res.render('index.ejs');
 });
 
+app.use((req, res, next) =>{
+  if(mode === 1){
+    console.log("3");
+  }
+  next();
+});
+
 app.get('/second/:id', (req, res) =>{
+  if(mode === 1){
+    console.log("/second");
+  }
   connection.query(
     'SELECT * FROM users',
     (error, results) =>{
@@ -58,7 +88,17 @@ app.get('/second/:id', (req, res) =>{
 });
 
 app.get('/login', (req, res) =>{
+  if(mode === 1){
+    console.log("/login");
+  }
   res.render('login.ejs', {msg: ""});
+});
+
+app.use((req, res, next) =>{
+  if(mode === 1){
+    console.log("4");
+  }
+  next();
 });
 
 app.post('/login', (req, res) =>{
@@ -96,6 +136,9 @@ app.post('/login', (req, res) =>{
 });
 
 app.get('/singup', (req, res) =>{
+  if(mode === 1){
+    console.log("/singup");
+  }
   res.render('singup.ejs', {msg: ""});
 });
 
@@ -129,20 +172,32 @@ app.post('/singup', (req, res) =>{
 });
 
 app.get('/logout', (req, res) =>{
+  if(mode === 1){
+    console.log("/logout");
+  }
   req.session.destroy((error) =>{
     res.redirect('/');
   });
 });
 
 app.get('/mypage', (req, res) =>{
+  if(mode === 1){
+    console.log("/mypage");
+  }
   res.render('mypage.ejs');
 });
 
 app.get('/delete', (req, res)=>{
+  if(mode === 1){
+    console.log("/delete");
+  }
   res.render('delete.ejs');
 });
 
 app.get('/complete_delete', (req, res) =>{
+  if(mode === 1){
+    console.log("/complete_delete");
+  }
   connection.query(
     'DELETE FROM users WHERE email = ?',
     [res.locals.userInfo.email],
@@ -156,10 +211,16 @@ app.get('/complete_delete', (req, res) =>{
 });
 
 app.get('/after_delete', (req, res) =>{
+  if(mode === 1){
+    console.log("/after_delete");
+  }
   res.render('message.ejs', {msg: "Delete: " + deleteUser + ", Successfully!"});
 });
 
 app.get('/delete_by_admin', (req, res) =>{
+  if(mode === 1){
+    console.log("/delete_by_admin");
+  }
   connection.query(
     'SELECT * FROM users',
     (error, results) =>{
@@ -189,6 +250,9 @@ app.post('/delete_by_admin_link/:id', (req, res) =>{
 });
 
 app.get('/view_fruits', (req, res) =>{
+  if(mode === 1){
+    console.log("/view_fruits");
+  }
   connection.query(
     'SELECT * FROM fruits;',
     (error, results) =>{
