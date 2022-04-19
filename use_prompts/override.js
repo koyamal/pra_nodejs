@@ -1,5 +1,6 @@
 const prompts = require('prompts');
-prompts.override({'twitter': 'override'});
+//prompts.override({'twitter': 'override'});
+prompts.override(require('yargs').argv); //node override.js --twitter=override
 const yargs = require('yargs').argv;
 
 console.log(yargs);
