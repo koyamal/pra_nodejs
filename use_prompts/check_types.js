@@ -48,6 +48,7 @@ const questions = [
     type: 'select',
     name: 'select',
     message: 'Pick a color',
+    hint: ' ',
     choices: [
       { title: 'Red', description: 'This option has a description', value: '#ff0000' },
       { title: 'Green', value: '#00ff00', disabled: true },
