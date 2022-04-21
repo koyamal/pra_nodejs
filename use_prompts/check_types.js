@@ -10,6 +10,19 @@ const questions = [
     type: 'password',
     name: 'password',
     message: 'Input your password'
+  },
+  {
+    type: 'invisible',
+    name: 'repassword',
+    message: 'Input your password again'
+  },
+  {
+    type: 'number',
+    name: 'age',
+    message: 'How old are you?',
+    initial: 0,
+    min: 0,
+    max: 200
   }
 ];
 
