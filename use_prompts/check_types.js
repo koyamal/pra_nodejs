@@ -35,6 +35,24 @@ const questions = [
     name: 'list',
     message: 'Enter your phone number(ex:xxx-xxxx-xxxx)',
     separator: '-'
+  },
+  {
+    type: 'toggle',
+    name: 'toggle',
+    message: 'Do you like cat?',
+    initial: true,
+    active: 'Yes',
+    inactive: 'No'
+  },
+  {
+    type: 'select',
+    name: 'select',
+    message: 'Pick a color',
+    choices: [
+      { title: 'Red', description: 'This option has a description', value: '#ff0000' },
+      { title: 'Green', value: '#00ff00', disabled: true },
+      { title: 'Blue', value: '#0000ff' }
+    ],
   }
 ];
 
