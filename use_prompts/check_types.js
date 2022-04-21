@@ -23,6 +23,18 @@ const questions = [
     initial: 0,
     min: 0,
     max: 200
+  },
+  {
+    type: 'confirm',
+    name: 'confirm',
+    message: 'Do you like dogs?',
+    initial: true
+  },
+  {
+    type: 'list',
+    name: 'list',
+    message: 'Enter your phone number(ex:xxx-xxxx-xxxx)',
+    separator: '-'
   }
 ];
 
