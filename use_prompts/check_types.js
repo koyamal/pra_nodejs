@@ -54,6 +54,30 @@ const questions = [
       { title: 'Green', value: '#00ff00', disabled: true },
       { title: 'Blue', value: '#0000ff' }
     ],
+  },
+  {
+    type: 'multiselect',
+    name: 'multiselect',
+    message: 'Pick colors',
+    choices: [
+      { title: 'Red', value: '#ff0000', selected: true},
+      { title: 'Green', value: '#00ff00', disabled: true },
+      { title: 'Blue', value: '#0000ff', selected: true }
+    ],
+    max: 2,
+  },
+  {
+    type: 'autocomplete',
+    name: 'autocomplete',
+    message: 'Pick your favorite actor',
+    choices: [
+      { title: 'Cage' },
+      { title: 'Clooney', value: 'silver-fox' },
+      { title: 'Gyllenhaal' },
+      { title: 'Gibson' },
+      { title: 'Grant' },
+      { title: 'Erik'}
+    ]
   }
 ];
 
