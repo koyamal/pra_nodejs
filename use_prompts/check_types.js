@@ -78,6 +78,13 @@ const questions = [
       { title: 'Grant' },
       { title: 'Erik'}
     ]
+  },
+  {
+    type: 'date',
+    name: 'date',
+    message: 'What\'s your birthday?',
+    initial: new Date(1990, 9, 11),
+    validate: date => date > Date.now() ? 'Not in the future' : true
   }
 ];
 
