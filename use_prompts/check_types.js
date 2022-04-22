@@ -84,6 +84,7 @@ const questions = [
     name: 'date',
     message: 'What\'s your birthday?',
     initial: new Date(1990, 9, 11),
+    mask: 'YYYY-MM-DD',
     validate: date => date > Date.now() ? 'Not in the future' : true
   }
 ];
