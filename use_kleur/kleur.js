@@ -28,3 +28,7 @@ console.log(kleur.underline('underline'));
 console.log(kleur.inverse('inverse'));
 console.log(kleur.hidden('hidden'));
 console.log(kleur.strikethrough('strikethrough'));
+
+const { underline, bgWhite } = require('kleur/colors');
+//import { underline, bgWhite } from 'kleur/colors';
+console.log(underline('kleur/colors'));
