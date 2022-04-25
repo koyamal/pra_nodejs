@@ -1,6 +1,6 @@
-console.log('test message04');
+//console.log('test message04');
 const el = require('./elements');
-console.log('test message05');
+//console.log('test message05');
 const fns = require('./elements/fns');
 
 console.log(el);
