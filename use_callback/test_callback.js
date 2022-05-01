@@ -19,4 +19,9 @@ function sayTwiceInput(func){
 }
 
 sayTwiceInput(sayInput);
+
+sayTwiceInput(function(tetete){
+    console.log(tetete + tetete);
+});
+
 setTimeout(sayHello, 2000);
