@@ -13,6 +13,10 @@ function sayInput(msg){
     console.log(msg);
 }
 
+function sayInputThree(msg){
+    console.log(msg + msg + msg);
+}
+
 function sayTwiceInput(func){
     func('Hello,');
     func('World');
@@ -20,8 +24,10 @@ function sayTwiceInput(func){
 
 sayTwiceInput(sayInput);
 
-sayTwiceInput(function(tetete){
-    console.log(tetete + tetete);
+sayTwiceInput(function(msg){
+    console.log(msg + msg);
 });
+
+sayTwiceInput(sayInputThree);
 
 setTimeout(sayHello, 2000);
