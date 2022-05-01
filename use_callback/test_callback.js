@@ -7,6 +7,8 @@ function sayTwiceHello(func){
     func();
 }
 
+sayTwiceHello(sayHello);
+
 function sayInput(msg){
     console.log(msg);
 }
@@ -16,6 +18,5 @@ function sayTwiceInput(func){
     func('World');
 }
 
-sayTwiceHello(sayHello);
 sayTwiceInput(sayInput);
 setTimeout(sayHello, 2000);
