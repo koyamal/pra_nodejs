@@ -1,4 +1,4 @@
-let qs = {
+const qs = {
     type: 'number',
     name: 'value',
     message: 'How old are you?',
