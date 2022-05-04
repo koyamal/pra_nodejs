@@ -1,9 +1,17 @@
-const qs = {
-    type: 'number',
-    name: 'value',
-    message: 'How old are you?',
-    validate: value => value < 18 ? `Nightclub is 18+ only` : true
-};
+let qs = [
+    {
+        type: 'number',
+        name: 'value',
+        message: 'How old are you?',
+        validate: value => value < 18 ? `Nightclub is 18+ only` : true
+    },
+    {
+        type: 'number',
+        name: 'value02',
+        message: 'How old are you?',
+        validate: value => value < 18 ? `Nightclub is 18+ only` : true
+    },
+];
 
 console.log(qs);
 qs = [].concat(qs);
