@@ -1,4 +1,4 @@
-let qs = [
+let questions = [
     {
         type: 'number',
         name: 'value',
@@ -13,11 +13,11 @@ let qs = [
     },
 ];
 
-console.log(qs);
-qs = [].concat(qs);
-console.log(qs);
+console.log(questions);
+questions = [].concat(questions);
+console.log(questions);
 
-for (question of qs){
+for (question of questions){
     ({ name, type } = question);
     console.log(name);
     console.log(type);
