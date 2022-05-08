@@ -22,6 +22,12 @@ function sayTwiceInput(func){
     func('World');
 }
 
+function sayTripleInput(func){
+    func('One');
+    func('Two');
+    func('Three');
+}
+
 sayTwiceInput(sayInput);
 
 sayTwiceInput(function(msg){
@@ -31,3 +37,5 @@ sayTwiceInput(function(msg){
 sayTwiceInput(sayInputThree);
 
 setTimeout(sayHello, 2000);
+
+setTimeout(sayTripleInput, 1000, sayInput);
