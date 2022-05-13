@@ -1,24 +1,24 @@
 async function f() {
     let promise = new Promise((resolve, reject) => {
-      setTimeout(() => resolve("f: done!"), 1500)
+      setTimeout(() => resolve("6(f: done!)"), 1500)
       //setTimeout(() => resolve(console.log("hello")), 1000)
     });
     console.log('2');
     console.log(promise);
     let result = await promise;
-    console.log("6");
+    //console.log("6");
     console.log(result, promise);
 }
 
 async function g() {
   let promise = new Promise((resolve, reject) => {
-    setTimeout(() => resolve("g: done!"), 1000)
+    setTimeout(() => resolve("5(g: done!)"), 1400)
     //setTimeout(() => resolve(console.log("hello")), 1000)
   });
   console.log('4');
   console.log(promise);
   let result = await promise;
-  console.log("5");
+  //console.log("5");
   console.log(result, promise);
 }
 
