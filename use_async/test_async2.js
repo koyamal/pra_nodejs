@@ -7,7 +7,7 @@ async function f() {
     console.log(promise);
     let result = await promise;
     //console.log("6");
-    console.log(result, promise);
+    console.log(result);
 }
 
 async function g() {
@@ -19,7 +19,7 @@ async function g() {
   console.log(promise);
   let result = await promise;
   //console.log("5");
-  console.log(result, promise);
+  console.log(result);
 }
 
 console.log('1');
