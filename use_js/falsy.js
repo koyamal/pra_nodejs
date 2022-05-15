@@ -1,5 +1,5 @@
-let a;
+let val;
 
-const uName = a || 'Tom';
+const uName = val || 'Tom';
 
 console.log(uName);
