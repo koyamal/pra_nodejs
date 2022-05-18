@@ -15,13 +15,15 @@ promiseResolve().then(function (value) {
 function promiseReject(){
     return new Promise(function(resolve, reject){
         setTimeout(function(){
-            reject(new Error('reject called'))
+            //reject(new Error('reject called'))
+            reject({"reject": "1"})
         });
     });
 }
 
 promiseReject().then(function (value) {
     console.log(value);
-}).catch(function (error) {
-    console.log(error);
+}).catch(function (val) {
+    console.log(val["reject"]);
+    console.log(val);
 });
