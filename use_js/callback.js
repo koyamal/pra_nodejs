@@ -2,13 +2,13 @@ function hello(){
     console.log('hello');
 }
 
-function bye(){
-    console.log('bye');
+function bye(name){
+    console.log('bye', name);
 }
 
 function fn(cb){
     console.log('callback function is called');
-    cb();
+    cb('Bob');
     if (cb.prop === undefined){
         cb.prop = 12;
     }else{
