@@ -25,5 +25,5 @@ function a(){
 const b = a.bind({name: 'Takeshi'});
 b();
 
-a.apply({name: 'apply'});
-a.call({name: 'call'});
+a.apply({name: 'apply'}); // a.apply({obj}, [val1, val2,]);
+a.call({name: 'call'}); // a.call({obj}, val1, val2, )
