@@ -24,3 +24,6 @@ function a(){
 
 const b = a.bind({name: 'Takeshi'});
 b();
+
+a.apply({name: 'apply'});
+a.call({name: 'call'});
