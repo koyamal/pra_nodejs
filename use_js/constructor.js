@@ -10,6 +10,8 @@ Person.prototype.hello = function(){
 const bob = new Person('Bob', 18);
 console.log(bob);
 bob.hello();
+console.log(bob instanceof Person);
+console.log(bob.__proto__ === Person.prototype);
 
 const tom = new Person('Tom', 24);
 console.log(tom);
