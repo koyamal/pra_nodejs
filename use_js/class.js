@@ -16,6 +16,7 @@ class Japanese extends Person{
     }
 
     hello(){
+        super.hello();
         console.log('kon ' + this.name);
     }
 
@@ -26,4 +27,5 @@ class Japanese extends Person{
 
 const bob = new Japanese('Bob', 34, 'Male');
 console.log(bob);
+bob.hello();
 bob.bye();
