@@ -30,3 +30,10 @@ bob = new Person('bob', 32);
 bob.hello();
 bob.bye();
 bob.hi();
+//bob.seeyou();
+
+console.log(bob.hasOwnProperty('hello')); //true
+console.log(bob.hasOwnProperty('bye')); //false
+console.log('hello' in bob); //true
+console.log('bye' in bob); //true
+console.log('hi' in bob); //true
