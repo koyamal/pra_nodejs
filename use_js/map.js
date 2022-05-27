@@ -63,8 +63,19 @@ const setmap = function(map, key, val){
     return map.set(key, val);
 }
 
-const newMap = new Map();
-setmap(newMap, 'tests', 'test01');
-console.log(newMap);
-setmap(newMap, 'tests', 'test02');
-console.log(newMap);
+const map02 = new Map();
+setmap(map02, 'tests', 'test01');
+console.log(map02);
+setmap(map02, 'tests', 'test02');
+console.log(map02);
+
+const map03 = new Map();
+const set01 = new Set();
+set01.add('set01');
+map03.set('map03', set01);
+console.log(map03.get('map03'));
+set01.add('set02');
+map03.set('map03', set01);
+console.log(map03);
+console.log(map03.get('map03'));
+
