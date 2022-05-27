@@ -71,11 +71,16 @@ console.log(map02);
 
 const map03 = new Map();
 const set01 = new Set();
-set01.add('set01');
+set01.add(function(){console.log('set 01')});
 map03.set('map03', set01);
 console.log(map03.get('map03'));
-set01.add('set02');
+set01.add(function(){console.log('set 02')});
 map03.set('map03', set01);
 console.log(map03);
 console.log(map03.get('map03'));
+
+const ds = map03.get('map03');
+for(d of ds){
+    d();
+}
 
