@@ -1,7 +1,10 @@
 new Promise(function(resolve, reject){
     console.log('promise');
     //resolve('hello');
-    reject('bye');
+    setTimeout(function(){
+        resolve('hello');
+    }, 2000);
+    //reject('bye');
 }).then(function(data){
     console.log('then1: ' + data);
     //throw new Error();
