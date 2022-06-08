@@ -9,6 +9,13 @@ new Promise(function promise(resolve){
     console.log('job1');
     setTimeout(function task2(){
         console.log('task2');
+        queueMicrotask(function job5(){
+            console.log('job5');
+        });
+    });
+
+    queueMicrotask(function job4(){
+        console.log('job4');
     });
 }).then(function job2(){
     console.log('job2');
