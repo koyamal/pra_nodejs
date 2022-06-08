@@ -12,6 +12,12 @@ new Promise(function promise(resolve){
         queueMicrotask(function job5(){
             console.log('job5');
         });
+
+        const p = Promise.resolve();
+        p.then(function job6(){
+            console.log('job6');
+        });
+        console.log('task2end');
     });
 
     queueMicrotask(function job4(){
