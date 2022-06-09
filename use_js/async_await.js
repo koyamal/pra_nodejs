@@ -9,6 +9,9 @@ function sleep(val){
 
 async function init(){
     let val = await sleep(0);
+    val = await sleep(val);
+    val = await sleep(val);
+    val = await sleep(val);
     console.log(val);
 }
 
