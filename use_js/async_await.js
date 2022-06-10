@@ -12,6 +12,7 @@ async function init(){
     val = await sleep(val);
     val = await sleep(val);
     val = await sleep(val);
+    throw new Error();
     //console.log(val);
     return val;
 }
@@ -19,4 +20,6 @@ async function init(){
 //init();
 init().then(function(val){
     console.log('hello' + val);
+}).catch(function(e){
+    console.log(e);
 })
