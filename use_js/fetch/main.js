@@ -7,3 +7,14 @@ fetch('users.json').then(function(response){
         console.log(`I'm ${user.name}, ${user.age} years old`)
     }
 });
+
+async function fetchUsers(){
+    const response = await fetch('users.json');
+    const json = await response.json();
+    for(const user of json){
+        console.log(`I'm ${user.name}, ${user.age} years old`);
+    }
+    console.log("test");
+}
+
+fetchUsers();
