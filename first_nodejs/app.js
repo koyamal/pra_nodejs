@@ -5,6 +5,7 @@ const mysql = require('mysql');
 const bodyParser = require('body-parser');
 const session = require('express-session');
 const { NULL } = require('mysql/lib/protocol/constants/types');
+const fetch = require('node-fetch');
 
 const app = express();
 let deleteUser = "";
@@ -308,9 +309,18 @@ app.get('/test_async', (req, res) =>{
   console.log('async_test');
   (async function (){
     const c = await setTimeout(function(){
-      //res.redirect('/login');
+      res.redirect('/login');
       console.log('hello');
     }, 2000);
+    console.log('test_async');
+  })();
+});
+
+app.get('/test_async2', (req, res) =>{
+  console.log('async_test');
+  (async function (){
+    const c = await fetch('http://localhost:3000/views/footer.ejs');
+    console.log(c);
     console.log('test_async');
   })();
 });
