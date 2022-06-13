@@ -307,11 +307,12 @@ app.post('/add_fruit', (req, res) =>{
 app.get('/test_async', (req, res) =>{
   console.log('async_test');
   (async function (){
-    await setTimeout(function(){
-      res.redirect('/login');
+    const c = await setTimeout(function(){
+      //res.redirect('/login');
+      console.log('hello');
     }, 2000);
     console.log('test_async');
-  })()
+  })();
 });
 
 app.use((req, res, next) =>{
