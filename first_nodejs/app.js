@@ -319,9 +319,10 @@ app.get('/test_async', (req, res) =>{
 app.get('/test_async2', (req, res) =>{
   console.log('async_test');
   (async function (){
-    const c = await fetch('http://localhost:3000/views/footer.ejs');
+    const c = await fetch('http://localhost:3000/test_async');
     console.log(c);
     console.log('test_async');
+    res.redirect('/');
   })();
 });
 
