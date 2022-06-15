@@ -349,6 +349,23 @@ app.get('/test_async3', (req, res) =>{
   })();
 });
 
+app.get('/test_async4', (req, res) =>{
+  (async function(){
+    const c = fetch('http://localhost:3000/add_fruit_temp', {method: 'POST'});
+    res.redirect('/view_fruits');
+  })();
+});
+
+app.post('/add_fruit_temp', (req, res) =>{
+  connection.query(
+    'INSERT INTO fruits (name) VALUES (?);',
+    ['Fetched'],
+    (error, results) =>{
+      res.redirect('/view_fruits');
+    }
+  );
+});
+
 app.use((req, res, next) =>{
   if(mode === 1){
     console.log("fin.");
