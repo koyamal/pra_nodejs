@@ -306,22 +306,45 @@ app.post('/add_fruit', (req, res) =>{
 });
 
 app.get('/test_async', (req, res) =>{
-  console.log('async_test');
+  console.log('async_test1');
   (async function (){
     const c = await setTimeout(function(){
       res.redirect('/login');
       console.log('hello');
     }, 2000);
-    console.log('test_async');
+    console.log('test_async1');
   })();
 });
 
 app.get('/test_async2', (req, res) =>{
-  console.log('async_test');
+  console.log('async_test2');
   (async function (){
     const c = await fetch('http://localhost:3000/test_async');
+    //console.log(c);
+    console.log('test_async2');
+    res.redirect('/');
+  })();
+});
+
+app.get('/temp01', (req, res) =>{
+  console.log('This is temp01');
+  res.redirect('/');
+});
+
+app.get('/temp02', (req, res) =>{
+  console.log('This is temp02');
+  res.redirect('/');
+});
+
+app.get('/test_async3', (req, res) =>{
+  (async function(){
+    const fetchs = new Set();
+    fetchs.add(fetch('http://localhost:3000/temp01'));
+    fetchs.add(fetch('http://localhost:3000/temp02'));
+    //fetchs.add(fetch('http://localhost:3000/test_async'));
+    //fetchs.add(fetch('http://localhost:3000/test_async2'));
+    const c = await Promise.all(fetchs);
     console.log(c);
-    console.log('test_async');
     res.redirect('/');
   })();
 });
