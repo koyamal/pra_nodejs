@@ -7,6 +7,7 @@ const session = require('express-session');
 const { NULL } = require('mysql/lib/protocol/constants/types');
 const fetch = require('node-fetch');
 
+
 const app = express();
 let deleteUser = "";
 
@@ -63,6 +64,7 @@ app.use((req, res, next) =>{
 });
 
 app.get('/', (req, res) => {
+  res.setHeader('Access-Control-Allow-Origin', 'http://localhost:5500');
   if(mode === 1){
     console.log("/");
   }
@@ -251,6 +253,7 @@ app.post('/delete_by_admin_link/:id', (req, res) =>{
 });
 
 app.get('/view_fruits', (req, res) =>{
+  res.setHeader('Access-Control-Allow-Origin', 'http://localhost:5500');
   if(mode === 1){
     console.log("/view_fruits");
   }
@@ -357,6 +360,7 @@ app.get('/test_async4', (req, res) =>{
 });
 
 app.post('/add_fruit_temp', (req, res) =>{
+  res.setHeader('Access-Control-Allow-Origin', 'http://localhost:5500');
   connection.query(
     'INSERT INTO fruits (name) VALUES (?);',
     ['Fetched'],
