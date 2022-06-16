@@ -362,7 +362,7 @@ app.get('/test_async4', (req, res) =>{
 app.post('/add_fruit_temp', (req, res) =>{
   res.setHeader('Access-Control-Allow-Origin', 'http://localhost:5500');
   let val = 'Fetched';
-  console.log(req);
+  //console.log(req);
   if (req.body){
     //val = req.body.a;
     console.log(`val: ${val}`);
