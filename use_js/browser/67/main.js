@@ -93,8 +93,11 @@ function calcFactory(val, cb) {
 }
 
 const calc = calcFactory(10, console.log);
+const calc2 = calcFactory(10, window.alert);
 calc.plus(5); 
 calc.minus(3); 
 calc.multiply(3);
 calc.divide(2);
+
+calc2.plus(10);
 
