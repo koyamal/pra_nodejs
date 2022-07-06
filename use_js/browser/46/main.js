@@ -12,3 +12,12 @@ b.prop = 'bye';
 console.log(b);
 b.add = 'add';
 console.log(b);
+
+const c = {
+    prop: 'hello world',
+    fn: function(){
+        console.log('HELLO WORLD');
+    }
+}
+
+c.fn();
