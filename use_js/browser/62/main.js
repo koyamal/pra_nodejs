@@ -6,7 +6,6 @@ const person = {
     }
 }
 
-
 person.hello();
 
 function fn(ref){
@@ -14,3 +13,14 @@ function fn(ref){
 }
 
 fn(person.hello);
+
+window.id = 4;
+const obj = {
+    id: 3,
+    disp: function(){
+        console.log('This obj id is ' + this.id);
+    }
+}
+obj.disp();
+const d = obj.disp;
+d();
