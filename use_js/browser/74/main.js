@@ -5,9 +5,10 @@
  * 問題１：
  * addNumberFactoryを短く書き直してみましょう。
  */
-function addNumberFactory(num) {
-    return value => num + value;
-}
+// function addNumberFactory(num) {
+//     return value => num + value;
+// }
+const addNumberFactory = num => value => num + value;
 
 const add5 = addNumberFactory(5);
 const result = add5(10);
