@@ -18,7 +18,7 @@ console.log(result);
  * 問題２：
  * incrementFactoryを短く書き直してみましょう。
  */
-function incrementFactory() {
+const incrementFactory = () => {
     
     let num = 0;
 
