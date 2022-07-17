@@ -10,6 +10,8 @@ const instance = new F(1, 2);
 console.log(instance);
 console.log(instance instanceof F); // true
 console.log(instance.__proto__ === F.prototype); // true, same meaning as one line up
+console.log(instance instanceof Object); // true
+console.log(instance.__proto__ === Object.prototype); // false
 
 function G(a, b){
     this.a = a;
