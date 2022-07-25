@@ -46,4 +46,4 @@ console.log(tom.name);
 console.log(tom);
 Person2.hello();
 tom.constructor.hello();
-console.log(tom.constructor === Person2)
+console.log(tom.constructor === Person2);
