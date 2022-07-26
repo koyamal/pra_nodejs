@@ -45,7 +45,8 @@
 
 class User{
   constructor(name){
-    this.name = name
+    this.name = name;
+    this.pathRedirect = '/';
   }
 
   login(){
@@ -59,7 +60,7 @@ class User{
   }
 
   redirect(){
-    console.log('redirect : /');
+    console.log(`redirect : ${this.pathRedirect}`);
     return true;
   }
 
@@ -68,15 +69,11 @@ class User{
 class AdminUser extends User{
   constructor(name){
     super(name);
+    this.pathRedirect = '/admin';
   }
 
   checkRoll(){
     console.log('you have admin roll');
-    return true;
-  }
-
-  redirect(){
-    console.log('redirect : /admin');
     return true;
   }
 }
