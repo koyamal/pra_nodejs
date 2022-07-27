@@ -61,7 +61,8 @@ class User{
 
   redirect(){
     console.log(`redirect : ${this.pathRedirect}`);
-    return true;
+    // return true;
+    return false;
   }
 
 }
