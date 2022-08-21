@@ -16,3 +16,10 @@ let j = 0;
 while(j < data.length){
   console.log(data[j++]);
 }
+
+{
+  const k = 0;
+  console.log(k);
+}
+
+// console.log(k);
