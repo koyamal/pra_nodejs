@@ -30,3 +30,19 @@ console.log(discriptor3);
 obj3.prop = 1000;
 
 console.log(obj3);
+
+
+const obj4 = {};
+
+Object.defineProperty(obj4, 'prop', {
+    value: 11,
+    writable: false,
+    enumerable: true
+});
+
+const discriptor4 = Object.getOwnPropertyDescriptor(obj4, 'prop');
+console.log(discriptor4);
+
+obj4.prop = 1000;
+
+console.log(obj4);
