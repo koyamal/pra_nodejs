@@ -21,7 +21,8 @@ class Person{
 
     bye(person){
         console.log(`Goodbye, ${person.name}.`);
-        return this;
+        // return this;
+        return person;
     }
 }
 
@@ -36,4 +37,5 @@ const tim = new Person('Tim', 33);
 bob.hello(tim)
 .introduce()
 .shakeHands(tim)
-.bye(tim);
+.bye(tim)
+.hello(tim);
