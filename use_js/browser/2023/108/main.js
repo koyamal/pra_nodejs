@@ -19,3 +19,15 @@ console.log(map);
 for(const m of map){
     console.log(m);
 }
+
+console.log('======set======')
+
+const s = new Set();
+s.add(key1);
+s.add(key1);
+s.add(key2);
+s.add(0);
+
+for(let k of s){
+    console.log(k);
+}
