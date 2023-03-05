@@ -34,4 +34,10 @@ class Person2{
         // this._name = 'Taro';
         this._name = val;
     }
+
+    static hello(){
+        console.log('hello');
+    }
 }
+
+Person2.hello();
