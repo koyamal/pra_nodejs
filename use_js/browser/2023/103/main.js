@@ -19,7 +19,7 @@ let k1;
 k0 = (k1 = k0) + 1;
 // K1 = k0
 // 0 + 1
-// k0 = 1
+// k0 = 1å
 
 console.log(0 * 5);
 console.log(!0 * 5);
