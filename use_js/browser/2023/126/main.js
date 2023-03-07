@@ -1,14 +1,17 @@
 new Promise(function(resolve, reject){
     console.log('Promise');
-    resolve();
-    // reject();
-}).then(function(){
-    console.log('then');
-    throw new Error();
-}).then(function(){
-    console.log('then2');
-}).catch(function(){
-    console.log('catch');
+    // resolve('hello');
+    reject('bye');
+}).then(function(data){
+    console.log('then: ' + data);
+    // throw new Error();
+    return data + '!';
+}).then(function(data){
+    console.log('then2: ' + data);
+}).catch(function(data){
+    console.log('catch: ' + data);
+}).finally(function(){
+    console.log('finally');
 })
 
 console.log('global end');
