@@ -15,6 +15,35 @@ const moduleA =(function(){
     return {publicFn, publicVal};
 })();
 
-moduleA.publicFn();
-moduleA.publicFn();
-moduleA.publicFn();
+const moduleB = (function(){
+    moduleA.publicFn();
+    moduleA.publicFn();
+    moduleA.publicFn();
+    console.log(moduleA.publicVal);
+})();
+
+const moduleBB = (function(moduleA){
+    moduleA.publicFn();
+    moduleA.publicFn();
+    moduleA.publicFn();
+    console.log(moduleA.publicVal);
+})(moduleA);
+
+const moduleBBB = (function({publicVal, publicFn}){
+    publicFn();
+    publicFn();
+    publicFn();
+    console.log(publicVal);
+})(moduleA);
+
+
+const moduleBBBB = (function({publicVal: val, publicFn: fn}){
+    fn();
+    fn();
+    fn();
+    console.log(val);
+})(moduleA);
+
+// moduleA.publicFn();
+// moduleA.publicFn();
+// moduleA.publicFn();
