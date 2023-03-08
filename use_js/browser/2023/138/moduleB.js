@@ -1,6 +1,9 @@
-import defaultVal, { publicVal as val, publicFn } from "./moduleA.js";
+// import defaultVal, { publicVal as val, publicFn } from "./moduleA.js";
+import defaultVal, * as moduleA from "./moduleA.js";
 
 // console.log(publicVal);
-console.log(val);
+// console.log(val);
 console.log(defaultVal);
-publicFn();
+console.log(moduleA.default);
+moduleA.publicFn();
+// publicFn();
