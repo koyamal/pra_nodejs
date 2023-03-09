@@ -1,3 +1,8 @@
-import { publicFn, publicVal } from "./moduleA.js";
+// import { publicFn, publicVal } from "./moduleA.js";
 
-publicFn();
+// publicFn();
+
+import('./moduleA.js').then(function(modules){
+    console.log(modules);
+    modules.publicFn();
+})
