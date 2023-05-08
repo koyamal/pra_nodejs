@@ -8,11 +8,11 @@ const handler = {
     get: function(target, prop, receiver){
         console.log(`[get]: ${prop}`);
         console.log('receiver: ', receiver);
-        return target[prop];  
+        return target[prop];
     },
     deleteProperty: function(target, prop){
         console.log(`[delete]: ${prop}`);
-        delete target[prop];   
+        delete target[prop];
     }
 }
 const pxy = new Proxy(targetObj, handler);
@@ -21,3 +21,25 @@ const pxy = new Proxy(targetObj, handler);
 pxy.a;
 
 delete pxy.a;
+
+const objBox = {
+    funcA: () => {
+        console.log("funcA");
+    },
+    funcB: () => {
+        return "funcB";
+    },
+    funcC: function(){
+        console.log("funcC");
+    },
+    funcD: function(){
+        return "funcD";
+    }
+}
+
+objBox.funcA();
+const b = objBox.funcB;
+console.log(b);
+objBox.funcC();
+const d = objBox.funcD;
+console.log(d);
