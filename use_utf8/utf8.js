@@ -1,3 +1,8 @@
 const originText = "あいうえお";
 const encoder = new TextEncoder();
-console.log(encoder.encode(originText));
+const decoder = new TextDecoder();
+const encodedText = encoder.encode(originText);
+const decodedText = decoder.decode(encodedText);
+
+console.log("encode", encodedText);
+console.log("decode", decodedText);
