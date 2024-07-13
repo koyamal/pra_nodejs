@@ -1,4 +1,4 @@
-const originText = "あいうえお";
+const originText = "ABCDEFGHIJKLMNOPQRSTUVWXYZあい";
 const encoder = new TextEncoder();
 const decoder = new TextDecoder();
 const encodedText = encoder.encode(originText);
