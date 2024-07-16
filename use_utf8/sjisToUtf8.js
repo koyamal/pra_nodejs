@@ -9,5 +9,6 @@ const unicodeArray = Encoding.convert(sjisArray, {
   to: 'UNICODE',
   from: 'SJIS'
 });
+console.log(unicodeArray);
 const str = Encoding.codeToString(unicodeArray); // 文字コード値の配列から文字列に変換
 console.log(str); // 'つくえ'
