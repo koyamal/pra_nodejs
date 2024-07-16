@@ -1,3 +1,6 @@
+/**
+ * SJISコードをUNICODEへ変換し、文字列で表示する。
+ */
 const Encoding = require('encoding-japanese');
 
 /**
@@ -22,3 +25,5 @@ console.log(unicodeArray);
 
 const str = Encoding.codeToString(unicodeArray); // 文字コード値の配列から文字列に変換
 console.log(str); // 'つくえ'
+
+console.log(Encoding.codeToString([12349, 66003, 73795]));
