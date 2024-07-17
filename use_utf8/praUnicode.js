@@ -19,12 +19,20 @@ console.log(`"${orignText}"のunicode(2進数): `, unicodeArrayBinary);
 
 const textBinary = unicodeArrayBinary[0];
 
+// 先頭から4(値によっては3桁とか2桁とかになるかも),6,6ビットに分割する
+const dividedUnicodeArrayBinary = unicodeArrayBinary.map((unicodeBinary) => {
+  const first = unicodeBinary.slice(0, unicodeBinary.length -12);
+  const second = unicodeBinary.slice(unicodeBinary.length -12, unicodeBinary.length -6);
+  const third = unicodeBinary.slice(unicodeBinary.length -6);
+  return [first, second, third];
+});
+
 const first = textBinary.slice(0, textBinary.length -12);
 const second = textBinary.slice(textBinary.length -12, textBinary.length -6);
 const third = textBinary.slice(textBinary.length -6);
 console.log(first, second, third);
 
-// utf-8へ変換するために定数(e0, 80, 80)を加える
+// utf-8へ変換するために分割した各値に定数(e0, 80, 80)を加える
 const addNumberHex = ['e0', '80', '80'];
 const addNumberBinary = addNumberHex.map(hex => parseInt(hex, 16).toString(2));
 console.log(addNumberBinary);
