@@ -1,3 +1,6 @@
+/**
+ * unicodeのコードポイントをutf-8へ変換する
+ */
 const Encoding = require('encoding-japanese');
 
 const orignText = 'お';
@@ -15,13 +18,10 @@ const unicodeArrayBinary = unicodeArray.map(unicodeNumber => unicodeNumber.toStr
 console.log(`"${orignText}"のunicode(2進数): `, unicodeArrayBinary);
 
 const textBinary = unicodeArrayBinary[0];
-const textBinary_fix = '0000' + textBinary;
-const textBinary16 = textBinary_fix.slice(textBinary_fix.length - 16);
-console.log(textBinary16);
 
-const first = textBinary16.slice(0, 4);
-const second = textBinary16.slice(4, 10);
-const third = textBinary16.slice(10);
+const first = textBinary.slice(0, textBinary.length -12);
+const second = textBinary.slice(textBinary.length -12, textBinary.length -6);
+const third = textBinary.slice(textBinary.length -6);
 console.log(first, second, third);
 
 // utf-8へ変換するために定数(e0, 80, 80)を加える
