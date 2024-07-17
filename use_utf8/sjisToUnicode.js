@@ -19,7 +19,8 @@ const unicodeArray = Encoding.convert(sjisArray, {
 
 /**
  * unicodeArray = [12388, 12367, 12360]
- * unicodeにはNoがあり、12388が”つ”、12367が"く"、12360が"え"
+ * 格納されてる値はunicodeのコードポイントの10進数表現
+ * 12388が”つ”、12367が"く"、12360が"え"
  */
 console.log(unicodeArray);
 
