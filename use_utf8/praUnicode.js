@@ -3,7 +3,7 @@
  */
 const Encoding = require('encoding-japanese');
 
-const orignText = 'お';
+const orignText = 'おに';
 
 // 文字列をunicode(10進数)へ変換
 const unicodeArray = Encoding.stringToCode(orignText);
@@ -40,6 +40,16 @@ console.log(addNumberBinary);
 const calBinaryReturnHex = (a, b) => {
   return (BigInt(`0b${a}`) + BigInt(`0b${b}`)).toString(16);
 }
+
+const utf8ArrayHex = dividedUnicodeArrayBinary.map((dividedUnicodeBinary) => {
+  const first = calBinaryReturnHex(dividedUnicodeBinary[0], addNumberBinary[0]);
+  const second = calBinaryReturnHex(dividedUnicodeBinary[1], addNumberBinary[1]);
+  const third = calBinaryReturnHex(dividedUnicodeBinary[2], addNumberBinary[2]);
+
+  return first + second + third;
+});
+
+console.log("xxxxx",utf8ArrayHex);
 
 console.log(calBinaryReturnHex('0011', '11100000'));
 console.log(calBinaryReturnHex('000001', '10000000'));
