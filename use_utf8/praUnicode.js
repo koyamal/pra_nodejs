@@ -43,7 +43,7 @@ const calBinaryReturnHex = (a, b) => {
 }
 
 // unicodeからutf-8へ変換するために分割した各値に定数(e0, 80, 80)のバイナリを加える
-const utf8ArrayHex = dividedUnicodeArrayBinary.map((dividedUnicodeBinary) => {
+const utf8ArrayHex = dividedUnicodeArrayBinary.map(dividedUnicodeBinary => {
   const first = calBinaryReturnHex(dividedUnicodeBinary[0], addNumberBinary[0]);
   const second = calBinaryReturnHex(dividedUnicodeBinary[1], addNumberBinary[1]);
   const third = calBinaryReturnHex(dividedUnicodeBinary[2], addNumberBinary[2]);
