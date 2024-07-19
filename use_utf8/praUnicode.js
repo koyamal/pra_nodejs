@@ -38,9 +38,7 @@ const addNumberHex = ['e0', '80', '80'];
 const addNumberBinary = addNumberHex.map(hex => parseInt(hex, 16).toString(2));
 
 // 2個のバイナリ(文字列)の和を16進数で返す
-const calBinaryReturnHex = (a, b) => {
-  return (BigInt(`0b${a}`) + BigInt(`0b${b}`)).toString(16);
-}
+const calBinaryReturnHex = (a, b) => (BigInt(`0b${a}`) + BigInt(`0b${b}`)).toString(16);
 
 // unicodeからutf-8へ変換するために分割した各値に定数(e0, 80, 80)のバイナリを加える
 const utf8ArrayHex = dividedUnicodeArrayBinary.map(dividedUnicodeBinary => {
