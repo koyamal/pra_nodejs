@@ -11,7 +11,6 @@
 const Encoding = require('encoding-japanese');
 
 // utf-8へ変換したい文字列
-// const orignText = 'おに';
 const orignText = process.argv[2] || 'おに';
 
 // 文字列をunicode(10進数)へ変換
