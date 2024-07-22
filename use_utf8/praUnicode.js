@@ -7,6 +7,7 @@
  * 2進数を4,6,6ビットに分割する
  * 分割した各値に定数(e0,80,80)を加える
  * 16進数に変換する
+ * utf-8
  */
 const Encoding = require('encoding-japanese');
 
@@ -49,4 +50,5 @@ const utf8ArrayHex = dividedUnicodeArrayBinary.map(dividedUnicodeBinary => {
   return first + second + third;
 });
 
+// utf-8
 console.log(`"${orignText}"のutf-8(16進数): `, utf8ArrayHex);
