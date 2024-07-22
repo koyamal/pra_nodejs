@@ -6,3 +6,4 @@ const decodedText = decoder.decode(encodedText);
 
 console.log("encode", encodedText);
 console.log("decode", decodedText);
+console.log("decodeText", decodedText);
