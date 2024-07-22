@@ -52,3 +52,8 @@ const utf8ArrayHex = dividedUnicodeArrayBinary.map(dividedUnicodeBinary => {
 
 // utf-8
 console.log(`"${orignText}"のutf-8(16進数): `, utf8ArrayHex);
+
+// Encoding.convertを利用してutf-8へ変換する
+const utf8Array = Encoding.convert(unicodeArray, 'UTF8', 'UNICODE');
+const utf8ArrayHexByEncoding = utf8Array.map(utf8Number => utf8Number.toString(16));
+console.log(utf8ArrayHexByEncoding);
