@@ -4,5 +4,4 @@ const crypto = require('crypto');
 const plainText = "helloWorld";
 console.log(`plain text: ${plainText}`);
 const sha256Hash = crypto.createHash('sha256').update(plainText).digest('hex');
-console.log(`sha256: ${sha256Hash}`);
-console.log(`${sha256Hash.length}文字`);
+console.log(`sha256: ${sha256Hash} (${sha256Hash.length}文字)`);
