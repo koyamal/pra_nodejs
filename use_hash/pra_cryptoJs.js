@@ -8,3 +8,10 @@ console.log(typeof hash);
 console.log(hash);
 console.log(hash.toString(CryptoJS.enc.Base64));
 console.log(hash.toString(CryptoJS.enc.Hex));
+
+const toHashSha256 = (msg) => {
+  const hash = CryptoJS.SHA256(msg);
+  return hash.toString(CryptoJS.enc.Hex);
+}
+
+console.log(toHashSha256("helloWorld"));
