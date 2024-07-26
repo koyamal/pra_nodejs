@@ -34,6 +34,7 @@ const toHashSha512 = (msg, flag=false) => {
   return hashHex;
 }
 
+// outputLengthは224, 256, 384, 512
 const toHashSha3 = (msg, flag=false, outputLength=512) => {
   const hash = CryptoJS.SHA3(msg, { outputLength });
   const hashHex = hash.toString(CryptoJS.enc.Hex);
@@ -46,3 +47,4 @@ toHashSha1(originText, true);
 toHashSha256(originText, true);
 toHashSha512(originText, true);
 toHashSha3(originText, true);
+toHashSha3(originText, true, 224);
