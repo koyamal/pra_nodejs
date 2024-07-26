@@ -1,17 +1,12 @@
-const sha256 = require('crypto-js/sha256');
 const CryptoJS = require('crypto-js');
-const hashDigest = sha256("helloWorld");
-console.log(hashDigest);
 
-var hash = CryptoJS.SHA256("Message");
-console.log(typeof hash);
-console.log(hash);
-console.log(hash.toString(CryptoJS.enc.Base64));
-console.log(hash.toString(CryptoJS.enc.Hex));
+const originText = 'helloWorld';
 
-const toHashSha256 = (msg) => {
+const toHashSha256 = (msg, flag=false) => {
   const hash = CryptoJS.SHA256(msg);
-  return hash.toString(CryptoJS.enc.Hex);
+  const hashHex = hash.toString(CryptoJS.enc.Hex);
+  if (flag) console.log(`sha-256(${msg}): ${hashHex} (${hashHex.length})`);
+  return hashHex;
 }
 
-console.log(toHashSha256("helloWorld"));
+console.log(toHashSha256(originText, true));
