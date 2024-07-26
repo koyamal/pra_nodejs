@@ -13,4 +13,12 @@ const toHashSha256 = (msg, flag=false) => {
   return hashHex;
 }
 
+const toHashSha512 = (msg, flag=false) => {
+  const hash = CryptoJS.SHA512(msg);
+  const hashHex = hash.toString(CryptoJS.enc.Hex);
+  if (flag) consoleHash('sha-512', msg, hashHex);
+  return hashHex;
+}
+
 toHashSha256(originText, true);
+toHashSha512(originText, true);
