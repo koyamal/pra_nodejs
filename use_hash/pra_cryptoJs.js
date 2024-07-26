@@ -34,7 +34,15 @@ const toHashSha512 = (msg, flag=false) => {
   return hashHex;
 }
 
+const toHashSha3 = (msg, flag=false, outputLength=512) => {
+  const hash = CryptoJS.SHA3(msg, { outputLength });
+  const hashHex = hash.toString(CryptoJS.enc.Hex);
+  if (flag) consoleHash('sha-3', msg, hashHex);
+  return hashHex;
+}
+
 toHashMd5(originText, true);
 toHashSha1(originText, true);
 toHashSha256(originText, true);
 toHashSha512(originText, true);
+toHashSha3(originText, true);
