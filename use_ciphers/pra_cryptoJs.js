@@ -12,5 +12,4 @@ console.log(`ciphertext: ${encrypted.ciphertext}`);
 console.log('=======================');
 
 const decrypted = CryptoJS.AES.decrypt(encrypted, "hello");
-console.log(`decrypted: ${decrypted}`); // utf-8
-console.log(decrypted.toString(CryptoJS.enc.Utf8));
+console.log(`decrypted: ${decrypted.toString(CryptoJS.enc.Utf8)}`); // utf-8
