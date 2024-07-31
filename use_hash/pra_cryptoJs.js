@@ -42,6 +42,13 @@ const toHashSha3 = (msg, flag=false, outputLength=512) => {
   return hashHex;
 }
 
+const toHashSha4 = (msg, flag=false, outputLength=512) => {
+  const hash = CryptoJS.SHA224(msg, { outputLength });
+  const hashHex = hash.toString(CryptoJS.enc.Hex);
+  if (flag) consoleHash('sha-4', msg, hashHex);
+  return hashHex;
+}
+
 const toHmacSha256 = (msg, flag=false, secretKey) => {
   const hash = CryptoJS.HmacSHA256(msg, secretKey);
   const hashHex = hash.toString(CryptoJS.enc.Hex);

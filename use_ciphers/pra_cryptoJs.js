@@ -1,8 +1,8 @@
 const CryptoJS = require('crypto-js');
 
-const originText = 'helloWorld';
+const originText = 'goodBy';
 
-const encrypted = CryptoJS.AES.encrypt(originText, "hello");
+const encrypted = CryptoJS.AES.encrypt(originText, "bye");
 console.log('=======================');
 console.log(`${originText} to ${encrypted}`);
 console.log(`key: ${encrypted.key}`);
