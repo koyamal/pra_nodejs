@@ -42,6 +42,7 @@ const toHashSha3 = (msg, flag=false, outputLength=512) => {
   return hashHex;
 }
 
+// no use
 const toHashSha224 = (msg, flag=false, outputLength=512) => {
   const hash = CryptoJS.SHA224(msg, { outputLength });
   const hashHex = hash.toString(CryptoJS.enc.Hex);
