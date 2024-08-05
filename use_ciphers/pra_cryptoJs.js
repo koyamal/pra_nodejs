@@ -11,5 +11,5 @@ console.log(`salt: ${encrypted.salt}`);
 console.log(`ciphertext: ${encrypted.ciphertext}`);
 console.log('=======================');
 
-const decrypted = CryptoJS.AES.decrypt(encrypted, "hello");
+const decrypted = CryptoJS.AES.decrypt(encrypted, "bye");
 console.log(`decrypted: ${decrypted.toString(CryptoJS.enc.Utf8)}`); // utf-8
