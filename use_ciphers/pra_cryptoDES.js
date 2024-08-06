@@ -2,7 +2,8 @@ const CryptoJS = require('crypto-js');
 
 const originText = 'goodBy';
 
-const encrypted = CryptoJS.DES.encrypt(originText, "bye");
+// const encrypted = CryptoJS.DES.encrypt(originText, "bye");
+const encrypted = CryptoJS.TripleDES.encrypt(originText, "bye");
 console.log('=======================');
 console.log(`${originText} to ${encrypted}`);
 console.log(`key: ${encrypted.key}`);
