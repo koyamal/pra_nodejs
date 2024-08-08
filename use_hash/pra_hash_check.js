@@ -19,3 +19,4 @@ const asyncMessage = {
 
 console.log(asyncMessage.message);
 asyncMessage.good && console.log("hello");
+asyncMessage.bad || console.log("bye");
