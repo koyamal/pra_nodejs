@@ -15,4 +15,6 @@ const asyncMessage = {
   message: 'helloWorld',
   good: true,
   bad: false,
-}
+};
+
+console.log(asyncMessage.message);
