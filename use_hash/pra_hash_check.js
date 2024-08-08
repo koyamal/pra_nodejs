@@ -18,3 +18,4 @@ const asyncMessage = {
 };
 
 console.log(asyncMessage.message);
+asyncMessage.good && console.log("hello");
