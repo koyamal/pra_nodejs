@@ -20,3 +20,10 @@ const asyncMessage = {
 console.log(asyncMessage.message);
 asyncMessage.good && console.log("hello");
 asyncMessage.bad || console.log("bye");
+
+const objA = {
+  ...{propB: "hello", propC: "world"},
+  propD: ".",
+};
+
+console.log(objA);
