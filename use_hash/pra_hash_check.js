@@ -31,4 +31,6 @@ console.log(objA);
 const keysObjA = Object.keys(objA);
 console.log(keysObjA);
 
-keysObjA.map(key => console.log(objA[key]));
+let outputText = ''
+keysObjA.forEach(key => outputText += objA[key]);
+console.log(outputText);
