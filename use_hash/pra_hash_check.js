@@ -27,3 +27,10 @@ const objA = {
 };
 
 console.log(objA);
+
+const keysObjA = Object.keys(objA);
+console.log(keysObjA);
+
+let outputText = ''
+keysObjA.forEach(key => outputText += objA[key]);
+console.log(outputText);
