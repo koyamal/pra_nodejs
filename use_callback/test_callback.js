@@ -7,6 +7,11 @@ function sayTwiceHello(func){
     func();
 }
 
+function sayTwiceHello2(func){
+    func();
+    func();
+}
+
 sayTwiceHello(sayHello);
 
 function sayInput(msg){
