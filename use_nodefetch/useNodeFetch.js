@@ -6,3 +6,10 @@ const responses = await Promise.all([
 ]);
 
 console.log(responses);
+
+const responsesAllSettled = await Promise.allSettled([
+  await fetch('https://github.com/'),
+  await fetch('https://yahoo.co.jp/')
+]);
+
+console.log(responsesAllSettled);
