@@ -1,6 +1,15 @@
 import fetch from 'node-fetch'
 
-const response = await fetch('https://github.com/');
-const body = await response.text();
+const responses = await Promise.all([
+  await fetch('https://github.com/'),
+  await fetch('https://yahoo.co.jp/')
+]);
 
-console.log(body);
+console.log(responses);
+
+const responsesAllSettled = await Promise.allSettled([
+  await fetch('https://github.com/'),
+  await fetch('https://yahoo.co.jp/')
+]);
+
+console.log(responsesAllSettled);
