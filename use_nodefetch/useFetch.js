@@ -15,3 +15,5 @@ const responsesAllSettled = await Promise.allSettled([
 ]);
 
 console.log(responsesAllSettled);
+
+'a b c'.trim();
