@@ -16,4 +16,5 @@ const responsesAllSettled = await Promise.allSettled([
 
 console.log(responsesAllSettled);
 
-'a b c'.trim();
+const output = 'a b c'.trim();
+console.log(output);
