@@ -19,3 +19,6 @@ console.log(responsesAllSettled);
 const originText = ' a b c ';
 const output = originText.trim();
 console.log(output);
+
+const output2 = originText.trimStart();
+console.log(output2);
