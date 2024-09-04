@@ -22,3 +22,6 @@ console.log(output);
 
 const output2 = originText.trimStart();
 console.log(output2);
+
+const output3 = originText.trimEnd();
+console.log(output3);
