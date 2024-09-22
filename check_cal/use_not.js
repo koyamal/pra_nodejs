@@ -1,3 +1,3 @@
 const messageText = "hello";
 
-console.log(messageText!)
+// console.log(messageText!)
