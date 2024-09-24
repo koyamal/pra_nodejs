@@ -1,3 +1,9 @@
+const envTableName: string = 'is_this_table';
+
+const outputText: string = `Output Text is ${envTableName}`;
+
+console.log(outputText);
+
 // const messageText2: string | undefined = undefined;
 const messageText2: string | undefined = "haelloWorld";
 
@@ -13,11 +19,5 @@ const bookA: books = {
   bookName: '猫飼ってみた',
   author: '冬肘掃除'
 }
-
-const envTableName: string = 'is_this_table';
-
-const outputText: string = `Output Text is ${envTableName}`;
-
-console.log(outputText);
 
 console.log(bookA.bookName);
