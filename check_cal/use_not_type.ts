@@ -16,4 +16,6 @@ const bookA: books = {
 
 const envTableName: string = 'is_this_table';
 
+const outputText: string = `Output Text is ${envTableName}`;
+
 console.log(bookA.bookName);
