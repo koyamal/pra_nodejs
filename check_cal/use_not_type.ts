@@ -14,4 +14,6 @@ const bookA: books = {
   author: '冬肘掃除'
 }
 
+const envTableName: string = 'is_this_table';
+
 console.log(bookA.bookName);
