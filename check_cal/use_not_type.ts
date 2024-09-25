@@ -1,6 +1,7 @@
 const envTableName: string = 'is_this_table';
+const envFlag: boolean = true;
 
-const outputText: string = `Output Text is ${envTableName}`;
+const outputText: string = `Output Text is ${envFlag? envTableName: 'no_table'}.`;
 
 console.log(outputText);
 
