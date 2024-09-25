@@ -1,6 +1,6 @@
 "use strict";
 const envTableName = 'is_this_table';
-const envFlag = true;
+const envFlag = false;
 const outputText = `Output Text is ${envFlag ? envTableName : 'no_table'}.`;
 console.log(outputText);
 // const messageText2: string | undefined = undefined;
