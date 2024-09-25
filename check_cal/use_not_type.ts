@@ -1,6 +1,6 @@
 const envTableName: string = 'is_this_table';
 
-const outputText: string = `Output Text is ${envTableName}`;
+const outputText: string = `Output Text is ${envTableName}.`;
 
 console.log(outputText);
 
