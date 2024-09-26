@@ -14,6 +14,7 @@ console.log(messageText2!.slice(1, 2));
 interface books {
   bookName: string;
   author: string;
+  price?: number;
 }
 
 const bookA: books = {
