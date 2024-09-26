@@ -19,7 +19,8 @@ interface books {
 
 const bookA: books = {
   bookName: '猫飼ってみた',
-  author: '冬肘掃除'
+  author: '冬肘掃除',
+  price: 498,
 }
 
 console.log(bookA.bookName);
