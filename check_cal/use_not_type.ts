@@ -14,11 +14,13 @@ console.log(messageText2!.slice(1, 2));
 interface books {
   bookName: string;
   author: string;
+  price?: number;
 }
 
 const bookA: books = {
   bookName: '猫飼ってみた',
-  author: '冬肘掃除'
+  author: '冬肘掃除',
+  price: 498,
 }
 
 console.log(bookA.bookName);
