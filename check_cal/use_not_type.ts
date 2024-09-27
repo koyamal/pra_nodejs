@@ -1,3 +1,5 @@
+import { v4 as uuidv4 } from 'uuid';
+
 const envTableName: string = 'is_this_table';
 const envFlag: boolean = true;
 
@@ -15,12 +17,14 @@ interface books {
   bookName: string;
   author: string;
   price?: number;
+  bookId: string;
 }
 
 const bookA: books = {
   bookName: '猫飼ってみた',
   author: '冬肘掃除',
   price: 498,
+  bookId: uuidv4()
 }
 
-console.log(bookA.bookName);
+console.log(bookA);
