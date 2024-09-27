@@ -27,4 +27,4 @@ const bookA: books = {
   bookId: uuidv4()
 }
 
-console.log(bookA.bookName);
+console.log(bookA);

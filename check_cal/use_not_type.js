@@ -14,4 +14,4 @@ const bookA = {
     price: 498,
     bookId: (0, uuid_1.v4)()
 };
-console.log(bookA.bookName);
+console.log(bookA);
