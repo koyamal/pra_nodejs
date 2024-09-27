@@ -14,4 +14,10 @@ const bookA = {
     author: '冬肘掃除',
     price: 498,
 };
+const bookB = {
+    bookId: (0, uuid_1.v4)(),
+    bookName: '犬が逃げた',
+    author: '佐々木亮介',
+    price: 628,
+};
 console.log(bookA);
