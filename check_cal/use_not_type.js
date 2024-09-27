@@ -9,9 +9,9 @@ console.log(outputText);
 const messageText2 = "haelloWorld";
 console.log(messageText2.slice(1, 2));
 const bookA = {
+    bookId: (0, uuid_1.v4)(),
     bookName: '猫飼ってみた',
     author: '冬肘掃除',
     price: 498,
-    bookId: (0, uuid_1.v4)()
 };
 console.log(bookA);
