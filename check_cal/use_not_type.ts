@@ -21,10 +21,10 @@ interface books {
 }
 
 const bookA: books = {
+  bookId: uuidv4(),
   bookName: '猫飼ってみた',
   author: '冬肘掃除',
   price: 498,
-  bookId: uuidv4()
 }
 
 console.log(bookA);
