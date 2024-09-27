@@ -27,4 +27,11 @@ const bookA: books = {
   price: 498,
 }
 
+const bookB: books = {
+  bookId: uuidv4(),
+  bookName: '犬が逃げた',
+  author: '佐々木亮介',
+  price: 628,
+}
+
 console.log(bookA);
