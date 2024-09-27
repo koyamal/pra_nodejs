@@ -21,3 +21,6 @@ const bookB = {
     price: 628,
 };
 console.log(bookA);
+if (bookA.author === bookB.author) {
+    console.log(`${bookA.bookName}と${bookB.bookName}の筆者は${bookA.author}`);
+}
