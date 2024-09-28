@@ -39,5 +39,5 @@ console.log(bookA);
 if(bookA.author === bookB.author) {
   console.log(`${bookA.bookName}と${bookB.bookName}の筆者は${bookA.author}`);
 } else {
-  console.log(``)
+  console.log(`${bookA.bookName}と${bookB.bookName}の筆者は異なります。`)
 }
