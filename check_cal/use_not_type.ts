@@ -16,8 +16,9 @@ console.log(messageText2!.slice(1, 2));
 interface books {
   bookName: string;
   author: string;
-  price?: number;
+  price: number;
   bookId: string;
+  summary?: string;
 }
 
 const bookA: books = {
@@ -25,6 +26,7 @@ const bookA: books = {
   bookName: '猫飼ってみた',
   author: '冬肘掃除',
   price: 498,
+  summary: '猫を拾ったヒロシが猫を飼う中で成長する物語'
 }
 
 const bookB: books = {
