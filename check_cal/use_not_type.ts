@@ -18,6 +18,7 @@ interface books {
   author: string;
   price: number;
   bookId: string;
+  summary?: string;
 }
 
 const bookA: books = {
