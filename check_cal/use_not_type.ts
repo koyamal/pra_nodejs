@@ -35,6 +35,9 @@ const bookB: books = {
   bookName: '犬が逃げた',
   author: '佐々木亮介',
   price: 628,
+  calPrice() {
+    console.log(`${this.author}は${this.bookName}を書きました`)
+  },
 }
 
 console.log(bookA);
