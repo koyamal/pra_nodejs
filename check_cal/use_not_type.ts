@@ -19,6 +19,7 @@ interface books {
   price: number;
   bookId: string;
   summary?: string;
+  calPrice?: () => void;
 }
 
 const bookA: books = {
