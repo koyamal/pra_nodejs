@@ -40,6 +40,8 @@ const bookB: books = {
   },
 }
 
+bookB.calPrice && bookB.calPrice();
+
 console.log(bookA);
 
 if(bookA.author === bookB.author) {
