@@ -20,7 +20,12 @@ const bookB = {
     bookName: '犬が逃げた',
     author: '佐々木亮介',
     price: 628,
+    calPrice() {
+        console.log(`${this.author}は${this.bookName}を書きました`);
+    },
 };
+bookA.calPrice && bookA.calPrice();
+bookB.calPrice && bookB.calPrice();
 console.log(bookA);
 if (bookA.author === bookB.author) {
     console.log(`${bookA.bookName}と${bookB.bookName}の筆者は${bookA.author}`);
