@@ -38,3 +38,4 @@ function test(arg) {
 }
 console.log(test('hello'));
 console.log(test(4));
+console.log(test(['hello']));
