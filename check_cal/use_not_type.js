@@ -37,3 +37,4 @@ function test(arg) {
     return arg;
 }
 console.log(test('hello'));
+console.log(test(4));
