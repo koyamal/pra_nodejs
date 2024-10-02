@@ -64,3 +64,7 @@ const startDate = '2024/10/03 12:30';
 console.log(dayjs(startDate));
 
 console.log(dayjs(startDate).isBefore(dayjs()));
+
+if(dayjs(startDate).isBefore(dayjs())) {
+  console.log('before');
+}
