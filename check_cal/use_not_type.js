@@ -1,6 +1,10 @@
 "use strict";
+var __importDefault = (this && this.__importDefault) || function (mod) {
+    return (mod && mod.__esModule) ? mod : { "default": mod };
+};
 Object.defineProperty(exports, "__esModule", { value: true });
 const uuid_1 = require("uuid");
+const dayjs_1 = __importDefault(require("dayjs"));
 const envTableName = 'is_this_table';
 const envFlag = true;
 const outputText = `Output Text is ${envFlag ? envTableName : 'no_table'}.`;
@@ -39,3 +43,4 @@ function test(arg) {
 console.log(test('hello'));
 console.log(test(4));
 console.log(test(['hello']));
+console.log((0, dayjs_1.default)());
