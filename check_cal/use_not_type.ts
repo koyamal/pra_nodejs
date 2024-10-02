@@ -58,3 +58,5 @@ function test<T>(arg: T): T {
 console.log(test<string>('hello'));
 console.log(test<number>(4));
 console.log(test<string[]>(['hello']));
+
+console.log(dayjs());
