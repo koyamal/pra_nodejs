@@ -50,3 +50,6 @@ console.log((0, dayjs_1.default)(startDate).isBefore((0, dayjs_1.default)()));
 if ((0, dayjs_1.default)(startDate).isBefore((0, dayjs_1.default)())) {
     console.log('before');
 }
+else {
+    console.log('after');
+}
