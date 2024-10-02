@@ -1,4 +1,5 @@
 import { v4 as uuidv4 } from 'uuid';
+import dayjs from 'dayjs';
 
 const envTableName: string = 'is_this_table';
 const envFlag: boolean = true;
@@ -57,3 +58,5 @@ function test<T>(arg: T): T {
 console.log(test<string>('hello'));
 console.log(test<number>(4));
 console.log(test<string[]>(['hello']));
+
+console.log(dayjs());
