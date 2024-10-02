@@ -44,3 +44,5 @@ console.log(test('hello'));
 console.log(test(4));
 console.log(test(['hello']));
 console.log((0, dayjs_1.default)());
+const startDate = '2024/10/03 12:30';
+console.log((0, dayjs_1.default)(startDate));

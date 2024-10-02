@@ -60,3 +60,5 @@ console.log(test<number>(4));
 console.log(test<string[]>(['hello']));
 
 console.log(dayjs());
+const startDate = '2024/10/03 12:30';
+console.log(dayjs(startDate));
