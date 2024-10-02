@@ -67,4 +67,6 @@ console.log(dayjs(startDate).isBefore(dayjs()));
 
 if(dayjs(startDate).isBefore(dayjs())) {
   console.log('before');
+} else {
+  console.log('after');
 }
