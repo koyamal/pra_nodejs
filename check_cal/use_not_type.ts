@@ -76,9 +76,9 @@ const iso8061DateUTC = '2024-10-03T03:00:00Z';
 const iso8061DateUTC2 = '2024-10-03T03:00:00.000000001Z';
 
 if(dayjs(iso8061DateJST).toISOString() === dayjs(iso8061DateUTC).toISOString()) {
-  console.log("同じ");
+  console.log(`${iso8061DateJST}と${iso8061DateUTC}は同じ時刻`);
 } else {
-  console.log("違う");
+  console.log(`${iso8061DateJST}と${iso8061DateUTC}は違う時刻`);
 }
 
 console.log(dayjs(iso8061DateJST).toISOString());
