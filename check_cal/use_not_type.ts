@@ -70,3 +70,6 @@ if(dayjs(startDate).isBefore(dayjs())) {
 } else {
   console.log('after');
 }
+
+const iso8061DateJST = '2024-10-03T12:00:00+0900';
+const iso8061DateUTC = '2024-10-03T03:00:00Z';
