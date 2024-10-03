@@ -74,11 +74,11 @@ if(dayjs(startDate).isBefore(dayjs())) {
 const iso8061DateJST = '2024-10-03T12:00:00+0900';
 const iso8061DateUTC = '2024-10-03T03:00:00Z';
 
-if(dayjs(iso8061DateJST) === dayjs(iso8061DateUTC)) {
+if(dayjs(iso8061DateJST).toISOString() === dayjs(iso8061DateUTC).toISOString()) {
   console.log("同じ");
 } else {
   console.log("違う");
 }
 
 console.log(dayjs(iso8061DateJST).toISOString());
-console.log(dayjs(iso8061DateUTC));
+console.log(dayjs(iso8061DateUTC).toISOString());
