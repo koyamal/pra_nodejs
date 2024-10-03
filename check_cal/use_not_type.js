@@ -53,3 +53,13 @@ if ((0, dayjs_1.default)(startDate).isBefore((0, dayjs_1.default)())) {
 else {
     console.log('after');
 }
+const iso8061DateJST = '2024-10-03T12:00:00+0900';
+const iso8061DateUTC = '2024-10-03T03:00:00Z';
+if ((0, dayjs_1.default)(iso8061DateJST).toISOString() === (0, dayjs_1.default)(iso8061DateUTC).toISOString()) {
+    console.log("同じ");
+}
+else {
+    console.log("違う");
+}
+console.log((0, dayjs_1.default)(iso8061DateJST).toISOString());
+console.log((0, dayjs_1.default)(iso8061DateUTC).toISOString());
