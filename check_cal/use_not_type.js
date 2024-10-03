@@ -61,5 +61,5 @@ if ((0, dayjs_1.default)(iso8061DateJST) === (0, dayjs_1.default)(iso8061DateUTC
 else {
     console.log("違う");
 }
-console.log((0, dayjs_1.default)(iso8061DateJST));
+console.log((0, dayjs_1.default)(iso8061DateJST).date);
 console.log((0, dayjs_1.default)(iso8061DateUTC));
