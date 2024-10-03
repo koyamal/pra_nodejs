@@ -80,5 +80,5 @@ if(dayjs(iso8061DateJST) === dayjs(iso8061DateUTC)) {
   console.log("違う");
 }
 
-console.log(dayjs(iso8061DateJST).date());
+console.log(dayjs(iso8061DateJST).toISOString());
 console.log(dayjs(iso8061DateUTC));
