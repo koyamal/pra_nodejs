@@ -65,4 +65,4 @@ else {
 console.log((0, dayjs_1.default)(iso8061DateJST).toISOString());
 console.log((0, dayjs_1.default)(iso8061DateUTC).toISOString());
 console.log((0, dayjs_1.default)(iso8061DateUTC2).toISOString());
-console.log((0, dayjs_1.default)());
+console.log((0, dayjs_1.default)().utcOffset());
