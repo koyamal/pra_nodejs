@@ -6,8 +6,13 @@ Object.defineProperty(exports, "__esModule", { value: true });
 const dayjs_1 = __importDefault(require("dayjs"));
 const utc_1 = __importDefault(require("dayjs/plugin/utc"));
 const timezone_1 = __importDefault(require("dayjs/plugin/timezone"));
+const customConsole = (val) => {
+    console.log(val);
+};
 dayjs_1.default.extend(timezone_1.default);
 dayjs_1.default.extend(utc_1.default);
-console.log((0, dayjs_1.default)());
+const nowNoTz = (0, dayjs_1.default)();
 const nowTokyo = (0, dayjs_1.default)().tz("Asia/Tokyo");
 console.log(nowTokyo);
+customConsole({ nowNoTz });
+customConsole({ nowTokyo });

@@ -2,9 +2,15 @@ import dayjs from 'dayjs';
 import DayJSUtc from 'dayjs/plugin/utc'
 import timezone from 'dayjs/plugin/timezone';
 
+const customConsole = (val: object): void => {
+  console.log(val);
+}
+
 dayjs.extend(timezone);
 dayjs.extend(DayJSUtc);
-console.log(dayjs());
 
+const nowNoTz = dayjs();
 const nowTokyo = dayjs().tz("Asia/Tokyo");
-console.log(nowTokyo);
+
+customConsole({nowNoTz});
+customConsole({nowTokyo});
