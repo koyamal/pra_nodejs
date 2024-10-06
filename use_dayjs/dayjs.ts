@@ -6,4 +6,5 @@ dayjs.extend(timezone);
 dayjs.extend(DayJSUtc);
 console.log(dayjs());
 
-dayjs().tz("Asia/Tokyo")
+const nowTokyo = dayjs().tz("Asia/Tokyo");
+console.log(nowTokyo);
