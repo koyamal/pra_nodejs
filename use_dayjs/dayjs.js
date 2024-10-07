@@ -13,6 +13,5 @@ dayjs_1.default.extend(timezone_1.default);
 dayjs_1.default.extend(utc_1.default);
 const nowNoTz = (0, dayjs_1.default)();
 const nowTokyo = (0, dayjs_1.default)().tz("Asia/Tokyo");
-console.log(nowTokyo);
 customConsole({ nowNoTz });
 customConsole({ nowTokyo });
