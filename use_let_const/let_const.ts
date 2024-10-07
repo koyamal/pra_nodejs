@@ -7,3 +7,10 @@ dataBox.forEach(data => {
 });
 
 console.log(constBox);
+
+let letBox: number[] = [];
+dataBox.forEach(data => {
+  letBox.push(data);
+});
+
+console.log(letBox);
