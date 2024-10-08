@@ -12,11 +12,3 @@ dataBox.forEach(data => {
     letBox.push(data);
 });
 console.log(letBox);
-
-const jsonBox = [
-    {date: "2024-01-01T00:00:00Z", id: 1},
-    {date: "2023-01-01T00:00:00Z", id: 2},
-    {date: "2025-01-01T00:00:00Z", id: 3},
-];
-
-console.log(jsonBox);
