@@ -16,16 +16,16 @@ dataBox.forEach(data => {
 });
 console.log(letBox);
 
-const jsonBox = [
-  {date: "2024-01-01T00:00:00Z", id: 1},
-  {date: "2023-01-01T00:00:00Z", id: 2},
-  {date: "2025-01-01T00:00:00Z", id: 3},
-];
-
 type JsonBox = {
   date: string
   id: number;
 };
+
+const jsonBox: JsonBox[] = [
+  {date: "2024-01-01T00:00:00Z", id: 1},
+  {date: "2023-01-01T00:00:00Z", id: 2},
+  {date: "2025-01-01T00:00:00Z", id: 3},
+];
 
 function compareById( a: JsonBox , b: JsonBox ){
   var r = 0;
