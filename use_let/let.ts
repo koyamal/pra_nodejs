@@ -1,3 +1,4 @@
+import dayjs from "dayjs";
 const dataBox = [1, 2, 3];
 
 // constの配列に要素を追加していく。
@@ -29,8 +30,8 @@ const jsonBox: JsonBox[] = [
 
 function compareById( a: JsonBox , b: JsonBox ){
   var r = 0;
-  if( a.id < b.id ){ r = -1; }
-  else if( a.id > b.id ){ r = 1; }
+  if( dayjs(a.date) < dayjs(b.date) ){ r = -1; }
+  else if( dayjs(a.date) > dayjs(a.date) ){ r = 1; }
 
   return r;
 }
