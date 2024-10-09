@@ -28,7 +28,7 @@ const jsonBox: JsonBox[] = [
   {date: "2025-01-01T00:00:00Z", id: 2},
 ];
 
-function compareById( a: JsonBox , b: JsonBox ){
+function compareByDate( a: JsonBox , b: JsonBox ){
   var r = 0;
   if( dayjs(a.date) < dayjs(b.date) ){ r = -1; }
   else if( dayjs(a.date) > dayjs(a.date) ){ r = 1; }
@@ -36,7 +36,7 @@ function compareById( a: JsonBox , b: JsonBox ){
   return r;
 }
 
-function compareBydate( a: JsonBox , b: JsonBox ){
+function compareById( a: JsonBox , b: JsonBox ){
   var r = 0;
   if( a.id < b.id ){ r = -1; }
   else if( a.id > b.id ){ r = 1; }
