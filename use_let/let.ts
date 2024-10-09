@@ -22,4 +22,9 @@ const jsonBox = [
   {date: "2025-01-01T00:00:00Z", id: 3},
 ];
 
+type JsonBox = {
+  date: string
+  id: number;
+};
+
 console.log(jsonBox);
