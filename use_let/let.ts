@@ -36,3 +36,4 @@ function compareById( a: JsonBox , b: JsonBox ){
 }
 
 console.log(jsonBox);
+console.log(jsonBox.sort(compareById));
