@@ -44,5 +44,6 @@ function compareById( a: JsonBox , b: JsonBox ){
   return r;
 }
 
-console.log(jsonBox);
-console.log(jsonBox.sort(compareById));
+console.log("jsonBox", jsonBox);
+console.log("sort by id", jsonBox.sort(compareById));
+console.log("sort by date", jsonBox.sort(compareByDate));
