@@ -16,4 +16,4 @@ if (val2) {
   console.log("val2はFalsy");
 }
 
-console.log(val1 ?? "hello");
+console.log(val1 ?? `${val1} ?? X => X`);

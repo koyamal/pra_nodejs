@@ -1,6 +1,9 @@
 "use strict";
 const val1 = undefined;
 const val2 = [];
+const val3 = null;
+const val4 = false;
+const val5 = "";
 if (val1) {
     console.log("val1はTruthy");
 }
@@ -13,3 +16,4 @@ if (val2) {
 else {
     console.log("val2はFalsy");
 }
+console.log(val1 !== null && val1 !== void 0 ? val1 : `${val1} ?? X => X`);
