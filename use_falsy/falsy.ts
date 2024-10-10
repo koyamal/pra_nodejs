@@ -17,3 +17,7 @@ if (val2) {
 }
 
 console.log(val1 ?? `${val1} ?? X => X`);
+console.log(val2 ?? `${val2} ?? X => X`);
+console.log(val3 ?? `${val3} ?? X => X`);
+console.log(val4 ?? `${val4} ?? X => X`);
+console.log(val5 ?? `${val5} ?? X => X`);

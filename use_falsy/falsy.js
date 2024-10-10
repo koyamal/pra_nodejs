@@ -17,3 +17,6 @@ else {
     console.log("val2はFalsy");
 }
 console.log(val1 !== null && val1 !== void 0 ? val1 : `${val1} ?? X => X`);
+console.log(val2 !== null && val2 !== void 0 ? val2 : `${val2} ?? X => X`);
+console.log(val3 !== null && val3 !== void 0 ? val3 : `${val3} ?? X => X`);
+console.log(val4 !== null && val4 !== void 0 ? val4 : `${val4} ?? X => X`);
