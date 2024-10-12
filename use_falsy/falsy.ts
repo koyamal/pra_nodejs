@@ -24,4 +24,6 @@ console.log(val5 ?? `${val5} ?? X => X`);
 
 if(val1 !== undefined) {
   console.log(`${val1}はundefinedではありません。`);
+} else {
+  console.log(`${val1}はundefinedです。`);
 }
