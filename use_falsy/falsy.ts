@@ -21,3 +21,7 @@ console.log(val2 ?? `${val2} ?? X => X`);
 console.log(val3 ?? `${val3} ?? X => X`);
 console.log(val4 ?? `${val4} ?? X => X`);
 console.log(val5 ?? `${val5} ?? X => X`);
+
+if(val1 !== undefined) {
+  console.log(`${val1}はundefinedではありません。`);
+}
