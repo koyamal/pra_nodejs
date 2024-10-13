@@ -24,12 +24,6 @@ console.log(val3 ?? `${val3} ?? X => X`);
 console.log(val4 ?? `${val4} ?? X => X`);
 console.log(val5 ?? `${val5} ?? X => X`);
 
-if(val1 !== undefined) {
-  console.log(`${val1}はundefinedではありません。`);
-} else {
-  console.log(`${val1}はundefinedです。`);
-}
-
 valBox.forEach(val => {
   if(val !== undefined) {
     console.log(`${val}はundefinedではありません。`);
