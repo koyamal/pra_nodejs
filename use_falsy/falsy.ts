@@ -4,6 +4,8 @@ const val3 = null; // falsy
 const val4 = false; // falsy
 const val5 = ""; // falsy
 
+const valBox = [val1, val2, val3, val4, val5];
+
 if (val1) {
   console.log("val1はTruthy");
 } else {
