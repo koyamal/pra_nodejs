@@ -1,2 +1,4 @@
 "use strict";
-console.log("hello,\nworld.");
+const espLines = "hello,\nworld.";
+const espTabs = "hello,\tworld.";
+console.log(espLines);
