@@ -1,9 +1,10 @@
 "use strict";
-const val1 = undefined;
-const val2 = [];
-const val3 = null;
-const val4 = false;
-const val5 = "";
+const val1 = undefined; // falsy
+const val2 = []; // truty
+const val3 = null; // falsy
+const val4 = false; // falsy
+const val5 = ""; // falsy
+const valBox = [val1, val2, val3, val4, val5];
 if (val1) {
     console.log("val1はTruthy");
 }
@@ -27,3 +28,11 @@ if (val1 !== undefined) {
 else {
     console.log(`${val1}はundefinedです。`);
 }
+valBox.forEach(val => {
+    if (val !== undefined) {
+        console.log(`${val}はundefinedではありません。`);
+    }
+    else {
+        console.log(`${val}はundefinedです。`);
+    }
+});
