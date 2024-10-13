@@ -8,6 +8,8 @@ console.log(espTabs);
 const textLines = [
   "こんにちは。",
   `私の名前は${userName}です。`,
+  "",
+  "よろしくお願いします。"
 ].join('\n');
 
 console.log(textLines);
