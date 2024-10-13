@@ -1,8 +1,8 @@
-const val1 = undefined;
-const val2: string[] =[];
-const val3 = null;
-const val4 = false;
-const val5 = "";
+const val1 = undefined; // falsy
+const val2: string[] =[]; // truty
+const val3 = null; // falsy
+const val4 = false; // falsy
+const val5 = ""; // falsy
 
 if (val1) {
   console.log("val1はTruthy");
