@@ -29,3 +29,11 @@ if(val1 !== undefined) {
 } else {
   console.log(`${val1}はundefinedです。`);
 }
+
+valBox.forEach(val => {
+  if(val !== undefined) {
+    console.log(`${val}はundefinedではありません。`);
+  } else {
+    console.log(`${val}はundefinedです。`);
+  }
+});
