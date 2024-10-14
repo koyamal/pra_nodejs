@@ -9,7 +9,9 @@ const textLines = [
   "こんにちは。",
   `私の名前は${userName}です。`,
   "",
-  "よろしくお願いします。"
-].join('\n');
+  "よろしくお願いします。",
+  "",
+  "頑張ります。"
+].join('\n').split('\n');
 
 console.log(textLines);
