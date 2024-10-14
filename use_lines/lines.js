@@ -11,5 +11,5 @@ const textLines = [
     "よろしくお願いします。",
     "",
     "頑張ります。"
-].join('\n').split('\n');
+].join('\n');
 console.log(textLines);
