@@ -4,6 +4,13 @@ const espTabs = "hello,\tworld.";
 const userName = "Bob";
 console.log(espLines);
 console.log(espTabs);
+const textOrigin = [
+    "こんにちは。",
+    `私の名前は${userName}です。`,
+    "よろしくお願いします。",
+    "頑張ります。"
+].join('');
+console.log(textOrigin);
 const textLines = [
     "こんにちは。",
     `私の名前は${userName}です。`,
@@ -27,3 +34,10 @@ const textPages = [
     "頑張ります。"
 ].join('\f');
 console.log(textPages);
+const textBackSpace = [
+    "こんにちは。",
+    `私の名前は${userName}です。`,
+    "よろしくお願いします。",
+    "頑張ります。"
+].join('\b');
+console.log(textBackSpace);
