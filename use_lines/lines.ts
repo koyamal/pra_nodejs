@@ -19,8 +19,17 @@ console.log(textLines);
 const textTabs = [
   "こんにちは。",
   `私の名前は${userName}です。`,
-  "よろし\'くお願いします。",
-  "頑張り\fます。"
+  "よろしくお願いします。",
+  "頑張ります。"
 ].join('\t');
 
 console.log(textTabs);
+
+const textPages = [
+  "こんにちは。",
+  `私の名前は${userName}です。`,
+  "よろしくお願いします。",
+  "頑張ります。"
+].join('\f');
+
+console.log(textPages);
