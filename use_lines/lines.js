@@ -17,6 +17,6 @@ const textTabs = [
     "こんにちは。",
     `私の名前は${userName}です。`,
     "よろし\'くお願いします。",
-    "頑張ります。"
+    "頑張り\fます。"
 ].join('\t');
 console.log(textTabs);
