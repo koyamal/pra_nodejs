@@ -33,3 +33,12 @@ const textPages = [
 ].join('\f');
 
 console.log(textPages);
+
+const textBackSpace = [
+  "こんにちは。",
+  `私の名前は${userName}です。`,
+  "よろしくお願いします。",
+  "頑張ります。"
+].join('\b');
+
+console.log(textBackSpace);
