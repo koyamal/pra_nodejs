@@ -10,7 +10,7 @@ const textOrigin = [
   `私の名前は${userName}です。`,
   "よろしくお願いします。",
   "頑張ります。"
-].join();
+].join('');
 
 console.log(textOrigin);
 
