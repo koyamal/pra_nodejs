@@ -6,4 +6,4 @@ const textOrigin = [
     "よろしくお願いします。",
     "頑張ります。"
 ].join('');
-console.log(textOrigin);
+console.log("textOrigin", textOrigin);
