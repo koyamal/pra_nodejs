@@ -5,6 +5,6 @@ const textOrigin = [
   "頑張ります。"
 ].join('');
 
-console.log(textOrigin);
+console.log("textOrigin", textOrigin);
 
 export {};
