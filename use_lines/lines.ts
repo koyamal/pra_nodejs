@@ -51,3 +51,12 @@ const textBackSpace = [
 ].join('\b');
 
 console.log(textBackSpace);
+
+const textQ = [
+  "こんにちは。",
+  `私の名前は${userName}です。`,
+  "よろしくお願いします。",
+  "頑張ります。"
+].join('\"');
+
+console.log(textQ);
