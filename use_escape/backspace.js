@@ -5,7 +5,7 @@ const textOrigin = [
     `私の名前はBobです。`,
     "よろしくお願いします。",
     "頑張ります。"
-].join('');
+].join(' ');
 console.log("textOrigin", textOrigin);
 const textBackSpace = [
     "こんにちは。",
