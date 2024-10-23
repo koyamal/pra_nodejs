@@ -12,7 +12,7 @@ const textBackSpace = [
   `私の名前はBobです。`,
   "よろしくお願いします。",
   "頑張ります。"
-].join('\b');
+].join('\"');
 
 console.log("textBackSpace", textBackSpace);
 
