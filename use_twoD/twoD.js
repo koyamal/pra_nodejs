@@ -9,4 +9,5 @@ const getTwoDArray = (items) => {
 const items = [...Array(50)].map((_, i) => {
     return i;
 });
-console.log(items);
+const twoDArray = getTwoDArray(items);
+console.log(twoDArray);
