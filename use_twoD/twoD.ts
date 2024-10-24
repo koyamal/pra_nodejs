@@ -10,6 +10,12 @@ const items = [...Array(50)].map((_, i) => {
   return i;
 });
 
+items.push(0);
+
+const filteredItems = items.filter(item => item);
+
 const twoDArray = getTwoDArray(items);
 
-console.log(twoDArray);
+console.log("twoDArray", twoDArray);
+console.log("items", items);
+console.log("filteredItems", filteredItems);
