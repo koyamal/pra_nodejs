@@ -1,9 +1,9 @@
 const items = [...Array(50)].map((_, i) => {
-  if(i % 7 === 0) return "";
-  return i.toString();
+  if(i % 7 === 0) return 0;
+  return i;
 });
 
-items.push("");
+items.push(0);
 
 console.log("items", items);
 
