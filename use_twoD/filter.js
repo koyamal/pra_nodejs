@@ -9,7 +9,5 @@ items.push(0);
 console.log("items", items);
 const filteredItems = items.filter(item => item);
 console.log("filteredItems", filteredItems);
-const filteredMapedItems = items.filter(item => item % 8 !== 0).map((notSevenEightValue) => {
-    return { notSevenEightValue };
-});
+const filteredMapedItems = items.filter(item => item % 8 !== 0).map((notSevenEightValue) => { notSevenEightValue; });
 console.log(filteredMapedItems);
