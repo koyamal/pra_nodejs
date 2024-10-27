@@ -16,3 +16,5 @@ const filteredMapedItems = items.filter(item => item % 8 !== 0).map((notSevenEig
     };
 });
 console.log(filteredMapedItems);
+const checkFilter = items.filter((item, index, array) => item);
+console.log(checkFilter);
