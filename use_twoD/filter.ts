@@ -12,12 +12,14 @@ console.log("filteredItems", filteredItems);
 
 export {}
 
-const filteredMapedItems = items.filter(item => item % 8 !== 0).map((notSevenEightValue) => {
-  return {
-    name : 'itemid',
-    value : notSevenEightValue
-  }
-});
+const filteredMapedItems = items
+  .filter(item => item % 8 !== 0)
+  .map((notSevenEightValue) => {
+    return {
+      name : 'itemid',
+      value : notSevenEightValue
+    }
+  });
 
 console.log(filteredMapedItems);
 
