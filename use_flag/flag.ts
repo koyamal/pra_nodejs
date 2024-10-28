@@ -10,7 +10,7 @@ const getFlag = (value: number): boolean => {
 
 const flag = getFlag(randValue);
 
-const sendParams = [
+const rowParams = [
   {
     group_number: '23431223',
     onlyTrue: true,
