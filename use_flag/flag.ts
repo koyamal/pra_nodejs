@@ -10,6 +10,6 @@ const getFlag = (value: number): boolean => {
 
 const flag = getFlag(randValue);
 
-
+console.log(flag);
 
 export {}

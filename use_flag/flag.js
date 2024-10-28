@@ -10,3 +10,4 @@ const getFlag = (value) => {
     }
 };
 const flag = getFlag(randValue);
+console.log(flag);
