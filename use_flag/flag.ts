@@ -10,6 +10,15 @@ const getFlag = (value: number): boolean => {
 
 const flag = getFlag(randValue);
 
-console.log(flag);
+const sendParams = [
+  {
+    group_number: '23431223',
+    onlyTrue: true,
+  },
+  {
+    test_value: 'hello',
+    onlyTrue: false,
+  }
+];
 
 export {}
