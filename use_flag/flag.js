@@ -10,6 +10,7 @@ const getFlag = (value) => {
     }
 };
 const flag = getFlag(randValue);
+console.log("flag", flag);
 const rowParams = [
     {
         group_number: '23431223',
@@ -20,5 +21,5 @@ const rowParams = [
         onlyTrue: false,
     }
 ];
-const sendParams = rowParams.filter((param) => param.onlyTrue && flag);
+const sendParams = rowParams.filter((param) => !param.onlyTrue || (param.onlyTrue && flag));
 console.log(sendParams);
