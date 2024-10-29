@@ -17,6 +17,10 @@ const rowParams = [
   {
     test_value: 'hello',
     onlyTrue: false,
+  },
+  {
+    happy_hour: 'Double',
+    onlyTrue: getFlag(),
   }
 ];
 
