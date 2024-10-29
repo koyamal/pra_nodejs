@@ -1,4 +1,4 @@
-const randValue = Math.random();
+const randValue: number = Math.random();
 
 const getFlag = (value: number): boolean => {
   if(value > 0.5) {
@@ -8,7 +8,7 @@ const getFlag = (value: number): boolean => {
   }
 }
 
-const flag = getFlag(randValue);
+const flag: boolean = getFlag(randValue);
 console.log("flag", flag);
 
 const rowParams = [
@@ -22,7 +22,7 @@ const rowParams = [
   }
 ];
 
-const sendParams = rowParams.filter((param) => !param.onlyTrue || (param.onlyTrue && flag));
+const sendParams = rowParams.filter(param => !param.onlyTrue || (param.onlyTrue && flag));
 
 console.log(sendParams);
 
