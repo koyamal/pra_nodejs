@@ -1,15 +1,14 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-const randValue = Math.random();
-const getFlag = (value) => {
-    if (value > 0.5) {
+const getFlag = () => {
+    if (Math.random() > 0.5) {
         return true;
     }
     else {
         return false;
     }
 };
-const flag = getFlag(randValue);
+const flag = getFlag();
 console.log("flag", flag);
 const rowParams = [
     {
@@ -19,6 +18,10 @@ const rowParams = [
     {
         test_value: 'hello',
         onlyTrue: false,
+    },
+    {
+        happy_hour: 'Double',
+        onlyTrue: getFlag(),
     }
 ];
 const sendParams = rowParams.filter(param => !param.onlyTrue || (param.onlyTrue && flag));
