@@ -21,5 +21,5 @@ const rowParams = [
         onlyTrue: false,
     }
 ];
-const sendParams = rowParams.filter((param) => !param.onlyTrue || (param.onlyTrue && flag));
+const sendParams = rowParams.filter(param => !param.onlyTrue || (param.onlyTrue && flag));
 console.log(sendParams);
