@@ -1,14 +1,12 @@
-const randValue: number = Math.random();
-
-const getFlag = (value: number): boolean => {
-  if(value > 0.5) {
+const getFlag = (): boolean => {
+  if(Math.random() > 0.5) {
     return true;
   } else {
     return false;
   }
 }
 
-const flag: boolean = getFlag(randValue);
+const flag: boolean = getFlag();
 console.log("flag", flag);
 
 const rowParams = [
@@ -19,6 +17,10 @@ const rowParams = [
   {
     test_value: 'hello',
     onlyTrue: false,
+  },
+  {
+    happy_hour: 'Double',
+    onlyTrue: getFlag(),
   }
 ];
 
