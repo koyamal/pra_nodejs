@@ -1,5 +1,5 @@
 const replaceText = (text: string): string => {
-  return text.replace(/(and|or)\x20/, '$1a');
+  return text.replace(/(and|or)\x20/, '$1 ');
 }
 
 const originText = "and 123";
