@@ -1,6 +1,6 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 const replaceText = (text) => {
-    return text.replace(/(and|or)\x20/, '$1 ');
+    return text.replace(/(and|or)\x20/, '$1 a');
 };
 console.log(replaceText("and 123"));
