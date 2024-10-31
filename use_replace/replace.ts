@@ -19,7 +19,9 @@ const convertOriginText = convertCodeUnits(originText);
 const convertReplacedText = convertCodeUnits(replacedText);
 
 console.log("originText: ",originText);
+console.log(convertOriginText);
 
-console.log(replacedText);
+console.log("replacedText: ", replacedText);
+console.log(convertReplacedText);
 
 export {}
