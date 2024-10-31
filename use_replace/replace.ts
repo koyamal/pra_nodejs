@@ -3,8 +3,9 @@ const replaceText = (text: string): string => {
 }
 
 const originText = "and 123";
+const replacedText = replaceText(originText);
 console.log(originText);
-console.log(replaceText(originText));
+console.log(replacedText);
 
 function convertCodeUnits(str: string) {
   const codeUnits = [];
@@ -14,6 +15,11 @@ function convertCodeUnits(str: string) {
   return codeUnits;
 }
 
-const convertReplacedText = ""
+const convertOriginText = convertCodeUnits(originText);
+const convertReplacedText = convertCodeUnits(replacedText);
+
+console.log("originText: ",originText);
+
+console.log(replacedText);
 
 export {}
