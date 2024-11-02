@@ -2,7 +2,7 @@ const replaceText = (text: string): string => {
   return text.replace(/(and|or)\x20/gi, '$1　');
 }
 
-const originText = "and 123";
+const originText = process.argv[2];
 const replacedText = replaceText(originText);
 console.log(originText);
 console.log(replacedText);
