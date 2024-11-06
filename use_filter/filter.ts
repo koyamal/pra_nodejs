@@ -4,3 +4,4 @@ const filteredBox = numberBox.filter(number => number % 7 === 0);
 console.log(filteredBox);
 
 const filteredMappedBox = numberBox.filter(number => number % 2 === 0).map(number => {value: number});
+console.log(filteredMappedBox);
