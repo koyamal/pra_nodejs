@@ -8,3 +8,6 @@ console.log(filteredMappedBox);
 
 const MappedfilteredBox = numberBox.map(number => { return {valueNumber: number}}).filter(val => val.valueNumber >= 6);
 console.log(MappedfilteredBox);
+
+const filterTruthyBox = numberBox.filter(number => number);
+console.log(filterTruthyBox);
