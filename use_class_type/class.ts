@@ -10,4 +10,6 @@ class MS {
 
 let messaging: MS | undefined;
 
+messaging?.getMs();
+
 export {}
