@@ -10,6 +10,7 @@ class MS {
 
 let messaging: MS | undefined;
 
-const a = messaging ? messaging.getMs(): 'none';
-console.log(a);
+
+console.log(messaging ? messaging.getMs(): 'none');
+
 export {}
