@@ -13,4 +13,7 @@ let messaging: MS | undefined;
 
 console.log(messaging ? messaging.getMs(): 'none');
 
+messaging = new MS('messaging');
+console.log(messaging ? messaging.getMs(): 'none');
+
 export {}

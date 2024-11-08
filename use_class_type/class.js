@@ -10,5 +10,6 @@ class MS {
     ;
 }
 let messaging;
-const a = messaging ? messaging.getMs() : 'none';
-console.log(a);
+console.log(messaging ? messaging.getMs() : 'none');
+messaging = new MS('messaging');
+console.log(messaging ? messaging.getMs() : 'none');
