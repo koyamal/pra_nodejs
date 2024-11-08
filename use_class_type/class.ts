@@ -10,6 +10,6 @@ class MS {
 
 let messaging: MS | undefined;
 
-const a = messaging?.getMs();
+const a = messaging ? messaging.getMs(): 'none';
 console.log(a);
 export {}
