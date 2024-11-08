@@ -10,6 +10,6 @@ class MS {
 
 let messaging: MS | undefined;
 
-messaging?.getMs();
-
+const a = messaging?.getMs();
+console.log(a);
 export {}
