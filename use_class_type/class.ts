@@ -8,4 +8,6 @@ class MS {
   };
 }
 
+let messaging: MS | undefined;
+
 export {}
