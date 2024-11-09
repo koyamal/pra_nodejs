@@ -3,3 +3,4 @@ const test = <T>(arg: T): T => {
 }
 
 console.log(test<number>(1));
+console.log(test<string>("hello"));
