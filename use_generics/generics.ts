@@ -15,3 +15,5 @@ console.log(test<string>("hello"));
 
 console.log(test(1));
 console.log(test("hello"));
+
+console.log(test2({name : "name", age: 23}));
