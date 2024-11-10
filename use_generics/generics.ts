@@ -2,6 +2,14 @@ const test = <T>(arg: T): T => {
   return arg;
 }
 
+const test2 = <T extends argTypes>(arg: T): string => {
+  return arg.name;
+}
+
+interface argTypes {
+  name: string;
+}
+
 console.log(test<number>(1));
 console.log(test<string>("hello"));
 
