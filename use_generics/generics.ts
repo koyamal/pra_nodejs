@@ -2,7 +2,8 @@ const test = <T>(arg: T): T => {
   return arg;
 }
 
-const test2 = <T extends argTypes>(arg: T): string => {
+const test2 = <T extends argTypes, U>(arg: T, unit: U): string => {
+  console.log(unit);
   return arg.name;
 }
 
