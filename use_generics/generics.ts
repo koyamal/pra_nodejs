@@ -3,7 +3,7 @@ const test = <T>(arg: T): T => {
 }
 
 const test2 = <T extends argTypes, U>(arg: T, unit: U): string => {
-  console.log(unit);
+  console.log(`unit: ${unit}`);
   return arg.name;
 }
 
