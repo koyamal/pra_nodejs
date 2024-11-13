@@ -23,6 +23,7 @@ const amari = (val) => {
 };
 const cT = () => {
     const currentUtc = (0, dayjs_1.default)().utc();
+    console.log(currentUtc.add(9, 'hour').format('YYYY-MM-DD HH:mm:ss'));
     return currentUtc.add(9, 'hour').format('YYYY-MM-DD HH:mm') + ":" + roundSecond(currentUtc.second(), 5);
 };
 console.log(cT());
