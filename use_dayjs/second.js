@@ -11,3 +11,7 @@ const cT = () => {
     return currentUtc.add(9, 'hour').format('YYYY-MM-DD HH:mm:ss');
 };
 console.log(cT());
+const amari = (val) => {
+    const amari = val % 5;
+};
+console.log(amari(12));
