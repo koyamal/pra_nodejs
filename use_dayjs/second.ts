@@ -7,11 +7,9 @@ dayjs.extend(utc);
 
 const roundSecond = (rowSecond: number, unitValue: number) => {
   const remainder = rowSecond % unitValue;
-  if (remainder === 0) {
-    return rowSecond;
-  }else {
-    return rowSecond + (unitValue - remainder);
-  }
+
+  return rowSecond + (unitValue - remainder);
+
 }
 
 const amari = (val: number) => {
