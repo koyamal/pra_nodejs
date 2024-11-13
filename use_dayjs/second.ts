@@ -11,6 +11,8 @@ const cT = () => {
 console.log(cT());
 
 const amari = (val: number) => {
+  const val2 = dayjs().second()
+  console.log(val2);
   const amari = val % 5;
   return amari;
 };

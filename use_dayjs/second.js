@@ -13,5 +13,6 @@ const cT = () => {
 console.log(cT());
 const amari = (val) => {
     const amari = val % 5;
+    return amari;
 };
 console.log(amari(12));
