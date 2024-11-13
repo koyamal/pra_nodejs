@@ -3,12 +3,7 @@ import utc from "dayjs/plugin/utc"
 
 dayjs.extend(utc);
 
-const cT = () => {
-  const currentUtc = dayjs().utc();
-  return currentUtc.add(9, 'hour').format('YYYY-MM-DD HH:mm:ss');
-}
 
-console.log(cT());
 
 const roundSecond = (rowSecond: number, unitValue: number) => {
   const remainder = rowSecond % unitValue;
@@ -26,4 +21,9 @@ const amari = (val: number) => {
   return  val2 + (5 - amari);
 };
 
-console.log(amari(12))
+const cT = () => {
+  const currentUtc = dayjs().utc();
+  return currentUtc.add(9, 'hour').format('YYYY-MM-DD HH:mm') + ":" + roundSecond(currentUtc.second(), 5);
+}
+
+console.log(cT());
