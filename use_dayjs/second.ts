@@ -8,8 +8,9 @@ dayjs.extend(utc);
 const roundSecond = (rowSecond: number, unitValue: number, das: string) => {
   const remainder = rowSecond % unitValue;
 
-  return dayjs(das).add(rowSecond + (unitValue - remainder), 's')
-  // return rowSecond + (unitValue - remainder);
+  console.log(dayjs(das).add(rowSecond + (unitValue - remainder), 's'))
+  // return dayjs(das).add(rowSecond + (unitValue - remainder), 's')
+  return rowSecond + (unitValue - remainder);
 
 }
 
