@@ -8,7 +8,7 @@ const utc_1 = __importDefault(require("dayjs/plugin/utc"));
 dayjs_1.default.extend(utc_1.default);
 const roundSecond = (rowSecond, unitValue, das) => {
     const remainder = rowSecond % unitValue;
-    console.log((0, dayjs_1.default)(das).add(rowSecond + (unitValue - remainder), 's'));
+    console.log("e", (0, dayjs_1.default)(das).add(rowSecond + (unitValue - remainder), 's').format('YYYY-MM-DD HH:mm:ss'));
     // return dayjs(das).add(rowSecond + (unitValue - remainder), 's')
     return rowSecond + (unitValue - remainder);
 };
