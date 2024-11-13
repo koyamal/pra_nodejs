@@ -5,10 +5,11 @@ dayjs.extend(utc);
 
 
 
-const roundSecond = (rowSecond: number, unitValue: number) => {
+const roundSecond = (rowSecond: number, unitValue: number, das: string) => {
   const remainder = rowSecond % unitValue;
 
-  return rowSecond + (unitValue - remainder);
+  return dayjs(das).add(rowSecond + (unitValue - remainder), 's')
+  // return rowSecond + (unitValue - remainder);
 
 }
 

@@ -8,12 +8,7 @@ const utc_1 = __importDefault(require("dayjs/plugin/utc"));
 dayjs_1.default.extend(utc_1.default);
 const roundSecond = (rowSecond, unitValue) => {
     const remainder = rowSecond % unitValue;
-    if (remainder === 0) {
-        return rowSecond;
-    }
-    else {
-        return rowSecond + (unitValue - remainder);
-    }
+    return rowSecond + (unitValue - remainder);
 };
 const amari = (val) => {
     const val2 = (0, dayjs_1.default)().second();
