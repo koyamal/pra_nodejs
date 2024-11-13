@@ -9,3 +9,9 @@ const cT = () => {
 }
 
 console.log(cT());
+
+const amari = (val: number) => {
+  const amari = val % 5;
+};
+
+console.log(amari(12))
