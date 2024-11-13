@@ -12,7 +12,9 @@ const cT = () => {
 };
 console.log(cT());
 const amari = (val) => {
-    const amari = val % 5;
-    return amari;
+    const val2 = (0, dayjs_1.default)().second();
+    console.log(val2);
+    const amari = val2 % 5;
+    return val2 + (5 - amari);
 };
 console.log(amari(12));
