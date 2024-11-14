@@ -19,6 +19,7 @@ const roundSecond = (rowSecond: number, unitValue: number, das: string) => {
 
 const cT = () => {
   const currentUtc = dayjs().utc();
+  const currentUtcString = currentUtc.format('YYYY-MM-DD HH:mm');
   return currentUtc.add(9, 'hour').format('YYYY-MM-DD HH:mm:') + roundSecond(currentUtc.second(), 5, currentUtc.add(9, 'hour').format('YYYY-MM-DD HH:mm'));
 }
 
