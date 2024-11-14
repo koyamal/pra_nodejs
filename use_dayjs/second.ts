@@ -3,15 +3,10 @@ import utc from "dayjs/plugin/utc"
 
 dayjs.extend(utc);
 
-
-
 const roundSecond = (rowSecond: number, unitValue: number) => {
   const remainder = rowSecond % unitValue;
   return rowSecond + (unitValue - remainder);
 }
-
-
-
 
 const cT = () => {
   const currentUtc = dayjs().utc();
