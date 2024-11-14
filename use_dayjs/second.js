@@ -15,7 +15,7 @@ const roundSecond = (rowSecond, unitValue) => {
 const cT = () => {
     const currentUtc = (0, dayjs_1.default)().utc();
     const currentUtcString = currentUtc.add(9, 'hour').format('YYYY-MM-DD HH:mm');
-    return (0, dayjs_1.default)(currentUtcString).add(roundSecond(currentUtc.second(), 5)).format('YYYY-MM-DD HH:mm');
+    return (0, dayjs_1.default)(currentUtcString).add(roundSecond(currentUtc.second(), 5)).format('YYYY-MM-DD HH:mm:ss');
     // return currentUtc.add(9, 'hour').format('YYYY-MM-DD HH:mm:') + roundSecond(currentUtc.second(), 5, currentUtc.add(9, 'hour').format('YYYY-MM-DD HH:mm'));
 };
 console.log(cT());
