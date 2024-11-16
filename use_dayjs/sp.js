@@ -1,9 +1,3 @@
 "use strict";
-// const data = 
-//   [
-//   ...{
-//     a: "b"
-//   },
-//   "b"
-//   ];
-console.log(...[1, 2, 3]);
+const arrayData = [1, 2, 3];
+console.log(...arrayData);
