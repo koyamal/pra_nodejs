@@ -5,6 +5,7 @@ const objData = { one: "one", two: "two", three: "three" };
 console.log(Object.assign({ four: "four" }, objData));
 const outputData = [
     ...[1, 2, 3],
-    4
+    4,
+    ...(true ? [5] : [6])
 ];
 console.log(outputData);
