@@ -20,7 +20,7 @@ outputData.forEach((data) => {
 });
 
 const filteredList = outputData.filter((data) => {
-  data % 2 === 0;
+  return data % 2 === 0;
 });
 
 console.log(filteredList);
