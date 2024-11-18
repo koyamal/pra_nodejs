@@ -10,3 +10,6 @@ const outputData = [
     ...(flag ? [5, 6, 7] : [])
 ];
 console.log(outputData);
+outputData.forEach((data) => {
+    console.log(data);
+});
