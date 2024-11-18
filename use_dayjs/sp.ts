@@ -14,3 +14,7 @@ const outputData = [
 ];
 
 console.log(outputData);
+
+outputData.forEach((data) => {
+  console.log(data);
+});
