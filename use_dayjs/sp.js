@@ -13,3 +13,7 @@ console.log(outputData);
 outputData.forEach((data) => {
     console.log(data);
 });
+const filteredList = outputData.filter((data) => {
+    return data % 2 === 0;
+});
+console.log(filteredList);
