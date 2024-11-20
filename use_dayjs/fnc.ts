@@ -1,5 +1,6 @@
+const value = 1;
 const isFanc = () => {
-  console.log("isFanc");
+  return value === 1;
 }
 
 export { isFanc }
