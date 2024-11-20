@@ -26,10 +26,10 @@ const filteredList = outputData.filter((data) => {
 
 console.log(filteredList);
 
-console.log(isFanc && "hello")
+// console.log(isFanc && "hello")
 
-if(isFanc) {
-  console.log("hello");
-}
+// if(isFanc) {
+//   console.log("hello");
+// }
 
 export {}
