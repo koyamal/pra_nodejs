@@ -1,4 +1,5 @@
 "use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
 const arrayData = [1, 2, 3];
 console.log(...arrayData);
 const objData = { one: "one", two: "two", three: "three" };
@@ -17,8 +18,3 @@ const filteredList = outputData.filter((data) => {
     return data % 2 === 0;
 });
 console.log(filteredList);
-const isFanc = () => { };
-console.log(isFanc && "hello");
-if (isFanc) {
-    console.log("hello");
-}
