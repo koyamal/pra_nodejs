@@ -1,3 +1,4 @@
+import { isFanc } from "./fnc";
 const arrayData = [1, 2, 3];
 
 console.log(...arrayData);
@@ -24,3 +25,5 @@ const filteredList = outputData.filter((data) => {
 });
 
 console.log(filteredList);
+
+export {}

@@ -1,4 +1,5 @@
 "use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
 const arrayData = [1, 2, 3];
 console.log(...arrayData);
 const objData = { one: "one", two: "two", three: "three" };
