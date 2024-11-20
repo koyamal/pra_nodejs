@@ -17,3 +17,8 @@ const filteredList = outputData.filter((data) => {
     return data % 2 === 0;
 });
 console.log(filteredList);
+const isFanc = () => { };
+console.log(isFanc && "hello");
+if (isFanc) {
+    console.log("hello");
+}

@@ -24,3 +24,14 @@ const filteredList = outputData.filter((data) => {
 });
 
 console.log(filteredList);
+
+
+const isFanc = () => {}
+
+console.log(isFanc && "hello")
+
+if(isFanc) {
+  console.log("hello");
+}
+
+export {}
