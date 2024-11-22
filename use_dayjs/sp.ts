@@ -11,7 +11,8 @@ const flag = Math.random() > 0.5? true: false;
 const outputData = [
   ...[1, 2, 3],
   4,
-  ...(flag? [5, 6, 7]: [])
+  ...(flag? [5, 6, 7]: []),
+  ...(!flag? [8, 9, 10]: []),
 ];
 
 console.log(outputData);
