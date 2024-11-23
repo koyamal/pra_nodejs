@@ -5,6 +5,7 @@ dayjs.extend(utc);
 
 const roundUpSecond = (rowSecond: number, unitValue: number) => {
   const remainder = rowSecond % unitValue;
+  console.log(remainder);
   return rowSecond + (unitValue - remainder);
 }
 
