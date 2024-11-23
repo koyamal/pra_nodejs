@@ -12,4 +12,4 @@ const trueFalseFunc = () => {
   return 2;
 }
 
-export { isFanc, trueFanc }
+export { isFanc, trueFanc, trueFalseFunc }
