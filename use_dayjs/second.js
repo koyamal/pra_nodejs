@@ -8,6 +8,7 @@ const utc_1 = __importDefault(require("dayjs/plugin/utc"));
 dayjs_1.default.extend(utc_1.default);
 const roundUpSecond = (rowSecond, unitValue) => {
     const remainder = rowSecond % unitValue;
+    console.log({ remainder });
     return rowSecond + (unitValue - remainder);
 };
 const ceilTimestamp = () => {
