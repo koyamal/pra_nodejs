@@ -3,9 +3,7 @@ const isFanc = () => {
   return value === 1;
 }
 
-const trueFanc = () => {
-  return value !== 1;
-}
+const trueFanc = () => {value !== 1;}
 
 const trueFalseFunc = () => {
   if (value) return 1;
