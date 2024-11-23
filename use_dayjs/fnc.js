@@ -6,7 +6,7 @@ const isFanc = () => {
     return value === 1;
 };
 exports.isFanc = isFanc;
-const trueFanc = () => { value !== 1; };
+const trueFanc = () => value !== 1;
 exports.trueFanc = trueFanc;
 const trueFalseFunc = () => {
     if (value)
