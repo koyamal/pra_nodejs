@@ -10,3 +10,8 @@ const trueFanc = () => {
     return value !== 1;
 };
 exports.trueFanc = trueFanc;
+const trueFalseFunc = () => {
+    if (value)
+        return 1;
+    return 2;
+};
