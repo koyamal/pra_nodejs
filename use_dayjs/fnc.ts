@@ -3,4 +3,8 @@ const isFanc = () => {
   return value === 1;
 }
 
-export { isFanc }
+const trueFanc = () => {
+  return value !== 1;
+}
+
+export { isFanc, trueFanc }
