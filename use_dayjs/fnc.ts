@@ -10,4 +10,8 @@ const trueFalseFunc = () => {
   return 2;
 }
 
-export { isFanc, trueFanc, trueFalseFunc }
+const falseTrue = () => {
+  return value % 2;
+}
+
+export { isFanc, trueFanc, trueFalseFunc, falseTrue }
