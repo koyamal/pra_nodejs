@@ -1,6 +1,6 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.trueFalseFunc = exports.trueFanc = exports.isFanc = void 0;
+exports.falseTrue = exports.trueFalseFunc = exports.trueFanc = exports.isFanc = void 0;
 const value = 1;
 const isFanc = () => {
     return value === 1;
@@ -14,3 +14,7 @@ const trueFalseFunc = () => {
     return 2;
 };
 exports.trueFalseFunc = trueFalseFunc;
+const falseTrue = () => {
+    return value % 2;
+};
+exports.falseTrue = falseTrue;
