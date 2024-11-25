@@ -20,3 +20,4 @@ const falseTrue = () => {
 exports.falseTrue = falseTrue;
 const trueFlagFanc = () => value % 2 === 1 ? 0 : 1;
 exports.trueFlagFanc = trueFlagFanc;
+const falseFlagFanc = () => value % 3 === 0 ? 0 : 1;
