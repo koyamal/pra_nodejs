@@ -17,4 +17,5 @@ const falseTrue = () => {
 const trueFlagFanc = () => value % 2 === 1 ? 0 : 1;
 
 const falseFlagFanc = () => value % 3 === 0 ? 0 : 1;
-export { isFanc, trueFanc, trueFalseFunc, falseTrue, trueFlagFanc }
+
+export { isFanc, trueFanc, trueFalseFunc, falseTrue, trueFlagFanc, falseFlagFanc }
