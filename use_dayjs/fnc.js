@@ -15,6 +15,8 @@ const trueFalseFunc = () => {
 };
 exports.trueFalseFunc = trueFalseFunc;
 const falseTrue = () => {
+    const prefix = '/';
+    const path = 'domain' + prefix;
     return value % 2;
 };
 exports.falseTrue = falseTrue;
