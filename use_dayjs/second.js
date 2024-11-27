@@ -10,6 +10,10 @@ const roundUpSecond = (rowSecond, unitValue) => {
     const remainder = rowSecond % unitValue;
     return rowSecond + (unitValue - remainder);
 };
+const roundUpMinute = (rowSecond, unitValue) => {
+    const remainder = rowSecond % unitValue;
+    return rowSecond + (unitValue - remainder);
+};
 const ceilTimestamp = () => {
     const currentUtc = (0, dayjs_1.default)().utc();
     const currentUtcString = currentUtc.add(9, 'hour').format('YYYY-MM-DD HH:mm');
