@@ -1,6 +1,6 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.falseFlagFanc = exports.trueFlagFanc = exports.falseTrue = exports.trueFalseFunc = exports.trueFanc = exports.isFanc = void 0;
+exports.falseFlagValue = exports.trueFlagFanc = exports.falseTrue = exports.trueFalseFunc = exports.trueFanc = exports.isFanc = void 0;
 const value = 1;
 const isFanc = () => {
     return value === 1;
@@ -22,5 +22,5 @@ const falseTrue = () => {
 exports.falseTrue = falseTrue;
 const trueFlagFanc = () => value % 2 === 1 ? 0 : 1;
 exports.trueFlagFanc = trueFlagFanc;
-const falseFlagFanc = () => value % 3 === 0 ? 0 : 1;
-exports.falseFlagFanc = falseFlagFanc;
+const falseFlagValue = () => value % 3 === 0 ? 0 : 1;
+exports.falseFlagValue = falseFlagValue;
