@@ -12,6 +12,9 @@ const roundUpSecond = (rowSecond, unitValue) => {
 };
 const roundUpMinute = (rowSecond, unitValue) => {
     const remainder = rowSecond % unitValue;
+    const arrayBox = [rowSecond, unitValue];
+    const finded = arrayBox.find(d => d === 12);
+    console.log(finded);
     return rowSecond + (unitValue - remainder);
 };
 const ceilTimestamp = () => {
