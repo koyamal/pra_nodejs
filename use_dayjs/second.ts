@@ -10,6 +10,9 @@ const roundUpSecond = (rowSecond: number, unitValue: number) => {
 
 const roundUpMinute = (rowSecond: number, unitValue: number) => {
   const remainder = rowSecond % unitValue;
+  const arrayBox = [rowSecond, unitValue];
+  const finded = arrayBox.find(d => d === 12);
+  console.log(finded? 'finded.': 'not finded');
   return rowSecond + (unitValue - remainder);
 }
 
