@@ -23,3 +23,4 @@ const ceilTimestamp = () => {
     return (0, dayjs_1.default)(currentUtcString).add(roundUpSecond(currentUtc.second(), 5), 's').format('YYYY-MM-DD HH:mm:ss');
 };
 console.log(ceilTimestamp());
+roundUpMinute(1, 2);

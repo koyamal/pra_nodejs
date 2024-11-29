@@ -23,3 +23,5 @@ const ceilTimestamp = () => {
 }
 
 console.log(ceilTimestamp());
+
+roundUpMinute(1, 2);
