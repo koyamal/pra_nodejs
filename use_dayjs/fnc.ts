@@ -34,6 +34,8 @@ const funcType = (type: Type) => {
   }
 }
 
+funcType(type)
+
 console.log(type);
 
 export { isFanc, trueFanc, trueFalseFunc, falseTrue, trueFlagFanc, falseFlagValue, Type }
