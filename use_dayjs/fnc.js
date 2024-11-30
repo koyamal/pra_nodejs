@@ -24,3 +24,5 @@ const trueFlagFanc = () => value % 2 === 1 ? 0 : 1;
 exports.trueFlagFanc = trueFlagFanc;
 const falseFlagValue = () => value % 3 === 0 ? 0 : 1;
 exports.falseFlagValue = falseFlagValue;
+const type = { type: 'number' };
+console.log(type);
