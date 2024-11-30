@@ -33,4 +33,5 @@ const funcType = (type) => {
         console.log('number');
     }
 };
+funcType(type);
 console.log(type);
