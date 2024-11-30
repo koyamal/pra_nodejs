@@ -26,6 +26,14 @@ type Type  = {
 
 const type: Type = {type : 'number'}
 
+const funcType = (type: Type) => {
+  if (type.type === 'string') {
+    console.log('string');
+  } else {
+    console.log('number');
+  }
+}
+
 console.log(type);
 
 export { isFanc, trueFanc, trueFalseFunc, falseTrue, trueFlagFanc, falseFlagValue, Type }
