@@ -20,4 +20,12 @@ const trueFlagFanc = () => value % 2 === 1 ? 0 : 1;
 
 const falseFlagValue = () => value % 3 === 0 ? 0 : 1;
 
-export { isFanc, trueFanc, trueFalseFunc, falseTrue, trueFlagFanc, falseFlagValue }
+type Type  = {
+  type: 'string' | 'number';
+}
+
+const type: Type = {type : 'number'}
+
+console.log(type);
+
+export { isFanc, trueFanc, trueFalseFunc, falseTrue, trueFlagFanc, falseFlagValue, Type }
