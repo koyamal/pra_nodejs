@@ -25,4 +25,12 @@ exports.trueFlagFanc = trueFlagFanc;
 const falseFlagValue = () => value % 3 === 0 ? 0 : 1;
 exports.falseFlagValue = falseFlagValue;
 const type = { type: 'number' };
+const funcType = (type) => {
+    if (type.type === 'string') {
+        console.log('string');
+    }
+    else {
+        console.log('number');
+    }
+};
 console.log(type);
