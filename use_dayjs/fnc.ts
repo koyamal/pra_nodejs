@@ -32,7 +32,8 @@ const funcType = (type: Type) => {
   } else {
     console.log('number');
   }
-  if (type.type === 'number') return 0
+  if (type.type === 'number') return 0;
+  return 1;
 }
 
 funcType(type)
