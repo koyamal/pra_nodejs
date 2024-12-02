@@ -22,7 +22,7 @@ const falseFlagValue = () => value % 3 === 0 ? 0 : 1;
 
 type Type  = {
   type: 'string' | 'number';
-  dist: 'string';
+  dist: string;
 }
 
 const type: Type = {type : 'number', dist: 'string'}
@@ -37,7 +37,7 @@ const funcType = (type: Type) => {
   return 1;
 }
 
-funcType(type)
+funcType(type);
 
 console.log(type);
 
