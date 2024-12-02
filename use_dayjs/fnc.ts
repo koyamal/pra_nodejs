@@ -22,9 +22,10 @@ const falseFlagValue = () => value % 3 === 0 ? 0 : 1;
 
 type Type  = {
   type: 'string' | 'number';
+  dist: 'string';
 }
 
-const type: Type = {type : 'number'}
+const type: Type = {type : 'number', dist: 'string'}
 
 const funcType = (type: Type) => {
   if (type.type === 'string') {
