@@ -14,3 +14,5 @@ const nowTokyo = dayjs().tz("Asia/Tokyo");
 
 customConsole({nowNoTz});
 customConsole({nowTokyo});
+
+export {customConsole}
