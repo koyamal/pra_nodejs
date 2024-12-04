@@ -7,8 +7,8 @@ type inputFunc = {
   value: '1' | '2';
 };
 
-const customFunc = (val: inputFunc) {
-  
+const customFunc = (val: inputFunc) => {
+
 }
 
 const customConsole = (val: object): void => {
