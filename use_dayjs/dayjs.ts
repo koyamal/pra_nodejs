@@ -8,7 +8,9 @@ type inputFunc = {
 };
 
 const customFunc = (val: inputFunc) => {
-
+  if(val.type === 'A') {
+    console.log("This is type A");
+  }
 }
 
 const customConsole = (val: object): void => {
