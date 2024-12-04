@@ -2,6 +2,11 @@ import dayjs from 'dayjs';
 import DayJSUtc from 'dayjs/plugin/utc'
 import timezone from 'dayjs/plugin/timezone';
 
+type inputFunc = {
+  type: 'A' | 'B' | 'C';
+  value: '1' | '2';
+};
+
 const customConsole = (val: object): void => {
   console.log(val);
 }
