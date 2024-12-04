@@ -7,6 +7,11 @@ exports.customConsole = void 0;
 const dayjs_1 = __importDefault(require("dayjs"));
 const utc_1 = __importDefault(require("dayjs/plugin/utc"));
 const timezone_1 = __importDefault(require("dayjs/plugin/timezone"));
+const customFunc = (val) => {
+    if (val.type === 'A') {
+        console.log("This is type A");
+    }
+};
 const customConsole = (val) => {
     console.log(val);
 };
