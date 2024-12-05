@@ -11,6 +11,9 @@ const customFunc = (val) => {
     if (val.type === 'A') {
         console.log("This is type A");
     }
+    else if (val.type === 'B') {
+        console.log("This is type B");
+    }
 };
 exports.customFunc = customFunc;
 const customConsole = (val) => {
