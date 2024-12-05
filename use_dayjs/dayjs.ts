@@ -9,6 +9,9 @@ type inputFunc = {
 
 const customFunc = (val: inputFunc) => {
   if(val.type === 'A') {
+    if(val.value === '1') {
+      console.log("Value is 1");
+    }
     console.log("This is type A");
   } else if (val.type === 'B') {
     console.log("This is type B");
