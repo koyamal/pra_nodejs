@@ -2,6 +2,19 @@ import dayjs from 'dayjs';
 import DayJSUtc from 'dayjs/plugin/utc'
 import timezone from 'dayjs/plugin/timezone';
 
+type inputFunc = {
+  type: 'A' | 'B' | 'C';
+  value: '1' | '2';
+};
+
+const customFunc = (val: inputFunc) => {
+  if(val.type === 'A') {
+    console.log("This is type A");
+  } else if (val.type === 'B') {
+    console.log("This is type B");
+  }
+}
+
 const customConsole = (val: object): void => {
   console.log(val);
 }
@@ -15,4 +28,4 @@ const nowTokyo = dayjs().tz("Asia/Tokyo");
 customConsole({nowNoTz});
 customConsole({nowTokyo});
 
-export {customConsole}
+export {customConsole, customFunc}
