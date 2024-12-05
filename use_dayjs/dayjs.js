@@ -9,6 +9,9 @@ const utc_1 = __importDefault(require("dayjs/plugin/utc"));
 const timezone_1 = __importDefault(require("dayjs/plugin/timezone"));
 const customFunc = (val) => {
     if (val.type === 'A') {
+        if (val.value === '1') {
+            console.log("Value is 1");
+        }
         console.log("This is type A");
     }
     else if (val.type === 'B') {
