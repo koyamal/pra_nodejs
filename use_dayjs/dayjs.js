@@ -13,6 +13,7 @@ const customFunc = (val) => {
             console.log("Value is 1");
         }
         else if (val.value === '2') {
+            console.log("value 2");
         }
         console.log("This is type A");
     }
