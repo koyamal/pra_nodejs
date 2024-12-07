@@ -24,6 +24,9 @@ const customFunc = (val) => {
         if (val.value === '1') {
             console.log("Value is 1");
         }
+        else {
+            console.log("else");
+        }
     }
     else if (val.type === 'C') {
         console.log("This is type B");
