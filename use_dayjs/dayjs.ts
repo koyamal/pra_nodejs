@@ -26,6 +26,10 @@ const customFunc = (val: inputFunc) => {
   } else if (val.type === 'C') {
     console.log("This is type B");  
   }
+
+  else {
+    console.log("error");
+  }
 }
 
 const customConsole = (val: object): void => {
