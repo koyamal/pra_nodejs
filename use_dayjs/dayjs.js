@@ -31,6 +31,9 @@ const customFunc = (val) => {
     else if (val.type === 'C') {
         console.log("This is type B");
     }
+    else {
+        console.log("error");
+    }
 };
 exports.customFunc = customFunc;
 const customConsole = (val) => {
