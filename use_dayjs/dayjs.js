@@ -19,7 +19,7 @@ const customFunc = (val) => {
     }
     else if (val.type === 'B') {
         console.log("This is type B");
-        if (val.value)
+        if (val.value === '3')
             console.log("hello");
         if (val.value === '1') {
             console.log("Value is 1");
@@ -30,6 +30,9 @@ const customFunc = (val) => {
     }
     else if (val.type === 'C') {
         console.log("This is type B");
+    }
+    else {
+        console.log("error");
     }
 };
 exports.customFunc = customFunc;
