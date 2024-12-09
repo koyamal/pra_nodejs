@@ -4,7 +4,7 @@ import timezone from 'dayjs/plugin/timezone';
 
 type inputFunc = {
   type: 'A' | 'B' | 'C';
-  value: '1' | '2';
+  value: '1' | '2' | '3';
 };
 
 const customFunc = (val: inputFunc) => {
