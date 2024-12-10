@@ -1,1 +1,2 @@
-const constParams = {}
+const constParams = {};
+Object.assign(constParams,[{a: 'valueA'}]);
