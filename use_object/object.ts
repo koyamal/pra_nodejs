@@ -13,5 +13,6 @@ const animal = {
 }
 
 const dog = Object.create(animal);
+dog.name = 'Taro';
 
 console.log(dog)
