@@ -8,6 +8,6 @@ const animal = {
   isPlant: false,
   name: '',
   printHello: function() {
-    console.log(`Hello, I'm ${this.name}`)
+    console.log(`Hello, I'm ${this.name}.` + (this.isPlant? 'Plant.': 'Not Plant'));
   }
 }
