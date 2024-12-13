@@ -16,4 +16,4 @@ const dog = Object.create(animal);
 dog.name = 'Taro';
 dog.printHello();
 
-console.log(dog)
+console.log(dog);
