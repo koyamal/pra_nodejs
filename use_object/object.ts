@@ -11,3 +11,5 @@ const animal = {
     console.log(`Hello, I'm ${this.name}.` + (this.isPlant? 'Plant.': 'Not Plant'));
   }
 }
+
+const dog = Object.create(animal);
