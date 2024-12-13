@@ -13,3 +13,5 @@ const animal = {
 }
 
 const dog = Object.create(animal);
+
+console.log(dog)
