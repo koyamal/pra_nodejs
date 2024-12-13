@@ -6,7 +6,8 @@ console.log(constParams);
 
 const animal = {
   isPlant: false,
+  name: '',
   printHello: function() {
-
+    console.log(`Hello, I'm ${this.name}`)
   }
 }
