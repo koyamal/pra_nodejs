@@ -21,3 +21,5 @@ console.log(dog);
 const cat = Object.create(animal);
 cat.name = 'Tama';
 cat.printHello();
+
+console.log(cat);
