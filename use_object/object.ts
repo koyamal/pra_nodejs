@@ -17,3 +17,5 @@ dog.name = 'Taro';
 dog.printHello();
 
 console.log(dog);
+
+const cat = Object.create(animal);
