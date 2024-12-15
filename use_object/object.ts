@@ -16,13 +16,9 @@ const dog = Object.create(animal);
 dog.name = 'Taro';
 dog.printHello();
 
-console.log(dog);
-
 const cat = Object.create(animal);
 cat.name = 'Tama';
 cat.printHello();
-
-console.log(cat);
 
 const tree = Object.create(animal);
 tree.name = 'Kashi';
