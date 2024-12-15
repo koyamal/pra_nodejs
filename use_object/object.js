@@ -20,3 +20,4 @@ cat.printHello();
 console.log(cat);
 const tree = Object.create(animal);
 tree.isPlant = true;
+tree.printHello();
