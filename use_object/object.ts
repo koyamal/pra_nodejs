@@ -25,5 +25,6 @@ cat.printHello();
 console.log(cat);
 
 const tree = Object.create(animal);
+tree.name = 'Kashi';
 tree.isPlant = true;
 tree.printHello();
