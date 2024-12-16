@@ -25,8 +25,12 @@ tree.name = 'Kashi';
 tree.isPlant = true;
 tree.printHello();
 
+console.log(tree);
 Object.defineProperties(tree, {
   price: {
-    
-  }
-})
+    value: 420,
+    writable: true,
+  },
+});
+
+console.log(tree);
