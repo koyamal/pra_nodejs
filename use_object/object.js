@@ -27,4 +27,4 @@ Object.defineProperties(tree, {
         writable: true,
     },
 });
-console.log(tree);
+console.log(tree.price);
