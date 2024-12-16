@@ -33,4 +33,4 @@ Object.defineProperties(tree, {
   },
 });
 
-console.log(tree);
+console.log(tree.price);
