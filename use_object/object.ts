@@ -24,3 +24,9 @@ const tree = Object.create(animal);
 tree.name = 'Kashi';
 tree.isPlant = true;
 tree.printHello();
+
+Object.defineProperties(tree, {
+  price: {
+    
+  }
+})
