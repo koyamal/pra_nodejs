@@ -34,3 +34,5 @@ Object.defineProperties(tree, {
         writable: false,
     },
 });
+tree.price = 600;
+console.log(tree.price);
