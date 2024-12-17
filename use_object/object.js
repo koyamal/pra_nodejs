@@ -36,3 +36,5 @@ Object.defineProperties(tree, {
 });
 tree.price = 600;
 console.log(tree.price);
+tree.taxedPrice = 600 * 1.1;
+console.log(tree.taxedPrice);
