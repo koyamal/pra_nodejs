@@ -34,3 +34,16 @@ Object.defineProperties(tree, {
 });
 
 console.log(tree.price);
+
+Object.defineProperties(tree, {
+  taxedPrice: {
+    value: 420 * 1.1,
+    writable: false,
+  },
+});
+
+tree.price = 600;
+console.log(tree.price);
+
+tree.taxedPrice = 600 * 1.1;
+console.log(tree.taxedPrice);
