@@ -44,3 +44,4 @@ const originValue = {
     value: 12
 };
 const { maxInstances, minInstances } = originValue;
+console.log(maxInstances);
