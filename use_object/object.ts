@@ -47,3 +47,11 @@ console.log(tree.price);
 
 tree.taxedPrice = 600 * 1.1; // エラーになる
 console.log(tree.taxedPrice);
+
+const originValue = {
+  maxInstances: 5,
+  minInstances: 2,
+  value: 12
+};
+
+const {maxInstances, minInstances} = originValue;
