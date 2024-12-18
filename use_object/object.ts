@@ -45,5 +45,5 @@ Object.defineProperties(tree, {
 tree.price = 600;
 console.log(tree.price);
 
-tree.taxedPrice = 600 * 1.1;
+tree.taxedPrice = 600 * 1.1; // エラーになる
 console.log(tree.taxedPrice);
