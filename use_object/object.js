@@ -45,3 +45,4 @@ const originValue = {
 };
 const { maxInstances, minInstances } = originValue;
 console.log(maxInstances);
+const { value } = originValue;
