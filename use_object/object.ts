@@ -59,3 +59,6 @@ console.log(maxInstances);
 
 const { value } = originValue;
 console.log(value);
+
+const dateString = '2024-11-21 10:00';
+console.log(dateString.slice(0, 10).replace('-', '.'));
