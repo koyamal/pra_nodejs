@@ -62,3 +62,4 @@ console.log(value);
 
 const dateString = '2024-11-21 10:00,22';
 console.log(dateString.slice(0, 10).replace(/-,/g, '.'));
+console.log(dateString.replace(/-,/g, '.'));
