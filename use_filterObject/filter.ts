@@ -1,0 +1,1 @@
+const excludeProps = ['A', 'C', 'E', 'G', 'H'];
