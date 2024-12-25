@@ -9,4 +9,8 @@ console.log(filteredAlphabets);
 const mapedAlphabets = filteredAlphabets.map((data) => {
     return data + ',';
 });
+let queryText = '';
+filteredAlphabets.forEach((data) => {
+    queryText += data + ',';
+});
 console.log(mapedAlphabets);
