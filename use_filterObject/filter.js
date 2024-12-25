@@ -13,4 +13,5 @@ let queryText = '';
 filteredAlphabets.forEach((data) => {
     queryText += data + ',';
 });
+console.log(queryText);
 console.log(mapedAlphabets);
