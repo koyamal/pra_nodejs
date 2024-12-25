@@ -8,3 +8,9 @@ const excludeProps = ['A', 'C', 'E', 'G', 'H', 'G', 'Z'];
 const filteredAlphabets = alphabets.filter(alphabet => !excludeProps.includes(alphabet));
 
 console.log(filteredAlphabets);
+
+const mapedAlphabets = filteredAlphabets.map((data) => {
+  return data + ',';
+});
+
+console.log(mapedAlphabets);
