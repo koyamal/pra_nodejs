@@ -15,7 +15,7 @@ const mapedAlphabets = filteredAlphabets.map((data) => {
 
 let queryText = '';
 filteredAlphabets.forEach((data) => {
-
-})
+  queryText += data + ',';
+});
 
 console.log(mapedAlphabets);
