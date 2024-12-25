@@ -6,3 +6,7 @@ const alphabets = Array.apply(null, new Array(26)).map((_, i) => {
 const excludeProps = ['A', 'C', 'E', 'G', 'H', 'G', 'Z'];
 const filteredAlphabets = alphabets.filter(alphabet => !excludeProps.includes(alphabet));
 console.log(filteredAlphabets);
+const mapedAlphabets = filteredAlphabets.map((data) => {
+    return data + ',';
+});
+console.log(mapedAlphabets);
