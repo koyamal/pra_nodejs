@@ -13,5 +13,5 @@ let queryText = 'select from XXXXX where ';
 filteredAlphabets.forEach((data) => {
     queryText += data + ' != null and ';
 });
-console.log(queryText);
+console.log(queryText.slice(0, queryText.length - 4));
 console.log(mapedAlphabets);
