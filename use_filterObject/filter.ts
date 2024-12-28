@@ -13,11 +13,11 @@ const mapedAlphabets = filteredAlphabets.map((data) => {
   return data + ',';
 });
 
-let queryText = 'select from XXXXX where ';
+let queryText = 'select * from XXXXX where ';
 filteredAlphabets.forEach((data) => {
-  queryText += data + ' != null,';
+  queryText += data + ' is not null and ';
 });
 
-console.log(queryText);
+console.log(queryText.slice(0, queryText.length - 5) + ';');
 
 console.log(mapedAlphabets);
