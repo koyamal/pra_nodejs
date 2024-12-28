@@ -9,7 +9,7 @@ console.log(filteredAlphabets);
 const mapedAlphabets = filteredAlphabets.map((data) => {
     return data + ',';
 });
-let queryText = 'select from XXXXX where ';
+let queryText = 'select * from XXXXX where ';
 filteredAlphabets.forEach((data) => {
     queryText += data + ' != null and ';
 });
