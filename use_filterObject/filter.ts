@@ -15,7 +15,7 @@ const mapedAlphabets = filteredAlphabets.map((data) => {
 
 let queryText = 'select * from XXXXX where ';
 filteredAlphabets.forEach((data) => {
-  queryText += data + ' != null and ';
+  queryText += data + ' is not null and ';
 });
 
 console.log(queryText.slice(0, queryText.length - 5) + ';');
