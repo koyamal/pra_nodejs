@@ -22,4 +22,4 @@ console.log(queryText.slice(0, queryText.length - 5) + ';');
 
 console.log(mapedAlphabets);
 
-let textUpdate = 'update XXXXX set dataA = "12345" where dataB = "12345"'
+const textUpdate = 'update XXXXX set dataA = "12345" where dataB = "12345"';
