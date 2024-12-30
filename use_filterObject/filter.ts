@@ -3,7 +3,7 @@ const alphabets = Array.apply(null, new Array(26)).map((_, i) => {
   return String.fromCharCode(startPoint + i);
 });
 
-const excludeProps = ['A', 'C', 'E', 'G', 'H', 'G', 'Z'];
+const excludeProps = ['A', 'C', 'E', 'G', 'H', 'G', 'Z'].filter(data => data != 'G');
 
 const filteredAlphabets = alphabets.filter(alphabet => !excludeProps.includes(alphabet));
 
