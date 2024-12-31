@@ -4,9 +4,7 @@ const alphabets = Array.apply(null, new Array(26)).map((_, i) => String.fromChar
 const excludeProps = ['A', 'C', 'E', 'G', 'H', 'G', 'Z'].filter(data => data != 'G');
 const filteredAlphabets = alphabets.filter(alphabet => !excludeProps.includes(alphabet));
 console.log(filteredAlphabets);
-const mapedAlphabets = filteredAlphabets.map((data) => {
-    return data + ',';
-});
+const mapedAlphabets = filteredAlphabets.map(data => data + ',');
 let queryText = 'select * from XXXXX where ';
 filteredAlphabets.forEach((data) => {
     queryText += data + ' is not null and ';

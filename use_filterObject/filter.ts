@@ -7,9 +7,7 @@ const filteredAlphabets = alphabets.filter(alphabet => !excludeProps.includes(al
 
 console.log(filteredAlphabets);
 
-const mapedAlphabets = filteredAlphabets.map((data) => {
-  return data + ',';
-});
+const mapedAlphabets = filteredAlphabets.map(data => data + ',');
 
 let queryText = 'select * from XXXXX where ';
 filteredAlphabets.forEach((data) => {
