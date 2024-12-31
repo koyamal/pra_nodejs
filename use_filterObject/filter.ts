@@ -14,7 +14,7 @@ filteredAlphabets.forEach((data) => {
   outputText += data + ', ';
 });
 
-console.log(outputText.slice(0, outputText.length - 1) + ';');
+console.log(outputText.slice(0, outputText.length - 2) + ';');
 
 console.log(mapedAlphabets);
 
