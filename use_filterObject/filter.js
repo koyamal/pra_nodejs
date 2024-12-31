@@ -5,9 +5,9 @@ const excludeProps = ['A', 'C', 'E', 'G', 'H', 'G', 'Z'].filter(data => data != 
 const filteredAlphabets = alphabets.filter(alphabet => !excludeProps.includes(alphabet));
 console.log(filteredAlphabets);
 const mapedAlphabets = filteredAlphabets.map(data => data + ',');
-let outputText = 'select * from XXXXX where ';
+let outputText = 'Output Alphabets are ';
 filteredAlphabets.forEach((data) => {
-    outputText += data + ' is not null and ';
+    outputText += data + ', ';
 });
 console.log(outputText.slice(0, outputText.length - 5) + ';');
 console.log(mapedAlphabets);
