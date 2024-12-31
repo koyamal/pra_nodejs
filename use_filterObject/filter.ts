@@ -14,7 +14,7 @@ filteredAlphabets.forEach((data) => {
   outputText += data + ' is not null and ';
 });
 
-console.log(queryText.slice(0, queryText.length - 5) + ';');
+console.log(outputText.slice(0, outputText.length - 5) + ';');
 
 console.log(mapedAlphabets);
 
