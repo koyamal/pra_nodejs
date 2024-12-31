@@ -9,6 +9,6 @@ let outputText = 'Output Alphabets are ';
 filteredAlphabets.forEach((data) => {
     outputText += data + ', ';
 });
-console.log(outputText.slice(0, outputText.length - 1) + ';');
+console.log(outputText.slice(0, outputText.length - 2) + ';');
 console.log(mapedAlphabets);
 const textUpdate = 'update XXXXX set dataA = "12345" where dataB = "12345"';
