@@ -5,10 +5,10 @@ const excludeProps = ['A', 'C', 'E', 'G', 'H', 'G', 'Z'].filter(data => data != 
 const filteredAlphabets = alphabets.filter(alphabet => !excludeProps.includes(alphabet));
 console.log(filteredAlphabets);
 const mapedAlphabets = filteredAlphabets.map(data => data + ',');
-let queryText = 'select * from XXXXX where ';
+let outputText = 'select * from XXXXX where ';
 filteredAlphabets.forEach((data) => {
-    queryText += data + ' is not null and ';
+    outputText += data + ' is not null and ';
 });
-console.log(queryText.slice(0, queryText.length - 5) + ';');
+console.log(outputText.slice(0, outputText.length - 5) + ';');
 console.log(mapedAlphabets);
 const textUpdate = 'update XXXXX set dataA = "12345" where dataB = "12345"';
