@@ -9,13 +9,11 @@ console.log(filteredAlphabets);
 
 const mapedAlphabets = filteredAlphabets.map(data => data + ',');
 
-let queryText = 'select * from XXXXX where ';
+let outputText = 'Output Alphabets are ';
 filteredAlphabets.forEach((data) => {
-  queryText += data + ' is not null and ';
+  outputText += data + ', ';
 });
 
-console.log(queryText.slice(0, queryText.length - 5) + ';');
+console.log(outputText.slice(0, outputText.length - 2) + ';');
 
 console.log(mapedAlphabets);
-
-const textUpdate = 'update XXXXX set dataA = "12345" where dataB = "12345"';
