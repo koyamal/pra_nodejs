@@ -9,7 +9,7 @@ console.log(filteredAlphabets);
 
 const mapedAlphabets = filteredAlphabets.map(data => data + ',');
 
-let outputText = 'Output Alphabets are ';
+let outputText = 'Output Filtered Alphabets are ';
 filteredAlphabets.forEach((data) => {
   outputText += data + ', ';
 });
