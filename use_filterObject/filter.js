@@ -5,7 +5,7 @@ const excludeProps = ['A', 'C', 'E', 'G', 'H', 'G', 'Z'].filter(data => data != 
 const filteredAlphabets = alphabets.filter(alphabet => !excludeProps.includes(alphabet));
 console.log(filteredAlphabets);
 const mapedAlphabets = filteredAlphabets.map(data => data + ',');
-let outputText = 'Output Alphabets are ';
+let outputText = 'Output Filtered Alphabets are ';
 filteredAlphabets.forEach((data) => {
     outputText += data + ', ';
 });
