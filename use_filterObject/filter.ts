@@ -15,6 +15,8 @@ filteredAlphabets.forEach((data) => {
   console.log(data);
 });
 
+console.log(outputText);
+
 console.log(outputText.slice(0, outputText.length - 2) + ';');
 
 console.log(mapedAlphabets);
