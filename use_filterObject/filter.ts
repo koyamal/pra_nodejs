@@ -10,7 +10,7 @@ console.log(filteredAlphabets);
 const mapedAlphabets = filteredAlphabets.map(data => data + ',').map(data => data + ' ').map(data => data + '/');
 
 let outputText = 'Output Filtered Alphabets are ';
-filteredAlphabets.forEach((data) => {
+filteredAlphabets.forEach(data => {
   outputText += data + ', ';
   console.log(data);
 });
