@@ -4,7 +4,8 @@ const alphabets = Array.apply(null, new Array(26)).map((_, i) => String.fromChar
 const excludeProps = ['A', 'C', 'E', 'G', 'H', 'G', 'Z'].filter(data => data != 'G').filter(data => data != 'C');
 excludeProps.forEach(data => {
   console.log(data);
-})
+});
+
 const filteredAlphabets = alphabets.filter(alphabet => !excludeProps.includes(alphabet));
 
 console.log(filteredAlphabets);
