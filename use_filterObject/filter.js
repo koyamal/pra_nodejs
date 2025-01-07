@@ -6,7 +6,9 @@ excludeProps.forEach(data => {
     if (data === 'C') {
         console.log('This is C');
     }
-    console.log(data);
+    else {
+        console.log(data);
+    }
 });
 const filteredAlphabets = alphabets.filter(alphabet => !excludeProps.includes(alphabet));
 console.log(filteredAlphabets);
