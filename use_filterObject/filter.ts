@@ -1,9 +1,13 @@
 const startPoint = 'A'.charCodeAt(0);
 const alphabets = Array.apply(null, new Array(26)).map((_, i) => String.fromCharCode(startPoint + i));
 
-const excludeProps = ['A', 'C', 'E', 'G', 'H', 'G', 'Z'].filter(data => data != 'G').filter(data => data != 'C');
+const excludeProps = ['A', 'C', 'D', 'E', 'G', 'H', 'G', 'Z'].filter(data => data != 'G');
 excludeProps.forEach(data => {
-  console.log(data);
+  if(data === 'C') {
+    console.log('This is C');
+  } else {
+    console.log(data);
+  }
 });
 
 const filteredAlphabets = alphabets.filter(alphabet => !excludeProps.includes(alphabet));
