@@ -5,7 +5,7 @@ const excludeProps = ['A', 'C', 'D', 'E', 'G', 'H', 'G', 'Z'].filter(data => dat
 excludeProps.forEach(data => {
   if(data === 'C') {
     console.log('This is C');
-  } else {
+  } else if(data === 'D') {
     console.log(data);
   }
 });
