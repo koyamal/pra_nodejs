@@ -10,6 +10,10 @@ excludeProps.forEach(data => {
   }
 });
 
+const recordObject: Record<string, number> = {
+  hello: 1
+}
+
 const filteredAlphabets = alphabets.filter(alphabet => !excludeProps.includes(alphabet));
 
 console.log(filteredAlphabets);
