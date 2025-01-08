@@ -10,6 +10,9 @@ excludeProps.forEach(data => {
         console.log(data);
     }
 });
+const recordObject = {
+    hello: 1
+};
 const filteredAlphabets = alphabets.filter(alphabet => !excludeProps.includes(alphabet));
 console.log(filteredAlphabets);
 const mapedAlphabets = filteredAlphabets.map(data => data + ',').map(data => data + ' ').map(data => data + '/');
