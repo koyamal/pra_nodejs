@@ -7,7 +7,7 @@ excludeProps.forEach(data => {
         console.log('This is C');
     }
     else if (data === 'D') {
-        console.log(data);
+        console.log('This is D');
     }
 });
 const recordObject = {
