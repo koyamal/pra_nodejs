@@ -32,3 +32,19 @@ console.log(outputText);
 console.log(outputText.slice(0, outputText.length - 2) + ';');
 
 console.log(mapedAlphabets);
+
+const prevFlag = {
+  A: false,
+  B: false,
+}
+const newFlag = {
+  ...prevFlag,
+  B: true,
+}
+
+// const newFlagB = {
+//   B: true, // エラーになる
+//   ...prevFlag,
+// }
+
+console.log(newFlag);

@@ -25,3 +25,13 @@ filteredAlphabets.forEach(data => {
 console.log(outputText);
 console.log(outputText.slice(0, outputText.length - 2) + ';');
 console.log(mapedAlphabets);
+const prevFlag = {
+    A: false,
+    B: false,
+};
+const newFlag = Object.assign(Object.assign({}, prevFlag), { B: true });
+// const newFlagB = {
+//   B: true, // エラーになる
+//   ...prevFlag,
+// }
+console.log(newFlag);
