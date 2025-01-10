@@ -30,4 +30,8 @@ const prevFlag = {
     B: false,
 };
 const newFlag = Object.assign(Object.assign({}, prevFlag), { B: true });
+// const newFlagB = {
+//   B: true, // エラーになる
+//   ...prevFlag,
+// }
 console.log(newFlag);
