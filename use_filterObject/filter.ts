@@ -40,3 +40,5 @@ const prevFlag = {
 const newFlag = {
   ...prevFlag,
 }
+
+console.log(newFlag);
