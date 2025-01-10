@@ -42,4 +42,9 @@ const newFlag = {
   B: true,
 }
 
+// const newFlagB = {
+//   B: true, // エラーになる
+//   ...prevFlag,
+// }
+
 console.log(newFlag);
