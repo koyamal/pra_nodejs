@@ -25,3 +25,9 @@ filteredAlphabets.forEach(data => {
 console.log(outputText);
 console.log(outputText.slice(0, outputText.length - 2) + ';');
 console.log(mapedAlphabets);
+const prevFlag = {
+    A: false,
+    B: false,
+};
+const newFlag = Object.assign({}, prevFlag);
+console.log(newFlag);
