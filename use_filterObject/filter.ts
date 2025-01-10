@@ -39,6 +39,7 @@ const prevFlag = {
 }
 const newFlag = {
   ...prevFlag,
+  B: true,
 }
 
 console.log(newFlag);
