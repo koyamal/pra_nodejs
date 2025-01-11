@@ -29,7 +29,7 @@ const prevFlag = {
     A: false,
     B: false,
 };
-const newFlag = Object.assign(Object.assign({}, prevFlag), { B: true });
+const newFlag = Object.assign(Object.assign({}, prevFlag), { B: true, A: false });
 // const newFlagB = {
 //   B: true, // エラーになる
 //   ...prevFlag,
