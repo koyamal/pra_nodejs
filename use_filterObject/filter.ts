@@ -40,6 +40,7 @@ const prevFlag: Record<string, boolean> = {
 const newFlag = {
   ...prevFlag,
   B: true,
+  A: false,
 }
 
 // const newFlagB = {
