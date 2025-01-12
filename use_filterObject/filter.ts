@@ -43,6 +43,7 @@ const newFlag = {
 }
 
 newFlag.B = false;
+prevFlag.B = true;
 
 // const newFlagB = {
 //   B: true, // エラーになる
