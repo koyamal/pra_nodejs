@@ -40,10 +40,9 @@ const prevFlag: Record<string, boolean> = {
 const newFlag = {
   ...prevFlag,
   B: true,
-  A: false,
 }
 
-newFlag.A = true;
+newFlag.B = false;
 
 // const newFlagB = {
 //   B: true, // エラーになる
