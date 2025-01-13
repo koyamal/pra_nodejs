@@ -26,6 +26,6 @@ Object.defineProperty(exports, "__esModule", { value: true });
 const node_process_1 = require("node:process");
 const readline = __importStar(require("node:readline"));
 const rl = readline.createInterface(node_process_1.stdin, node_process_1.stdout);
-rl.question("hello", answer => {
+rl.question("じゃんけん(1.ぐー、2.ちょき、3.ぱー)：", answer => {
     console.log(answer);
 });
