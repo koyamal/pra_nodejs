@@ -37,4 +37,7 @@ rl.question("じゃんけん(1.ぐー、2.ちょき、3.ぱー)：", answer => {
     else if (answer === '3') {
         console.log('ぱーを出しました');
     }
+    else {
+        console.log('エラー');
+    }
 });
