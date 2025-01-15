@@ -3,6 +3,8 @@ import * as readline from "node:readline";
 
 const rl = readline.createInterface(stdin, stdout);
 
+const rand = Math.random();
+
 rl.question("じゃんけん(1.ぐー、2.ちょき、3.ぱー)：", answer => {
   console.log(answer);
   if(answer === '1') {
