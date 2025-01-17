@@ -26,8 +26,10 @@ Object.defineProperty(exports, "__esModule", { value: true });
 const node_process_1 = require("node:process");
 const readline = __importStar(require("node:readline"));
 const rl = readline.createInterface(node_process_1.stdin, node_process_1.stdout);
+let cpuHand = null;
 const rand = Math.random();
 if (rand < 0.3) {
+    cpuHand = 1;
     console.log('相手はぐー');
 }
 else if (rand < 0.6) {
