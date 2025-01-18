@@ -29,14 +29,13 @@ const rl = readline.createInterface(node_process_1.stdin, node_process_1.stdout)
 let cpuHand = null;
 const rand = Math.random();
 if (rand < 0.3) {
-    cpuHand = 1;
-    console.log('相手はぐー');
+    cpuHand = 0;
 }
 else if (rand < 0.6) {
-    console.log('相手はちょき');
+    cpuHand = 1;
 }
 else {
-    console.log('相手はぱー');
+    cpuHand = 2;
 }
 rl.question("じゃんけん(1.ぐー、2.ちょき、3.ぱー)：", answer => {
     console.log(answer);
