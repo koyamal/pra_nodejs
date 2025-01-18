@@ -6,12 +6,13 @@ const rl = readline.createInterface(stdin, stdout);
 let cpuHand = null;
 const rand = Math.random();
 if(rand < 0.3) {
-  cpuHand = 1;
+  cpuHand = 0;
   console.log('相手はぐー');
 } else if (rand < 0.6) {
-  cpuHand = 2;
+  cpuHand = 1;
   console.log('相手はちょき');
 } else {
+  cpuHand = 2;
   console.log('相手はぱー');
 }
 
