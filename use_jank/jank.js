@@ -33,6 +33,7 @@ if (rand < 0.3) {
     console.log('相手はぐー');
 }
 else if (rand < 0.6) {
+    cpuHand = 2;
     console.log('相手はちょき');
 }
 else {
