@@ -27,6 +27,7 @@ const node_process_1 = require("node:process");
 const readline = __importStar(require("node:readline"));
 const rl = readline.createInterface(node_process_1.stdin, node_process_1.stdout);
 let cpuHand = null;
+let userHand = null;
 const rand = Math.random();
 if (rand < 0.3) {
     cpuHand = 0;
@@ -40,12 +41,15 @@ else {
 rl.question("じゃんけん(1.ぐー、2.ちょき、3.ぱー)：", answer => {
     console.log(answer);
     if (answer === '1') {
+        userHand = 1;
         console.log('ぐーを出しました');
     }
     else if (answer === '2') {
+        userHand = 2;
         console.log('ちょきを出しました');
     }
     else if (answer === '3') {
+        userHand = 3;
         console.log('ぱーを出しました');
     }
     else {
