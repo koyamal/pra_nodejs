@@ -49,6 +49,7 @@ rl.question("じゃんけん(1.ぐー、2.ちょき、3.ぱー)：", answer => {
         console.log('ちょきを出しました');
     }
     else if (answer === '3') {
+        userHand = 3;
         console.log('ぱーを出しました');
     }
     else {
