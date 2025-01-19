@@ -4,6 +4,7 @@ import * as readline from "node:readline";
 const rl = readline.createInterface(stdin, stdout);
 
 let cpuHand = null;
+let userHand = null;
 const rand = Math.random();
 if(rand < 0.3) {
   cpuHand = 0;
