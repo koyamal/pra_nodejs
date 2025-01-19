@@ -17,6 +17,7 @@ if(rand < 0.3) {
 rl.question("じゃんけん(1.ぐー、2.ちょき、3.ぱー)：", answer => {
   console.log(answer);
   if(answer === '1') {
+    userHand = 1;
     console.log('ぐーを出しました');
   } else if (answer === '2') {
     console.log('ちょきを出しました');
