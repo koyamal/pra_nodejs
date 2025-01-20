@@ -59,3 +59,4 @@ rl.question("じゃんけん(1.ぐー、2.ちょき、3.ぱー)：", answer => {
 rl.on('line', (input) => {
     console.log(`入力内容: ${input}`);
 });
+rl.close();
