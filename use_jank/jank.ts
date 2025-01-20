@@ -18,7 +18,7 @@ rl.question("じゃんけん(1.ぐー、2.ちょき、3.ぱー)：", answer => {
   console.log(answer);
   if(answer === '1') {
     userHand = 1;
-    console.log('ぐーを出しました');
+    console.log('ぐーを出しました。');
   } else if (answer === '2') {
     userHand = 2;
     console.log('ちょきを出しました');
@@ -29,4 +29,8 @@ rl.question("じゃんけん(1.ぐー、2.ちょき、3.ぱー)：", answer => {
     console.log('エラー');
   }
   rl.close();
+});
+
+rl.on('line', (input) => {
+  console.log(`入力内容: ${input}`);
 });
