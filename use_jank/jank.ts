@@ -28,4 +28,5 @@ rl.question("じゃんけん(1.ぐー、2.ちょき、3.ぱー)：", answer => {
   } else {
     console.log('エラー');
   }
+  rl.close();
 });
