@@ -14,6 +14,10 @@ if(rand < 0.3) {
   cpuHand = 2;
 }
 
+rl.on('line', (input) => {
+  console.log(`入力内容: ${input}`);
+});
+
 rl.question("じゃんけん(1.ぐー、2.ちょき、3.ぱー)：", answer => {
   console.log(answer);
   if(answer === '1') {
@@ -28,9 +32,5 @@ rl.question("じゃんけん(1.ぐー、2.ちょき、3.ぱー)：", answer => {
   } else {
     console.log('エラー');
   }
-
-rl.on('line', (input) => {
-  console.log(`入力内容: ${input}`);
-});
   rl.close();
 });
