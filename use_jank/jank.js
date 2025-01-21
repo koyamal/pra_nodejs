@@ -56,7 +56,9 @@ rl.question("じゃんけん(1.ぐー、2.ちょき、3.ぱー)：", answer => {
         console.log('エラー');
     }
     rl.question('結果を見ますか？(y/n)：', input => {
-        console.log(`入力内容: ${input}`);
+        if (input === 'y') {
+            console.log('相手は', cpuHand);
+        }
         rl.close();
     });
 });
