@@ -1,15 +1,16 @@
+import { cp } from "node:fs";
 import { stdin, stdout } from "node:process";
 import * as readline from "node:readline";
 
 const rl = readline.createInterface(stdin, stdout);
 
 const handAndText = {
-  0: 'ぐー',
-  1: 'ちょき',
-  2: 'ぱー'
+  1: 'ぐー',
+  2: 'ちょき',
+  3: 'ぱー'
 }
 
-let cpuHand = null;
+let cpuHand: 1 | 2 | 3 = 1;
 let userHand = null;
 const rand = Math.random();
 if(rand < 0.3) {
@@ -36,7 +37,7 @@ rl.question("じゃんけん(1.ぐー、2.ちょき、3.ぱー)：", answer => {
   }
   rl.question('結果を見ますか？(y/n)：', input => {
     if(input === 'y') {
-      console.log('相手は', cpuHand);
+      console.log('相手は', handAndText[cpuHand]);
     }
     rl.close();
   });
