@@ -27,11 +27,11 @@ const node_process_1 = require("node:process");
 const readline = __importStar(require("node:readline"));
 const rl = readline.createInterface(node_process_1.stdin, node_process_1.stdout);
 const handAndText = {
-    0: 'ぐー',
-    1: 'ちょき',
-    2: 'ぱー'
+    1: 'ぐー',
+    2: 'ちょき',
+    3: 'ぱー'
 };
-let cpuHand = null;
+let cpuHand = 1;
 let userHand = null;
 const rand = Math.random();
 if (rand < 0.3) {
@@ -62,7 +62,7 @@ rl.question("じゃんけん(1.ぐー、2.ちょき、3.ぱー)：", answer => {
     }
     rl.question('結果を見ますか？(y/n)：', input => {
         if (input === 'y') {
-            console.log('相手は', cpuHand);
+            console.log('相手は', handAndText[cpuHand]);
         }
         rl.close();
     });
