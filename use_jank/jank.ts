@@ -31,6 +31,7 @@ rl.question("じゃんけん(1.ぐー、2.ちょき、3.ぱー)：", answer => {
     userHand = 3;
   } else {
     console.log('エラー');
+    rl.close();
   }
   console.log(`${handAndText[userHand]}を出しました`);
   rl.question('結果を見ますか？(y/n)：', input => {
