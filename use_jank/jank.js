@@ -25,6 +25,45 @@ var __importStar = (this && this.__importStar) || function (mod) {
 Object.defineProperty(exports, "__esModule", { value: true });
 const node_process_1 = require("node:process");
 const readline = __importStar(require("node:readline"));
+const jadgeJank = (userHand, cpuHand) => {
+    switch (userHand) {
+        case 1:
+            switch (cpuHand) {
+                case 1:
+                    return 'あいこ';
+                case 2:
+                    return 'かち';
+                case 3:
+                    return 'まけ';
+                default:
+                    return 'エラー';
+            }
+        case 2:
+            switch (cpuHand) {
+                case 1:
+                    return 'まけ';
+                case 2:
+                    return 'あいこ';
+                case 3:
+                    return 'かち';
+                default:
+                    return 'エラー';
+            }
+        case 3:
+            switch (cpuHand) {
+                case 1:
+                    return 'かち';
+                case 2:
+                    return 'まけ';
+                case 3:
+                    return 'あいこ';
+                default:
+                    return 'エラー';
+            }
+        default:
+            return 'エラー';
+    }
+};
 const rl = readline.createInterface(node_process_1.stdin, node_process_1.stdout);
 const handAndText = {
     1: 'ぐー',
@@ -62,7 +101,8 @@ rl.question("じゃんけん(1.ぐー、2.ちょき、3.ぱー)：", answer => {
     console.log(`あなたは${handAndText[userHand]}を出しました`);
     rl.question('結果を見ますか？(y/n)：', input => {
         if (input === 'y') {
-            console.log('相手は', handAndText[cpuHand]);
+            console.log(`相手は${handAndText[cpuHand]}を出しました`);
+            console.log(jadgeJank(userHand, cpuHand));
         }
         rl.close();
     });
