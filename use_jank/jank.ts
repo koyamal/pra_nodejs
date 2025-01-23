@@ -15,6 +15,28 @@ const jadgeJank = (userHand: number, cpuHand: number) => {
         default:
           return 'エラー';
       }
+      case 2:
+        switch(cpuHand) {
+          case 1:
+            return 'まけ';
+          case 2:
+            return 'あいこ';
+          case 3:
+            return 'かち';
+          default:
+            return 'エラー';
+        }
+      case 3:
+        switch(cpuHand) {
+          case 1:
+            return 'かち';
+          case 2:
+            return 'まけ';
+          case 3:
+            return 'あいこ';
+          default:
+            return 'エラー';
+        }
     default:
       return 'エラー';
   }
