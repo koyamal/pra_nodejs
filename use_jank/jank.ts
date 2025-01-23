@@ -2,6 +2,25 @@ import { cp } from "node:fs";
 import { stdin, stdout } from "node:process";
 import * as readline from "node:readline";
 
+const jadgeJank = (userHand: number, cpuHand: number) => {
+  switch(userHand) {
+    case 1:
+      switch(cpuHand) {
+        case 1:
+          return 'あいこ';
+        case 2:
+          return 'かち';
+        case 3:
+          return 'まけ';
+        default:
+          return 'エラー';
+      }
+    default:
+      return 'エラー';
+  }
+
+}
+
 const rl = readline.createInterface(stdin, stdout);
 
 const handAndText = {
