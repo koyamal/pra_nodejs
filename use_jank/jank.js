@@ -102,7 +102,7 @@ rl.question("じゃんけん(1.ぐー、2.ちょき、3.ぱー)：", answer => {
     rl.question('結果を見ますか？(y/n)：', input => {
         if (input === 'y') {
             console.log(`相手は${handAndText[cpuHand]}を出しました`);
-            console.log(jadgeJank(userHand, cpuHand));
+            console.log(`あなたは${jadgeJank(userHand, cpuHand)}`);
         }
         rl.close();
     });
