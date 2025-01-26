@@ -111,7 +111,6 @@ while (true) {
                 }
                 else {
                     console.log('bye');
-                    break;
                 }
                 rl.close();
             });
