@@ -106,7 +106,10 @@ rl.question("じゃんけん(1.ぐー、2.ちょき、3.ぱー)：", answer => {
         }
         rl.question('もう一度遊びますか？(y/n)：', input => {
             if (input === 'y') {
-                console.log(`相手は${handAndText[cpuHand]}を出しました`);
+                console.log(`じゃんけん`);
+            }
+            else {
+                console.log('bye');
             }
             rl.close();
         });
