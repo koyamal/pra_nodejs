@@ -86,7 +86,6 @@ while (true) {
           console.log(`じゃんけん`);
         } else {
           console.log('bye');
-          break;
         }
         rl.close();
       })
