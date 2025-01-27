@@ -112,11 +112,10 @@ while (playFlag) {
                 }
                 else {
                     playFlag = false;
+                    rl.close();
                     console.log('bye');
                 }
-                rl.close();
             });
         });
     });
-    break;
 }
