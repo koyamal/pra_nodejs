@@ -85,6 +85,7 @@ const playJanken = () => {
       }
       rl.question('もう一度遊びますか？(y/n)：', input => {
         if(input === 'y') {
+          playJanken();
           console.log(`じゃんけん`);
         } else {
           playFlag = false;
