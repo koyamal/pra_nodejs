@@ -83,7 +83,7 @@ else {
     cpuHand = 3;
 }
 let playFlag = true;
-while (playFlag) {
+const playJanken = () => {
     rl.question("じゃんけん(1.ぐー、2.ちょき、3.ぱー)：", answer => {
         console.log(answer);
         if (answer === '1') {
@@ -118,5 +118,4 @@ while (playFlag) {
             });
         });
     });
-    break;
-}
+};
