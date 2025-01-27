@@ -87,11 +87,10 @@ while (playFlag) {
           console.log(`じゃんけん`);
         } else {
           playFlag = false;
+          rl.close();
           console.log('bye');
         }
-        rl.close();
       })
     });
   });
-  break;
 }
