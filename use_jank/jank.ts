@@ -61,7 +61,8 @@ if(rand < 0.3) {
   cpuHand = 3;
 }
 
-while (true) {
+let playFlag = true;
+while (playFlag) {
   rl.question("じゃんけん(1.ぐー、2.ちょき、3.ぱー)：", answer => {
     console.log(answer);
     if(answer === '1') {
@@ -85,6 +86,7 @@ while (true) {
         if(input === 'y') {
           console.log(`じゃんけん`);
         } else {
+          playFlag = false;
           console.log('bye');
         }
         rl.close();
