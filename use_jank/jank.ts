@@ -61,32 +61,39 @@ if(rand < 0.3) {
   cpuHand = 3;
 }
 
-rl.question("じゃんけん(1.ぐー、2.ちょき、3.ぱー)：", answer => {
-  console.log(answer);
-  if(answer === '1') {
-    userHand = 1;
-  } else if (answer === '2') {
-    userHand = 2;
-  } else if (answer === '3') {
-    userHand = 3;
-  } else {
-    console.log('エラー');
-    rl.close();
-    return;
-  }
-  console.log(`あなたは${handAndText[userHand]}を出しました`);
-  rl.question('結果を見ますか？(y/n)：', input => {
-    if(input === 'y') {
-      console.log(`相手は${handAndText[cpuHand]}を出しました`);
-      console.log(`結果：${jadgeJank(userHand, cpuHand)}`);
-    }
-    rl.question('もう一度遊びますか？(y/n)：', input => {
-      if(input === 'y') {
-        console.log(`じゃんけん`);
-      } else {
-        console.log('bye');
-      }
+let playFlag = true;
+
+const playJanken = () => {
+  rl.question("じゃんけん(1.ぐー、2.ちょき、3.ぱー)：", answer => {
+    console.log(answer);
+    if(answer === '1') {
+      userHand = 1;
+    } else if (answer === '2') {
+      userHand = 2;
+    } else if (answer === '3') {
+      userHand = 3;
+    } else {
+      console.log('エラー');
       rl.close();
-    })
+      return;
+    }
+    console.log(`あなたは${handAndText[userHand]}を出しました`);
+    rl.question('結果を見ますか？(y/n)：', input => {
+      if(input === 'y') {
+        console.log(`相手は${handAndText[cpuHand]}を出しました`);
+        console.log(`結果：${jadgeJank(userHand, cpuHand)}`);
+      }
+      rl.question('もう一度遊びますか？(y/n)：', input => {
+        if(input === 'y') {
+          playJanken();
+        } else {
+          playFlag = false;
+          rl.close();
+          console.log('bye');
+        }
+      })
+    });
   });
-});
+}
+
+playJanken();
