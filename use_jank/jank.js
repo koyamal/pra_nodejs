@@ -120,3 +120,4 @@ const playJanken = () => {
         });
     });
 };
+playJanken();
