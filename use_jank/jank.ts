@@ -73,7 +73,7 @@ const playJanken = () => {
     } else if (answer === '3') {
       userHand = 3;
     } else {
-      console.log('1.ぐー、2.ちょき、3.ぱーから選んでください：');
+      console.log('1.ぐー、2.ちょき、3.ぱーから選んでください');
       playJanken();
       // rl.close();
       return;
