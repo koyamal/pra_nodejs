@@ -97,7 +97,8 @@ const playJanken = () => {
         }
         else {
             console.log('エラー');
-            rl.close();
+            playJanken();
+            // rl.close();
             return;
         }
         console.log(`あなたは${handAndText[userHand]}を出しました`);
