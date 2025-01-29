@@ -83,7 +83,6 @@ const getCpuHand = () => {
         return 3;
     }
 };
-let playFlag = true;
 const playJanken = () => {
     rl.question("じゃんけん(1.ぐー、2.ちょき、3.ぱー)：", answer => {
         console.log(answer);
@@ -113,7 +112,6 @@ const playJanken = () => {
                     playJanken();
                 }
                 else {
-                    playFlag = false;
                     rl.close();
                     console.log('bye');
                 }
