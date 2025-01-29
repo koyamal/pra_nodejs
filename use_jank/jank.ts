@@ -52,6 +52,10 @@ const handAndText = {
 
 let cpuHand: 1 | 2 | 3 = 1;
 let userHand: 1 | 2 | 3 = 1;
+
+const getCpuHand = () => {
+  
+}
 const rand = Math.random();
 if(rand < 0.3) {
   cpuHand = 1;
