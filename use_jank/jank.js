@@ -70,18 +70,19 @@ const handAndText = {
     2: 'ちょき',
     3: 'ぱー'
 };
-let cpuHand = 1;
 let userHand = 1;
-const rand = Math.random();
-if (rand < 0.3) {
-    cpuHand = 1;
-}
-else if (rand < 0.6) {
-    cpuHand = 2;
-}
-else {
-    cpuHand = 3;
-}
+const getCpuHand = () => {
+    const rand = Math.random();
+    if (rand < 0.3) {
+        return 1;
+    }
+    else if (rand < 0.6) {
+        return 2;
+    }
+    else {
+        return 3;
+    }
+};
 let playFlag = true;
 const playJanken = () => {
     rl.question("じゃんけん(1.ぐー、2.ちょき、3.ぱー)：", answer => {
@@ -104,7 +105,7 @@ const playJanken = () => {
         console.log(`あなたは${handAndText[userHand]}を出しました`);
         rl.question('結果を見ますか？(y/n)：', input => {
             if (input === 'y') {
-                console.log(`相手は${handAndText[cpuHand]}を出しました`);
+                const cpuHand = console.log(`相手は${handAndText[cpuHand]}を出しました`);
                 console.log(`結果：${jadgeJank(userHand, cpuHand)}`);
             }
             rl.question('もう一度遊びますか？(y/n)：', input => {
