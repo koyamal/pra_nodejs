@@ -1,7 +1,7 @@
 import { stdin, stdout } from "node:process";
 import * as readline from "node:readline";
 
-type JankenType = 1 | 2 | 3
+type HandType = 1 | 2 | 3
 
 const jadgeJank = (userHand: number, cpuHand: number) => {
   switch(userHand) {
