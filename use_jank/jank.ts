@@ -54,15 +54,14 @@ let cpuHand: 1 | 2 | 3 = 1;
 let userHand: 1 | 2 | 3 = 1;
 
 const getCpuHand = () => {
-  
-}
-const rand = Math.random();
-if(rand < 0.3) {
-  cpuHand = 1;
-} else if (rand < 0.6) {
-  cpuHand = 2;
-} else {
-  cpuHand = 3;
+  const rand = Math.random();
+  if(rand < 0.3) {
+    return 1;
+  } else if (rand < 0.6) {
+    return 2;
+  } else {
+    return 3;
+  }
 }
 
 let playFlag = true;
@@ -85,6 +84,7 @@ const playJanken = () => {
     console.log(`あなたは${handAndText[userHand]}を出しました`);
     rl.question('結果を見ますか？(y/n)：', input => {
       if(input === 'y') {
+        const cpuHand = 
         console.log(`相手は${handAndText[cpuHand]}を出しました`);
         console.log(`結果：${jadgeJank(userHand, cpuHand)}`);
       }
