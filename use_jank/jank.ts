@@ -1,4 +1,3 @@
-import { cp } from "node:fs";
 import { stdin, stdout } from "node:process";
 import * as readline from "node:readline";
 
