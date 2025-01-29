@@ -50,10 +50,9 @@ const handAndText = {
   3: 'ぱー'
 }
 
-let cpuHand: 1 | 2 | 3 = 1;
 let userHand: 1 | 2 | 3 = 1;
 
-const getCpuHand = () => {
+const getCpuHand = (): 1 | 2 | 3 => {
   const rand = Math.random();
   if(rand < 0.3) {
     return 1;
