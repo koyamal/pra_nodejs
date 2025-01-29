@@ -99,7 +99,6 @@ const playJanken = () => {
         else {
             console.log('1.ぐー、2.ちょき、3.ぱーから選んでください');
             playJanken();
-            // rl.close();
             return;
         }
         console.log(`あなたは${handAndText[userHand]}を出しました`);
