@@ -105,7 +105,8 @@ const playJanken = () => {
         console.log(`あなたは${handAndText[userHand]}を出しました`);
         rl.question('結果を見ますか？(y/n)：', input => {
             if (input === 'y') {
-                const cpuHand = console.log(`相手は${handAndText[cpuHand]}を出しました`);
+                const cpuHand = getCpuHand();
+                console.log(`相手は${handAndText[cpuHand]}を出しました`);
                 console.log(`結果：${jadgeJank(userHand, cpuHand)}`);
             }
             rl.question('もう一度遊びますか？(y/n)：', input => {
