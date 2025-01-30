@@ -1,6 +1,7 @@
-import { cp } from "node:fs";
 import { stdin, stdout } from "node:process";
 import * as readline from "node:readline";
+
+type HandType = 1 | 2 | 3;
 
 const jadgeJank = (userHand: number, cpuHand: number) => {
   switch(userHand) {
@@ -50,9 +51,9 @@ const handAndText = {
   3: 'ぱー'
 }
 
-let userHand: 1 | 2 | 3 = 1;
+let userHand: HandType = 1;
 
-const getCpuHand = (): 1 | 2 | 3 => {
+const getCpuHand = (): HandType => {
   const rand = Math.random();
   if(rand < 0.3) {
     return 1;
