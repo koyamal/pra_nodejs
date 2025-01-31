@@ -3,7 +3,7 @@ import * as readline from "node:readline";
 
 type HandType = 1 | 2 | 3;
 
-const jadgeJank = (userHand: HandType, cpuHand: number) => {
+const jadgeJank = (userHand: HandType, cpuHand: HandType) => {
   switch(userHand) {
     case 1:
       switch(cpuHand) {
