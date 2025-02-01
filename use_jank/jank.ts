@@ -1,6 +1,8 @@
 import { stdin, stdout } from "node:process";
 import * as readline from "node:readline";
 
+const rl = readline.createInterface(stdin, stdout);
+
 type HandType = 1 | 2 | 3;
 
 const jadgeJank = (userHand: HandType, cpuHand: HandType) => {
@@ -43,8 +45,6 @@ const jadgeJank = (userHand: HandType, cpuHand: HandType) => {
   }
 }
 
-const rl = readline.createInterface(stdin, stdout);
-
 const handAndText = {
   1: 'ぐー',
   2: 'ちょき',
@@ -65,7 +65,7 @@ const getCpuHand = (): HandType => {
 }
 
 const playJanken = () => {
-  rl.question("じゃんけん(1.ぐー、2.ちょき、3.ぱー)：", answer => {
+  rl.question(`じゃんけん(1.${handAndText[1]}、2.${handAndText[2]}、3.${handAndText[3]})：`, answer => {
     console.log(answer);
     if(answer === '1') {
       userHand = 1;
