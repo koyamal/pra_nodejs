@@ -25,6 +25,7 @@ var __importStar = (this && this.__importStar) || function (mod) {
 Object.defineProperty(exports, "__esModule", { value: true });
 const node_process_1 = require("node:process");
 const readline = __importStar(require("node:readline"));
+const rl = readline.createInterface(node_process_1.stdin, node_process_1.stdout);
 const jadgeJank = (userHand, cpuHand) => {
     switch (userHand) {
         case 1:
@@ -64,7 +65,6 @@ const jadgeJank = (userHand, cpuHand) => {
             return 'エラー';
     }
 };
-const rl = readline.createInterface(node_process_1.stdin, node_process_1.stdout);
 const handAndText = {
     1: 'ぐー',
     2: 'ちょき',
