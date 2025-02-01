@@ -1,6 +1,8 @@
 import { stdin, stdout } from "node:process";
 import * as readline from "node:readline";
 
+const rl = readline.createInterface(stdin, stdout);
+
 type HandType = 1 | 2 | 3;
 
 const jadgeJank = (userHand: HandType, cpuHand: HandType) => {
@@ -42,8 +44,6 @@ const jadgeJank = (userHand: HandType, cpuHand: HandType) => {
       return 'エラー';
   }
 }
-
-const rl = readline.createInterface(stdin, stdout);
 
 const handAndText = {
   1: 'ぐー',
