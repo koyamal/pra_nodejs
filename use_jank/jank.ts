@@ -65,7 +65,7 @@ const getCpuHand = (): HandType => {
 }
 
 const playJanken = () => {
-  rl.question("じゃんけん(1.ぐー、2.ちょき、3.ぱー)：", answer => {
+  rl.question(`じゃんけん(1.${handAndText[1]}、2.${handAndText[2]}、3.${handAndText[3]})：`, answer => {
     console.log(answer);
     if(answer === '1') {
       userHand = 1;
