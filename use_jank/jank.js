@@ -102,7 +102,7 @@ const playJanken = () => {
         }
         console.log(`あなたは${handAndText[userHand]}を出しました`);
         rl.question('結果を表示します：', input => {
-            if (input === 'y') {
+            if (input !== 'n') {
                 const cpuHand = getCpuHand();
                 console.log(`相手は${handAndText[cpuHand]}を出しました`);
                 console.log(`結果：${jadgeJank(userHand, cpuHand)}`);
