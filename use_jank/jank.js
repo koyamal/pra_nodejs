@@ -101,7 +101,7 @@ const playJanken = () => {
             return;
         }
         console.log(`あなたは${handAndText[userHand]}を出しました`);
-        rl.question('結果を表示します：(n: 結果を表示しない)', input => {
+        rl.question('結果を表示します(n: 結果を表示しない)：', input => {
             if (input !== 'n') {
                 const cpuHand = getCpuHand();
                 console.log(`相手は${handAndText[cpuHand]}を出しました`);
