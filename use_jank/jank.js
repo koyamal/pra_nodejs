@@ -96,13 +96,13 @@ const playJanken = () => {
             userHand = 3;
         }
         else {
-            console.log('1.ぐー、2.ちょき、3.ぱーから選んでください');
+            console.log(`1.${handAndText[1]}、2.${handAndText[2]}、3.${handAndText[3]}から選んでください`);
             playJanken();
             return;
         }
         console.log(`あなたは${handAndText[userHand]}を出しました`);
-        rl.question('結果を見ますか？(y/n)：', input => {
-            if (input === 'y') {
+        rl.question('結果を表示します(n: 結果を表示しない)：', input => {
+            if (input !== 'n') {
                 const cpuHand = getCpuHand();
                 console.log(`相手は${handAndText[cpuHand]}を出しました`);
                 console.log(`結果：${jadgeJank(userHand, cpuHand)}`);
