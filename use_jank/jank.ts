@@ -86,7 +86,7 @@ const playJanken = () => {
         console.log(`結果：${jadgeJank(userHand, cpuHand)}`);
       }
       rl.question('もう一度遊びますか？(y/n)：', input => {
-        if(input === 'y') {
+        if(input.toLowerCase() === 'y') {
           playJanken();
         } else {
           rl.close();
