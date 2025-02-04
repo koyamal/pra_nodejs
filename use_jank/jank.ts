@@ -80,17 +80,17 @@ const playJanken = () => {
     }
     console.log(`あなたは${handAndText[userHand]}を出しました`);
     rl.question('結果を表示します(n: 結果を表示しない)：', input => {
-      if(input !== 'n') {
+      if(input.toLowerCase() !== 'n') {
         const cpuHand = getCpuHand();
         console.log(`相手は${handAndText[cpuHand]}を出しました`);
         console.log(`結果：${jadgeJank(userHand, cpuHand)}`);
       }
       rl.question('もう一度遊びますか？(y/n)：', input => {
-        if(input === 'y') {
+        if(input.toLowerCase() === 'y') {
           playJanken();
         } else {
           rl.close();
-          console.log('bye');
+          console.log('ありがとうございました。');
         }
       })
     });
