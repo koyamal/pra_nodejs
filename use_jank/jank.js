@@ -113,7 +113,7 @@ const playJanken = () => {
                 }
                 else {
                     rl.close();
-                    console.log('bye');
+                    console.log('ありがとうございました。');
                 }
             });
         });
