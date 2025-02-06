@@ -55,9 +55,9 @@ let userHand: HandType = 1;
 
 const getCpuHand = (): HandType => {
   const rand = Math.random();
-  if(rand < 0.3) {
+  if(rand < 0.33) {
     return 1;
-  } else if (rand < 0.6) {
+  } else if (rand < 0.66) {
     return 2;
   } else {
     return 3;
@@ -90,7 +90,7 @@ const playJanken = () => {
           playJanken();
         } else {
           rl.close();
-          console.log('ありがとうございました。');
+          console.log('ご利用ありがとうございました。');
         }
       })
     });
