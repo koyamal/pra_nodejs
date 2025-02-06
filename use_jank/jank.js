@@ -94,8 +94,11 @@ const playJanken = () => {
         else if (answer === '3') {
             userHand = 3;
         }
+        else if (answer === 'q') {
+            console.log('bye');
+        }
         else {
-            console.log(`1.${handAndText[1]}、2.${handAndText[2]}、3.${handAndText[3]}から選んでください。やめる場合はqを押してください。`);
+            console.log(`1.${handAndText[1]}、2.${handAndText[2]}、3.${handAndText[3]}から選んでください。やめる場合：q`);
             playJanken();
             return;
         }
