@@ -6,4 +6,12 @@ const compareDate = [
   '2025-01-02 09:00:01',
 ];
 
+compareDate.forEach((date) => {
+  if(targetDate >= date) {
+    console.log(`${date}：targetDate >= date`);
+  } else {
+    console.log(`${date}：targetDate < date`);
+  }
+});
+
 export {};
