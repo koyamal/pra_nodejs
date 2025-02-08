@@ -11,7 +11,7 @@ const compareDate = [
 
 compareDate.forEach((date) => {
   if(targetDate >= date) {
-    console.log(`${date}：targetDate >= date`);
+    console.log(`：targetDate >= ${date}`);
   } else {
     console.log(`${date}：targetDate < date`);
   }
