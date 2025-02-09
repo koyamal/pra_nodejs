@@ -10,6 +10,9 @@ const compareDate = [
     '2025-01-03 09:00:00',
     '2025-02-01 09:00',
 ];
+const compStr = (val1, val2) => {
+    return val1 >= val2;
+};
 compareDate.forEach((date) => {
     if (targetDate >= date) {
         console.log(`${targetDate} >= ${date}`);
