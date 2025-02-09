@@ -21,3 +21,16 @@ compareDate.forEach((date) => {
         console.log(`${targetDate} < ${date}`);
     }
 });
+const targetList = [
+    '1', '2', '3', '10', '11', '20', '30', '101', '102',
+];
+targetList.forEach(target => {
+    targetList.forEach(compVal => {
+        if (compStr(target, compVal)) {
+            console.log(`${targetDate} >= ${compVal}`);
+        }
+        else {
+            console.log(`${targetDate} < ${compVal}`);
+        }
+    });
+});
