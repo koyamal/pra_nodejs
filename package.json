@@ -2,10 +2,14 @@
   "dependencies": {
     "crypto": "^1.0.1",
     "crypto-js": "^4.2.0",
+    "dayjs": "^1.11.13",
     "encoding-japanese": "^2.2.0",
-    "node-fetch": "^3.3.2"
+    "node-fetch": "^3.3.2",
+    "uuid": "^10.0.0"
   },
   "devDependencies": {
+    "@types/node": "^22.8.6",
+    "@types/uuid": "^10.0.0",
     "typescript": "^5.7.0-dev.20240922"
   }
 }
