@@ -16,15 +16,15 @@ const compStr = (val1: string, val2: string) => {
   } else {
     console.log(`${val1} < ${val2}`);
   }
-  return val1 >= val2;
 }
 
 compareDate.forEach(date => {
-  if(compStr(targetDate, date)) {
-    console.log(`${targetDate} >= ${date}`);
-  } else {
-    console.log(`${targetDate} < ${date}`);
-  }
+  compStr(targetDate, date);
+  // if(compStr(targetDate, date)) {
+  //   console.log(`${targetDate} >= ${date}`);
+  // } else {
+  //   console.log(`${targetDate} < ${date}`);
+  // }
 });
 
 const targetList = [
