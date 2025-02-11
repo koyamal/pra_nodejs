@@ -29,11 +29,6 @@ const targetList = [
 targetList.forEach(target => {
   targetList.forEach(compVal => {
     compStr(target, compVal);
-    // if(compStr(target, compVal)) {
-    //   console.log(`${target} >= ${compVal}`);
-    // } else {
-    //   console.log(`${target} < ${compVal}`);
-    // }
   })
 });
 
