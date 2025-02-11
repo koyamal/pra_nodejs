@@ -11,15 +11,15 @@ const compareDate = [
 ];
 
 const compStr = (val1: string, val2: string) => {
-  return val1 >= val2;
+  if(val1 >= val2) {
+    console.log(`${val1} >= ${val2}`);
+  } else {
+    console.log(`${val1} < ${val2}`);
+  }
 }
 
-compareDate.forEach((date) => {
-  if(compStr(targetDate, date)) {
-    console.log(`${targetDate} >= ${date}`);
-  } else {
-    console.log(`${targetDate} < ${date}`);
-  }
+compareDate.forEach(date => {
+  compStr(targetDate, date);
 });
 
 const targetList = [
@@ -28,11 +28,7 @@ const targetList = [
 
 targetList.forEach(target => {
   targetList.forEach(compVal => {
-    if(compStr(target, compVal)) {
-      console.log(`${target} >= ${compVal}`);
-    } else {
-      console.log(`${target} < ${compVal}`);
-    }
+    compStr(target, compVal);
   })
 });
 
