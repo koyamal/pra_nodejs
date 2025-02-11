@@ -13,7 +13,7 @@ const compareDate = [
 const compStr = (val1, val2) => {
     return val1 >= val2;
 };
-compareDate.forEach((date) => {
+compareDate.forEach(date => {
     if (compStr(targetDate, date)) {
         console.log(`${targetDate} >= ${date}`);
     }
