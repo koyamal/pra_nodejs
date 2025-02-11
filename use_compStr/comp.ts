@@ -11,6 +11,9 @@ const compareDate = [
 ];
 
 const compStr = (val1: string, val2: string) => {
+  if(val1 >= val2) {
+    console.log(`${val1} >= ${val2}`);
+  }
   return val1 >= val2;
 }
 
