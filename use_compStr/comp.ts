@@ -22,14 +22,14 @@ compareDate.forEach(date => {
   compStr(targetDate, date);
 });
 
-const targetList = [
-  '1', '2', '3', '10', '11', '20', '30', '101', '102',
+const compareValues = [
+  '0', '1', '2', '3', '10', '11', '20', '30', '101', '102',
 ];
 
-targetList.forEach(target => {
-  targetList.forEach(compVal => {
-    compStr(target, compVal);
-  })
+compareValues.forEach(val1 => {
+  compareValues.forEach(val2 => {
+    compStr(val1, val2);
+  });
 });
 
 export {};
