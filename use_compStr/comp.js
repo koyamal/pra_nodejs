@@ -22,7 +22,7 @@ compareDate.forEach(date => {
     compStr(targetDate, date);
 });
 const targetList = [
-    '1', '2', '3', '10', '11', '20', '30', '101', '102',
+    '0', '1', '2', '3', '10', '11', '20', '30', '101', '102',
 ];
 targetList.forEach(target => {
     targetList.forEach(compVal => {
