@@ -40,6 +40,13 @@ class compString {
       console.log(`${val1} < ${val2}`);
     }
   }
+  disCompStr = (val1: string, val2: string) => {
+    if(val1 > val2) {
+      console.log(`${val1} > ${val2}`);
+    } else {
+      console.log(`${val1} =< ${val2}`);
+    }
+  }
 }
 
 const instanceCompString = new compString();
