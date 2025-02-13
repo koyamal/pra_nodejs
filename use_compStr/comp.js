@@ -29,3 +29,26 @@ compareValues.forEach(val1 => {
         compStr(val1, val2);
     });
 });
+class compString {
+    constructor() {
+        this.compStr = (val1, val2) => {
+            if (val1 >= val2) {
+                console.log(`${val1} >= ${val2}`);
+            }
+            else {
+                console.log(`${val1} < ${val2}`);
+            }
+        };
+        this.disCompStr = (val1, val2) => {
+            if (val1 > val2) {
+                console.log(`${val1} > ${val2}`);
+            }
+            else {
+                console.log(`${val1} =< ${val2}`);
+            }
+        };
+    }
+}
+const instanceCompString = new compString();
+instanceCompString.compStr('A', 'B');
+instanceCompString.disCompStr('A', 'B');
