@@ -51,5 +51,6 @@ class compString {
 
 const instanceCompString = new compString();
 instanceCompString.compStr('A', 'B');
+instanceCompString.disCompStr('A', 'B');
 
 export {};
