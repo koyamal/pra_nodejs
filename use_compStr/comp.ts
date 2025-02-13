@@ -42,4 +42,7 @@ class compString {
   }
 }
 
+const instanceCompString = new compString();
+instanceCompString.compStr('A', 'B');
+
 export {};
