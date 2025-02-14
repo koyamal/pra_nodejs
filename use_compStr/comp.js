@@ -31,7 +31,11 @@ compareValues.forEach(val1 => {
 });
 class compString {
     constructor() {
+        this.calc = () => {
+            return true;
+        };
         this.compStr = (val1, val2) => {
+            this.calc();
             if (val1 >= val2) {
                 console.log(`${val1} >= ${val2}`);
             }
