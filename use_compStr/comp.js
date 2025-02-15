@@ -31,14 +31,14 @@ compareValues.forEach(val1 => {
 });
 class compString {
     constructor() {
-        this.calc = () => {
+        this.calc = (func) => {
+            func();
             return true;
         };
-        this.calcPub = () => {
-            return this.calc();
+        this.calcPub = (val1) => {
+            return this.calc(() => { console.log(val1); });
         };
         this.compStr = (val1, val2) => {
-            this.calc();
             if (val1 >= val2) {
                 console.log(`${val1} >= ${val2}`);
             }
@@ -60,4 +60,4 @@ const instanceCompString = new compString();
 instanceCompString.compStr('A', 'B');
 instanceCompString.disCompStr('A', 'B');
 // instanceCompString.calc();
-instanceCompString.calcPub();
+instanceCompString.calcPub('hello');
