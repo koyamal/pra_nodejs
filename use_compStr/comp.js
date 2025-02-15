@@ -34,6 +34,9 @@ class compString {
         this.calc = () => {
             return true;
         };
+        this.calcPub = () => {
+            return this.calc();
+        };
         this.compStr = (val1, val2) => {
             this.calc();
             if (val1 >= val2) {
