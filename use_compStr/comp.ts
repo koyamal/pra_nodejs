@@ -60,5 +60,6 @@ const instanceCompString = new compString();
 instanceCompString.compStr('A', 'B');
 instanceCompString.disCompStr('A', 'B');
 // instanceCompString.calc();
+instanceCompString.calcPub();
 
 export {};
