@@ -36,6 +36,9 @@ class compString {
             return true;
         };
         this.calcPub = (val1) => {
+            this.calc(() => {
+                console.log("done");
+            });
             return this.calc(() => { console.log(val1); });
         };
         this.compStr = (val1, val2) => {
