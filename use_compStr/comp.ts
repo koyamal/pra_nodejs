@@ -38,6 +38,9 @@ class compString {
     return true;
   }
   public calcPub = (val1: string) => {
+    this.calc(() => {
+      console.log("done");
+    })
     return this.calc(() => {console.log(val1)});
   }
   compStr = (val1: string, val2: string) => {
