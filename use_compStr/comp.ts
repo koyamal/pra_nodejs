@@ -33,11 +33,17 @@ compareValues.forEach(val1 => {
 });
 
 class compString {
-  private calc = () => {
+  private calc = (func: Function) => {
+    func();
     return true;
   }
+  public calcPub = (val1: string) => {
+    this.calc(() => {
+      console.log("done");
+    })
+    return this.calc(() => {console.log(val1)});
+  }
   compStr = (val1: string, val2: string) => {
-    this.calc();
     if(val1 >= val2) {
       console.log(`${val1} >= ${val2}`);
     } else {
@@ -57,5 +63,6 @@ const instanceCompString = new compString();
 instanceCompString.compStr('A', 'B');
 instanceCompString.disCompStr('A', 'B');
 // instanceCompString.calc();
+instanceCompString.calcPub('hello');
 
 export {};
