@@ -45,6 +45,7 @@ class compString {
     this.secondType = data.secondType;
   }
   private calc = (func: Function) => {
+    console.log(`${this.firstType}: ${this.secondType}`)
     func();
     return true;
   }
