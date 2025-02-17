@@ -38,7 +38,9 @@ type compStringType = {
 }
 
 class compString {
+  firstType: string;
   constructor(data: compStringType) {
+    this.firstType = data.firstType;
   }
   private calc = (func: Function) => {
     func();
