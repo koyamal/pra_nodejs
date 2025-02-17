@@ -32,6 +32,7 @@ compareValues.forEach(val1 => {
 class compString {
     constructor(data) {
         this.calc = (func) => {
+            console.log(`${this.firstType}: ${this.secondType}`);
             func();
             return true;
         };
