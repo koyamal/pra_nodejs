@@ -58,6 +58,7 @@ class compString {
             }
         };
         this.firstType = data.firstType;
+        this.secondType = data.secondType;
     }
 }
 const instanceCompString = new compString({ firstType: 'A', secondType: '2' });
