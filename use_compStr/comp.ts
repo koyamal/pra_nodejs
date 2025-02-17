@@ -68,7 +68,7 @@ class compString {
   }
 }
 
-const instanceCompString = new compString();
+const instanceCompString = new compString({firstType: 'A', secondType: '2'});
 instanceCompString.compStr('A', 'B');
 instanceCompString.disCompStr('A', 'B');
 // instanceCompString.calc();
