@@ -32,7 +32,14 @@ compareValues.forEach(val1 => {
   });
 });
 
+type compStringType = {
+  firstType: 'A' | 'B' | 'C';
+  secondType: '1' | '2' | '3';
+}
+
 class compString {
+  constructor(data: compStringType) {
+  }
   private calc = (func: Function) => {
     func();
     return true;
