@@ -30,8 +30,9 @@ compareValues.forEach(val1 => {
     });
 });
 class compString {
-    constructor() {
+    constructor(data) {
         this.calc = (func) => {
+            console.log(`${this.firstType}: ${this.secondType}`);
             func();
             return true;
         };
@@ -57,9 +58,11 @@ class compString {
                 console.log(`${val1} =< ${val2}`);
             }
         };
+        this.firstType = data.firstType;
+        this.secondType = data.secondType;
     }
 }
-const instanceCompString = new compString();
+const instanceCompString = new compString({ firstType: 'A', secondType: '2' });
 instanceCompString.compStr('A', 'B');
 instanceCompString.disCompStr('A', 'B');
 // instanceCompString.calc();

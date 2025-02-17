@@ -32,8 +32,20 @@ compareValues.forEach(val1 => {
   });
 });
 
+type compStringType = {
+  firstType: 'A' | 'B' | 'C';
+  secondType: '1' | '2' | '3';
+}
+
 class compString {
+  firstType: string;
+  secondType: string;
+  constructor(data: compStringType) {
+    this.firstType = data.firstType;
+    this.secondType = data.secondType;
+  }
   private calc = (func: Function) => {
+    console.log(`${this.firstType}: ${this.secondType}`)
     func();
     return true;
   }
@@ -59,7 +71,7 @@ class compString {
   }
 }
 
-const instanceCompString = new compString();
+const instanceCompString = new compString({firstType: 'A', secondType: '2'});
 instanceCompString.compStr('A', 'B');
 instanceCompString.disCompStr('A', 'B');
 // instanceCompString.calc();
