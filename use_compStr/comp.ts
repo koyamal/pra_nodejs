@@ -76,5 +76,7 @@ instanceCompString.compStr('A', 'B');
 instanceCompString.disCompStr('A', 'B');
 // instanceCompString.calc();
 instanceCompString.calcPub('hello');
+const instanceCompString2 = new compString({firstType: 'B', secondType: '3'});
+instanceCompString2.calcPub('hello');
 
 export {};
