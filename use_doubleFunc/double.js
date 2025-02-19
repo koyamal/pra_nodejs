@@ -7,4 +7,4 @@ const operation = {
         console.log('b');
     }
 };
-operation.a();
+operation['a']();
