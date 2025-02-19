@@ -8,3 +8,4 @@ const operation = {
 }
 
 operation['a']();
+operation['b']();
