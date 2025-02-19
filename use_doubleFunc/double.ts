@@ -6,3 +6,5 @@ const operation = {
     console.log('b');
   }
 }
+
+operation.a();
