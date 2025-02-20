@@ -5,6 +5,11 @@ const operation = {
     },
     b: function () {
         console.log('b');
+    },
+    c: {
+        d: function () {
+            console.log('d in c');
+        }
     }
 };
 operation['a']();
