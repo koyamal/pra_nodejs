@@ -9,6 +9,9 @@ const operation = {
     c: {
         d: function () {
             console.log('d in c');
+        },
+        e: function () {
+            console.log('e in c');
         }
     }
 };
