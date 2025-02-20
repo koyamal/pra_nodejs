@@ -15,6 +15,8 @@ const operation = {
   }
 }
 
+const inputText = 'c'
+
 operation['a']();
 operation['b']();
-operation['c']['d']();
+operation[inputText]['d']();
