@@ -17,3 +17,4 @@ const operation = {
 };
 operation['a']();
 operation['b']();
+operation['c']['d']();
