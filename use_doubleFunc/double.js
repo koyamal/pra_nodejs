@@ -24,3 +24,4 @@ const inputText = 'c';
 operation['a']();
 operation['b']();
 operation[inputText]['d']();
+operation[inputText]['f']['g']();
