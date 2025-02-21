@@ -11,6 +11,11 @@ const operation = {
     },
     e: function() {
       console.log('e in c');
+    },
+    f: {
+      g: function() {
+        console.log('g in f in c');
+      }
     }
   }
 }
@@ -20,3 +25,5 @@ const inputText = 'c'
 operation['a']();
 operation['b']();
 operation[inputText]['d']();
+const h = operation[inputText]['f']['g'];
+h();
