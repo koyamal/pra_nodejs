@@ -26,3 +26,4 @@ operation['b']();
 operation[inputText]['d']();
 const h = operation[inputText]['f']['g'];
 h();
+const i = operation[inputText]['f'];
