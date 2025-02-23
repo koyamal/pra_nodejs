@@ -36,3 +36,5 @@ h();
 const i = operation[inputText]['f'];
 i.g();
 i.g();
+
+operation[inputText]['f']['j']['k']();
