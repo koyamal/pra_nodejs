@@ -30,3 +30,4 @@ h();
 
 const i = operation[inputText]['f'];
 i.g();
+i.g();
