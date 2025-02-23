@@ -16,6 +16,11 @@ const operation = {
         f: {
             g: function () {
                 console.log('g in f in c');
+            },
+            j: {
+                k: function () {
+                    console.log('k in j in f in c');
+                }
             }
         }
     }
