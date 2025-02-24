@@ -53,5 +53,5 @@ copy.a = 'c';
 console.log({origin});
 
 operation['l'](origin);
-console.log(origin);
+console.log({origin});
 export {};
