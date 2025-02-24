@@ -1,4 +1,5 @@
 "use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
 const operation = {
     a: function () {
         console.log('a');
@@ -38,3 +39,7 @@ const i = operation[inputText]['f'];
 i.g();
 i.g();
 operation[inputText]['f']['j']['k']();
+const origin = { a: 'a', b: 'b' };
+const copy = origin;
+copy.a = 'c';
+console.log({ origin });
