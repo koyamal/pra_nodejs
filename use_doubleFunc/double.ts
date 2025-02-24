@@ -41,3 +41,8 @@ i.g();
 i.g();
 
 operation[inputText]['f']['j']['k']();
+
+const origin = {a: 'a', b: 'b'};
+const copy = origin;
+
+export {};
