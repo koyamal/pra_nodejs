@@ -27,6 +27,9 @@ const operation = {
                 }
             }
         }
+    },
+    l: function (val1) {
+        val1.b = 'l';
     }
 };
 const inputText = 'c';
