@@ -45,4 +45,7 @@ operation[inputText]['f']['j']['k']();
 const origin = {a: 'a', b: 'b'};
 const copy = origin;
 
+copy.a = 'c';
+
+console.log({origin});
 export {};
