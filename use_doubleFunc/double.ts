@@ -11,14 +11,17 @@ const operation = {
     },
     e: function() {
       console.log('e in c');
+      return 2;
     },
     f: {
       g: function() {
         console.log('g in f in c');
+        return 1;
       },
       j: {
         k: function() {
           console.log('k in j in f in c');
+          return 0;
         }
       }
     }
