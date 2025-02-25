@@ -28,6 +28,7 @@ const operation = {
   },
   l: function(val1: {a: string, b: string}) {
     val1.b = 'l';
+    val1.a = 'none';
   }
 }
 
