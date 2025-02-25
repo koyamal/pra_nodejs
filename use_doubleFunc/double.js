@@ -30,6 +30,7 @@ const operation = {
     },
     l: function (val1) {
         val1.b = 'l';
+        val1.a = 'none';
     }
 };
 const inputText = 'c';
