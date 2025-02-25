@@ -1,4 +1,5 @@
 "use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
 const operation = {
     a: function () {
         console.log('a');
@@ -12,17 +13,24 @@ const operation = {
         },
         e: function () {
             console.log('e in c');
+            return 2;
         },
         f: {
             g: function () {
                 console.log('g in f in c');
+                return 1;
             },
             j: {
                 k: function () {
                     console.log('k in j in f in c');
+                    return 0;
                 }
             }
         }
+    },
+    l: function (val1) {
+        val1.b = 'l';
+        val1.a = 'none';
     }
 };
 const inputText = 'c';
@@ -35,3 +43,9 @@ const i = operation[inputText]['f'];
 i.g();
 i.g();
 operation[inputText]['f']['j']['k']();
+const origin = { a: 'a', b: 'b' };
+const copy = origin;
+copy.a = 'c';
+console.log({ origin });
+operation['l'](origin);
+console.log({ origin });
