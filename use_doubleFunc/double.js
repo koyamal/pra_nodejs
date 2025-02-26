@@ -31,6 +31,12 @@ const operation = {
     l: function (val1) {
         val1.b = 'l';
         val1.a = 'none';
+    },
+    m: function (val1) {
+        if (val1 === null)
+            return 'null';
+        const newVal1 = val1 + 'new';
+        return newVal1;
     }
 };
 const inputText = 'c';
