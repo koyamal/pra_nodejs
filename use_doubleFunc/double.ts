@@ -61,4 +61,6 @@ console.log({origin});
 
 operation['l'](origin);
 console.log({origin});
+
+operation['m'](null);
 export {};
