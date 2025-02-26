@@ -62,5 +62,5 @@ console.log({origin});
 operation['l'](origin);
 console.log({origin});
 
-operation['m'](null);
+console.log(operation['m'](null));
 export {};
