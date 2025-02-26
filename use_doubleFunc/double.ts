@@ -29,6 +29,12 @@ const operation = {
   l: function(val1: {a: string, b: string}) {
     val1.b = 'l';
     val1.a = 'none';
+  },
+  m: function(val1: string | null) {
+    if(val1 === null) return 'null';
+
+    const newVal1 = val1 + 'new';
+    return newVal1;
   }
 }
 
@@ -55,4 +61,8 @@ console.log({origin});
 
 operation['l'](origin);
 console.log({origin});
+
+console.log(operation['m'](null));
+console.log(operation['m']('hello'));
+console.log(operation['m']('null'));
 export {};
