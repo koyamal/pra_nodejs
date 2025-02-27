@@ -4,8 +4,14 @@ class Psession {
     bId: string | null;
     cId: string | null;
     type: string;
+    updatedAt: string;
+    createdAt?: string | null;
   }
   constructor(data: {id: string; bId: string | null; cId: string | null; type: string}) {
-    this.data = {}
+    this.data = {
+      ...data,
+      updatedAt: new Date().getUTCDate().toString(),
+      ...(data.type === 'A' ? {}: {createdAt: new Date().getUTCDate().toString()})
+    }
   }
 }
