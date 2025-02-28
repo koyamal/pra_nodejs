@@ -14,4 +14,7 @@ class Psession {
       ...(data.type === 'A' ? {}: {createdAt: new Date().getUTCDate().toString()})
     }
   }
+  outputLog() {
+    console.log({...this.data});
+  }
 }
