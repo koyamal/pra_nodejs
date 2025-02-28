@@ -18,3 +18,6 @@ class Psession {
     console.log({...this.data});
   }
 }
+
+const psession = new Psession({id: '12344', bId: 'dboeiradkm', cId: null, type: 'A'});
+psession.outputLog();
