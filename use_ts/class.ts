@@ -21,3 +21,5 @@ class Psession {
 
 const psession = new Psession({id: '12344', bId: 'dboeiradkm', cId: null, type: 'A'});
 psession.outputLog();
+
+const psession2 = new Psession({id: '54323456', bId: 'sdfawerjfsdlkjsad', cId: 'dfjsakfjfsdk', type: 'B'});
