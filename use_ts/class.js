@@ -12,3 +12,4 @@ psession.outputLog();
 const psession2 = new Psession({ id: '54323456', bId: 'sdfawerjfsdlkjsad', cId: 'dfjsakfjfsdk', type: 'B' });
 const psession3 = new Psession({ id: '54323456', bId: 'sdfawerjfsdlkjsad', cId: 'dfjsakfjfsdk', type: 'A' });
 psession2.outputLog();
+psession3.outputLog();
