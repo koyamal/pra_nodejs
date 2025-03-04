@@ -33,6 +33,7 @@ const doPromiseAll = () => __awaiter(void 0, void 0, void 0, function* () {
     }
     catch (e) {
         console.log(e);
+        console.log('hello');
     }
 });
 doPromiseAll();

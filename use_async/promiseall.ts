@@ -10,7 +10,7 @@ function myPromiseError(num: number) {
   return new Promise(function(resolve) {
       setTimeout(() => { 
         throw Error('error');
-      }, 3000);
+      }, 1000);
   });
 }
 
