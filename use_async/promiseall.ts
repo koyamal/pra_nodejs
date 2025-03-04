@@ -7,9 +7,14 @@ function myPromise(num: number) {
 }
 
 function myPromiseError(num: number) {
-  return new Promise(function(resolve) {
-      setTimeout(() => { 
-        throw new Error('error');
+  return new Promise(function(resolve, rejects) {
+      setTimeout(() => {
+        try{
+          throw new Error('error!');
+        } catch(e) {
+          resolve('resolve');
+          rejects('rejects');
+        }
       }, 1000);
   });
 }

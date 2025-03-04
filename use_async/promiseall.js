@@ -17,9 +17,15 @@ function myPromise(num) {
     });
 }
 function myPromiseError(num) {
-    return new Promise(function (resolve) {
+    return new Promise(function (resolve, rejects) {
         setTimeout(() => {
-            throw new Error('error');
+            try {
+                throw new Error('error!');
+            }
+            catch (e) {
+                resolve('resolve');
+                rejects('rejects');
+            }
         }, 1000);
     });
 }
@@ -30,6 +36,7 @@ const doPromiseAll = () => __awaiter(void 0, void 0, void 0, function* () {
             myPromise(2),
             myPromiseError(3),
         ]);
+        console.log('after all');
     }
     catch (e) {
         console.log('before');
