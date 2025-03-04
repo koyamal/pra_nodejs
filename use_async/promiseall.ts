@@ -6,10 +6,19 @@ function myPromise(num: number) {
   });
 }
 
+function myPromiseError(num: number) {
+  return new Promise(function(resolve) {
+      setTimeout(() => { 
+        throw Error('error');
+      }, 3000);
+  });
+}
+
 const doPromiseAll = async () => {
   await Promise.all([
     myPromise(1),
-    myPromise(2)
+    myPromise(2),
+    myPromiseError(3),
   ]);
 }
 
