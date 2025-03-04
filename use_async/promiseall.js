@@ -24,10 +24,15 @@ function myPromiseError(num) {
     });
 }
 const doPromiseAll = () => __awaiter(void 0, void 0, void 0, function* () {
-    yield Promise.all([
-        myPromise(1),
-        myPromise(2),
-        myPromiseError(3),
-    ]);
+    try {
+        yield Promise.all([
+            myPromise(1),
+            myPromise(2),
+            myPromiseError(3),
+        ]);
+    }
+    catch (e) {
+        console.log(e);
+    }
 });
 doPromiseAll();
