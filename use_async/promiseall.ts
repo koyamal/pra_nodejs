@@ -15,11 +15,15 @@ function myPromiseError(num: number) {
 }
 
 const doPromiseAll = async () => {
-  await Promise.all([
-    myPromise(1),
-    myPromise(2),
-    myPromiseError(3),
-  ]);
+  try {
+    await Promise.all([
+      myPromise(1),
+      myPromise(2),
+      myPromiseError(3),
+    ]);
+  } catch(e) {
+    console.log(e);
+  }
 }
 
 doPromiseAll();

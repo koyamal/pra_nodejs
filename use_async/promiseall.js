@@ -11,13 +11,23 @@ var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, ge
 Object.defineProperty(exports, "__esModule", { value: true });
 function myPromise(num) {
     return new Promise(function (resolve) {
-        setTimeout(() => { resolve(num); }, 3000);
+        setTimeout(() => {
+            resolve(num);
+        }, 3000);
+    });
+}
+function myPromiseError(num) {
+    return new Promise(function (resolve) {
+        setTimeout(() => {
+            throw Error('error');
+        }, 3000);
     });
 }
 const doPromiseAll = () => __awaiter(void 0, void 0, void 0, function* () {
     yield Promise.all([
         myPromise(1),
-        myPromise(2)
+        myPromise(2),
+        myPromiseError(3),
     ]);
 });
 doPromiseAll();
