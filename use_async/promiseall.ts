@@ -23,7 +23,9 @@ const doPromiseAll = async () => {
     ]);
   } catch(e) {
     console.log(e);
+    console.log('hello');
   }
+
 }
 
 doPromiseAll();
