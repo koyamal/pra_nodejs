@@ -9,7 +9,7 @@ function myPromise(num: number) {
 function myPromiseError(num: number) {
   return new Promise(function(resolve) {
       setTimeout(() => { 
-        throw Error('error');
+        throw new Error('error');
       }, 1000);
   });
 }
@@ -21,9 +21,11 @@ const doPromiseAll = async () => {
       myPromise(2),
       myPromiseError(3),
     ]);
+    console.log('after all');
   } catch(e) {
+    console.log('before');
     console.log(e);
-    console.log('hello');
+    console.log('after');
   }
 
 }

@@ -19,8 +19,8 @@ function myPromise(num) {
 function myPromiseError(num) {
     return new Promise(function (resolve) {
         setTimeout(() => {
-            throw Error('error');
-        }, 3000);
+            throw new Error('error');
+        }, 1000);
     });
 }
 const doPromiseAll = () => __awaiter(void 0, void 0, void 0, function* () {
@@ -32,8 +32,9 @@ const doPromiseAll = () => __awaiter(void 0, void 0, void 0, function* () {
         ]);
     }
     catch (e) {
+        console.log('before');
         console.log(e);
-        console.log('hello');
+        console.log('after');
     }
 });
 doPromiseAll();
