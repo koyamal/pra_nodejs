@@ -39,7 +39,7 @@ const doPromiseAll = () => __awaiter(void 0, void 0, void 0, function* () {
         console.log('after all');
     }
     catch (e) {
-        console.log('before');
+        console.log('Promise.allでエラーをキャッチ');
         console.log(e);
         console.log('after');
     }
