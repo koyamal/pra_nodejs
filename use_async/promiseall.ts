@@ -2,7 +2,7 @@ function myPromise(num: number) {
   return new Promise(function(resolve) {
       setTimeout(() => { 
         resolve(num)
-      }, 3000);
+      }, 500);
   });
 }
 
@@ -15,7 +15,7 @@ function myPromiseError(num: number) {
           if(num) resolve('resolve is called');
           rejects('rejects is called');
         }
-      }, 1000);
+      }, 500);
   });
 }
 
@@ -24,7 +24,7 @@ const doPromiseAll = async () => {
     await Promise.all([
       myPromise(1),
       myPromise(2),
-      myPromiseError(3),
+      myPromiseError(0),
     ]);
     console.log('after Promise.all');
   } catch(e) {
