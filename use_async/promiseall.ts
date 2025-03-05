@@ -12,7 +12,7 @@ function myPromiseError(num: number) {
         try{
           throw new Error('error!');
         } catch(e) {
-          if(num) rejects('resolve is called');
+          if(num) resolve('resolve is called');
           rejects('rejects is called');
         }
       }, 1000);
