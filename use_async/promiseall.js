@@ -24,7 +24,7 @@ function myPromiseError(num) {
             }
             catch (e) {
                 if (num)
-                    rejects('resolve is called');
+                    resolve('resolve is called');
                 rejects('rejects is called');
             }
         }, 1000);
