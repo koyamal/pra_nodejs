@@ -28,7 +28,7 @@ const doPromiseAll = async () => {
     ]);
     console.log('after all');
   } catch(e) {
-    console.log('before');
+    console.log('Promise.allでエラーをキャッチ');
     console.log(e);
     console.log('after');
   }
