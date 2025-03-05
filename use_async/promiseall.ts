@@ -12,8 +12,8 @@ function myPromiseError(num: number) {
         try{
           throw new Error('error!');
         } catch(e) {
-          resolve('resolve');
-          rejects('rejects');
+          if(num) rejects('resolve is called');
+          rejects('rejects is called');
         }
       }, 1000);
   });
