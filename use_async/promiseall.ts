@@ -26,11 +26,11 @@ const doPromiseAll = async () => {
       myPromise(2),
       myPromiseError(3),
     ]);
-    console.log('after all');
+    console.log('after Promise.all');
   } catch(e) {
     console.log('Promise.allでエラーをキャッチ');
     console.log(e);
-    console.log('after');
+    console.log('Promise.allのcatchの最終行');
   }
 
 }
