@@ -36,6 +36,7 @@ const doPromiseAll = () => __awaiter(void 0, void 0, void 0, function* () {
             myPromise(1),
             myPromise(2),
             myPromiseError(0),
+            myPromiseError(1),
         ]);
         console.log('after Promise.all');
     }
