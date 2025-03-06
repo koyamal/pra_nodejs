@@ -38,13 +38,14 @@ const doPromiseAll = async () => {
 
 const doPromiseAllSettled = async () => {
   try {
-    await Promise.allSettled([
+    const res = await Promise.allSettled([
       myPromise(1),
       myPromise(2),
       myPromiseError(0),
       myPromiseError(1),
     ]);
     console.log('after Promise.all');
+    console.log(res);
   } catch(e) {
     console.log('Promise.allでエラーをキャッチ');
     console.log(e);
