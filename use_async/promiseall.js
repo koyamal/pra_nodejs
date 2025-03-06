@@ -48,13 +48,14 @@ const doPromiseAll = () => __awaiter(void 0, void 0, void 0, function* () {
 });
 const doPromiseAllSettled = () => __awaiter(void 0, void 0, void 0, function* () {
     try {
-        yield Promise.allSettled([
+        const res = yield Promise.allSettled([
             myPromise(1),
             myPromise(2),
             myPromiseError(0),
             myPromiseError(1),
         ]);
         console.log('after Promise.all');
+        console.log(res);
     }
     catch (e) {
         console.log('Promise.allでエラーをキャッチ');
