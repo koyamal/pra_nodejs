@@ -46,4 +46,21 @@ const doPromiseAll = () => __awaiter(void 0, void 0, void 0, function* () {
         console.log('Promise.allのcatchの最終行');
     }
 });
-doPromiseAll();
+const doPromiseAllSettled = () => __awaiter(void 0, void 0, void 0, function* () {
+    try {
+        yield Promise.allSettled([
+            myPromise(1),
+            myPromise(2),
+            myPromiseError(0),
+            myPromiseError(1),
+        ]);
+        console.log('after Promise.all');
+    }
+    catch (e) {
+        console.log('Promise.allでエラーをキャッチ');
+        console.log(e);
+        console.log('Promise.allのcatchの最終行');
+    }
+});
+// doPromiseAll();
+doPromiseAllSettled();
