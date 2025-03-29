@@ -5,6 +5,7 @@ const array1 = [
 ];
 
 const array2 = [
+  {id: '0', data: 'zero'},
   {id: '2', data: 'bye'},
 ];
 
