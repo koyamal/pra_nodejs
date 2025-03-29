@@ -6,7 +6,7 @@ const array1 = [
 ];
 const array2 = [
     { id: '0', data: 'zero' },
-    { id: '2', data: 'bye' },
+    // {id: '2', data: 'bye'},
 ];
 const array3 = array1.some(d => array2.some(da => da.id === d.id));
 console.log(array3);
