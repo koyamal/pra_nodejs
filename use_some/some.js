@@ -8,5 +8,7 @@ const array2 = [
     { id: '0', data: 'zero' },
     { id: '2', data: 'bye' },
 ];
-const array3 = array1.some(d => array2.some(da => da.id === d.id));
-console.log(array3);
+const flag = array1.some(d => array2.some(da => da.id === d.id));
+const flag2 = array1.some(d => d.data === 'bye');
+console.log(flag);
+console.log({ flag2 });
