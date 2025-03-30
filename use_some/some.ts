@@ -13,6 +13,6 @@ const flag = array1.some(d => array2.some(da => da.id === d.id));
 
 const flag2 = array1.some(d => d.data === 'bye');
 
-console.log(flag);
+console.log({flag});
 
 console.log({flag2});
