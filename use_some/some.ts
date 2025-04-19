@@ -15,6 +15,7 @@ const array2 = [
 const flag = array1.some(d => array2.some(da => da.id === d.id));
 
 const flag2 = array1.some(d => d.data === 'bye');
+flag2 && console.log('true');
 
 array1.some(d => d.data === 'seeyou');
 console.log('seeyou');
