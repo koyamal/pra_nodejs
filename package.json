@@ -3,7 +3,8 @@
     "preinstall": "echo 'preinstall'",
     "postinstall": "echo 'postinstall'",
     "prepublish": "echo 'prepublish'",
-    "preprepare": "echo 'preprepare'"
+    "preprepare": "echo 'preprepare'",
+    "prepare": "echo 'prepare'"
   },
   "dependencies": {
     "crypto": "^1.0.1",
