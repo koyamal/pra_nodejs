@@ -1,4 +1,7 @@
 {
+  "scripts": {
+    "preinstall": "echo 'hello'"
+  },
   "dependencies": {
     "crypto": "^1.0.1",
     "crypto-js": "^4.2.0",
