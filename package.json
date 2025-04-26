@@ -1,7 +1,8 @@
 {
   "scripts": {
     "preinstall": "echo 'preinstall'",
-    "postinstall": "echo 'postinstall'"
+    "postinstall": "echo 'postinstall'",
+    "prepublish": "echo 'prepublish'"
   },
   "dependencies": {
     "crypto": "^1.0.1",
