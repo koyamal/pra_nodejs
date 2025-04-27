@@ -1,7 +1,7 @@
 {
   "scripts": {
-    "preinstall": "echo 'preinstall'",
-    "postinstall": "echo 'postinstall'",
+    "preinstall": "echo 'preinstall is called'",
+    "postinstall": "echo 'postinstall is called'",
     "prepublish": "echo 'prepublish'",
     "preprepare": "echo 'preprepare'",
     "prepare": "echo 'prepare'",
