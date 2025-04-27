@@ -2,10 +2,10 @@
   "scripts": {
     "preinstall": "echo 'preinstall is called'",
     "postinstall": "echo 'postinstall is called'",
-    "prepublish": "echo 'prepublish'",
-    "preprepare": "echo 'preprepare'",
-    "prepare": "echo 'prepare'",
-    "postprepare": "echo 'postprepare'"
+    "prepublish": "echo 'prepublish is called'",
+    "preprepare": "echo 'preprepare is called'",
+    "prepare": "echo 'prepare is called'",
+    "postprepare": "echo 'postprepare is called'"
   },
   "dependencies": {
     "crypto": "^1.0.1",
