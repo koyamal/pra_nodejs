@@ -1,4 +1,12 @@
 {
+  "scripts": {
+    "preinstall": "echo 'preinstall'",
+    "postinstall": "echo 'postinstall'",
+    "prepublish": "echo 'prepublish'",
+    "preprepare": "echo 'preprepare'",
+    "prepare": "echo 'prepare'",
+    "postprepare": "echo 'postprepare'"
+  },
   "dependencies": {
     "crypto": "^1.0.1",
     "crypto-js": "^4.2.0",
