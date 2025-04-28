@@ -5,7 +5,8 @@
     "prepublish": "echo 'prepublish is called'",
     "preprepare": "echo 'preprepare is called'",
     "prepare": "echo 'prepare is called'",
-    "postprepare": "echo 'postprepare is called'"
+    "postprepare": "echo 'postprepare is called'",
+    "hello": "echo 'hello'"
   },
   "dependencies": {
     "crypto": "^1.0.1",
