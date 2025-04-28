@@ -1,11 +1,14 @@
 {
   "scripts": {
-    "preinstall": "echo 'preinstall'",
-    "postinstall": "echo 'postinstall'",
-    "prepublish": "echo 'prepublish'",
-    "preprepare": "echo 'preprepare'",
-    "prepare": "echo 'prepare'",
-    "postprepare": "echo 'postprepare'"
+    "preinstall": "echo 'preinstall is called'",
+    "postinstall": "echo 'postinstall is called'",
+    "prepublish": "echo 'prepublish is called'",
+    "preprepare": "echo 'preprepare is called'",
+    "prepare": "echo 'prepare is called'",
+    "postprepare": "echo 'postprepare is called'",
+    "hello": "echo 'hello'",
+    "prehello": "echo 'prehello'",
+    "posthello": "echo 'posthello'"
   },
   "dependencies": {
     "crypto": "^1.0.1",
