@@ -6,7 +6,8 @@
     "preprepare": "echo 'preprepare is called'",
     "prepare": "echo 'prepare is called'",
     "postprepare": "echo 'postprepare is called'",
-    "hello": "echo 'hello'"
+    "hello": "echo 'hello'",
+    "prehello": "echo 'prehello'"
   },
   "dependencies": {
     "crypto": "^1.0.1",
