@@ -8,6 +8,7 @@
     "postprepare": "echo 'postprepare is called'",
     "hello": "echo 'hello'",
     "prehello": "echo 'prehello'",
+    "preprehello": "echo 'preprehello'",
     "posthello": "echo 'posthello'"
   },
   "dependencies": {
