@@ -9,7 +9,8 @@
     "hello": "echo 'hello'",
     "prehello": "echo 'prehello'",
     "preprehello": "echo 'preprehello'",
-    "posthello": "echo 'posthello'"
+    "posthello": "echo 'posthello'",
+    "postposthello": "echo 'postposthello'"
   },
   "dependencies": {
     "crypto": "^1.0.1",
