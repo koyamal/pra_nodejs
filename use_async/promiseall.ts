@@ -26,6 +26,7 @@ const doPromiseAll = async () => {
       myPromise(2),
       myPromiseError(0),
       myPromiseError(1),
+      myPromiseError(2),
     ]);
     console.log('after Promise.all');
   } catch(e) {
