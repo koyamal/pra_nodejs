@@ -61,7 +61,8 @@ doPromiseAllSettled();
 doPromiseAll();
 (async() => {
   await Promise.all([
-    
+    doPromiseAllSettled,
+    doPromiseAll
   ]);
 })()
 export {}
