@@ -58,4 +58,5 @@ const doPromiseAllSettled = async () => {
 
 // doPromiseAll();
 doPromiseAllSettled();
+doPromiseAll();
 export {}
