@@ -64,6 +64,7 @@ doPromiseAll();
     doPromiseAllSettled,
     doPromiseAll,
     doPromiseAll,
+    doPromiseAllSettled
   ]);
 })()
 export {}
