@@ -66,6 +66,8 @@ doPromiseAll();
     doPromiseAll,
     doPromiseAll,
     doPromiseAll,
+    doPromiseAll,
+    doPromiseAll,
     doPromiseAllSettled
   ]);
 })()
