@@ -64,6 +64,8 @@ doPromiseAll();
     doPromiseAllSettled,
     doPromiseAll,
     doPromiseAll,
+    doPromiseAll,
+    doPromiseAll,
     doPromiseAllSettled
   ]);
 })()
