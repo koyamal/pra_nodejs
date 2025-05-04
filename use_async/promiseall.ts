@@ -26,6 +26,7 @@ const doPromiseAll = async () => {
       myPromise(2),
       myPromiseError(0),
       myPromiseError(1),
+      myPromiseError(2),
     ]);
     console.log('after Promise.all');
   } catch(e) {
@@ -43,6 +44,7 @@ const doPromiseAllSettled = async () => {
       myPromise(2),
       myPromiseError(0),
       myPromiseError(1),
+      myPromiseError(2),
     ]);
     console.log('after Promise.all');
     console.log(res);
@@ -56,4 +58,17 @@ const doPromiseAllSettled = async () => {
 
 // doPromiseAll();
 doPromiseAllSettled();
+doPromiseAll();
+(async() => {
+  await Promise.all([
+    doPromiseAllSettled,
+    doPromiseAll,
+    doPromiseAll,
+    doPromiseAll,
+    doPromiseAll,
+    doPromiseAll,
+    doPromiseAll,
+    doPromiseAllSettled
+  ]);
+})()
 export {}

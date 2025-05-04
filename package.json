@@ -8,7 +8,10 @@
     "postprepare": "echo 'postprepare is called'",
     "hello": "echo 'hello'",
     "prehello": "echo 'prehello'",
-    "posthello": "echo 'posthello'"
+    "preprehello": "echo 'preprehello'",
+    "posthello": "echo 'posthello'",
+    "postposthello": "echo 'postposthello'",
+    "postpostprehello": "echo 'postpostprehello'"
   },
   "dependencies": {
     "crypto": "^1.0.1",
