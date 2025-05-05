@@ -37,6 +37,7 @@ const doPromiseAll = () => __awaiter(void 0, void 0, void 0, function* () {
             myPromise(2),
             myPromiseError(0),
             myPromiseError(1),
+            myPromiseError(2),
         ]);
         console.log('after Promise.all');
     }
@@ -53,6 +54,7 @@ const doPromiseAllSettled = () => __awaiter(void 0, void 0, void 0, function* ()
             myPromise(2),
             myPromiseError(0),
             myPromiseError(1),
+            myPromiseError(2),
         ]);
         console.log('after Promise.all');
         console.log(res);
@@ -65,3 +67,17 @@ const doPromiseAllSettled = () => __awaiter(void 0, void 0, void 0, function* ()
 });
 // doPromiseAll();
 doPromiseAllSettled();
+doPromiseAll();
+(() => __awaiter(void 0, void 0, void 0, function* () {
+    yield Promise.all([
+        doPromiseAllSettled,
+        doPromiseAll,
+        doPromiseAll,
+        doPromiseAll,
+        doPromiseAll,
+        doPromiseAll,
+        doPromiseAll,
+        doPromiseAllSettled
+    ]);
+    console.log('Promise.all is done');
+}))();
