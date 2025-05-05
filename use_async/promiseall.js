@@ -37,6 +37,7 @@ const doPromiseAll = () => __awaiter(void 0, void 0, void 0, function* () {
             myPromise(2),
             myPromiseError(0),
             myPromiseError(1),
+            myPromiseError(2),
         ]);
         console.log('after Promise.all');
     }
@@ -46,6 +47,10 @@ const doPromiseAll = () => __awaiter(void 0, void 0, void 0, function* () {
         console.log('Promise.allのcatchの最終行');
     }
 });
+const doPromiseAllResolve = (num) => __awaiter(void 0, void 0, void 0, function* () {
+    const res = yield myPromise(num);
+    console.log(res);
+});
 const doPromiseAllSettled = () => __awaiter(void 0, void 0, void 0, function* () {
     try {
         const res = yield Promise.allSettled([
@@ -53,6 +58,7 @@ const doPromiseAllSettled = () => __awaiter(void 0, void 0, void 0, function* ()
             myPromise(2),
             myPromiseError(0),
             myPromiseError(1),
+            myPromiseError(2),
         ]);
         console.log('after Promise.all');
         console.log(res);
@@ -64,4 +70,14 @@ const doPromiseAllSettled = () => __awaiter(void 0, void 0, void 0, function* ()
     }
 });
 // doPromiseAll();
-doPromiseAllSettled();
+// doPromiseAllSettled();
+// doPromiseAll();
+(() => __awaiter(void 0, void 0, void 0, function* () {
+    console.log('Promise.all is start');
+    yield Promise.all([
+        doPromiseAllResolve(1),
+        doPromiseAllResolve(2),
+        doPromiseAllSettled()
+    ]);
+    console.log('Promise.all is done');
+}))();
