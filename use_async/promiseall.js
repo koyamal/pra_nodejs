@@ -47,8 +47,8 @@ const doPromiseAll = () => __awaiter(void 0, void 0, void 0, function* () {
         console.log('Promise.allのcatchの最終行');
     }
 });
-const doPromiseAllResolve = () => __awaiter(void 0, void 0, void 0, function* () {
-    const res = yield myPromise(1);
+const doPromiseAllResolve = (num) => __awaiter(void 0, void 0, void 0, function* () {
+    const res = yield myPromise(num);
     console.log(res);
 });
 const doPromiseAllSettled = () => __awaiter(void 0, void 0, void 0, function* () {
@@ -75,7 +75,8 @@ const doPromiseAllSettled = () => __awaiter(void 0, void 0, void 0, function* ()
 (() => __awaiter(void 0, void 0, void 0, function* () {
     console.log('Promise.all is start');
     yield Promise.all([
-        doPromiseAllResolve()
+        doPromiseAllResolve(1),
+        doPromiseAllResolve(2)
     ]);
     console.log('Promise.all is done');
 }))();
