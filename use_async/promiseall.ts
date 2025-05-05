@@ -37,8 +37,8 @@ const doPromiseAll = async () => {
 
 }
 
-const doPromiseAllResolve = async () => {
-  const res = await myPromise(1);
+const doPromiseAllResolve = async (num: number) => {
+  const res = await myPromise(num);
   console.log(res);
 }
 
@@ -67,7 +67,8 @@ const doPromiseAllSettled = async () => {
 (async() => {
   console.log('Promise.all is start');
   await Promise.all([
-    doPromiseAllResolve()
+    doPromiseAllResolve(1),
+    doPromiseAllResolve(2)
   ]);
   console.log('Promise.all is done');
 })()
