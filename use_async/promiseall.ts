@@ -67,7 +67,7 @@ const doPromiseAllSettled = async () => {
 (async() => {
   console.log('Promise.all is start');
   await Promise.all([
-    doPromiseAllResolve
+    doPromiseAllResolve()
   ]);
   console.log('Promise.all is done');
 })()
