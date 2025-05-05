@@ -70,5 +70,6 @@ doPromiseAll();
     doPromiseAll,
     doPromiseAllSettled
   ]);
+  console.log('Promise.all is done');
 })()
 export {}
