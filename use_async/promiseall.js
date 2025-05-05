@@ -49,6 +49,7 @@ const doPromiseAll = () => __awaiter(void 0, void 0, void 0, function* () {
 });
 const doPromiseAllResolve = () => __awaiter(void 0, void 0, void 0, function* () {
     const res = yield myPromise(1);
+    console.log(res);
 });
 const doPromiseAllSettled = () => __awaiter(void 0, void 0, void 0, function* () {
     try {
