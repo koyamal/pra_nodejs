@@ -76,7 +76,8 @@ const doPromiseAllSettled = () => __awaiter(void 0, void 0, void 0, function* ()
     console.log('Promise.all is start');
     yield Promise.all([
         doPromiseAllResolve(1),
-        doPromiseAllResolve(2)
+        doPromiseAllResolve(2),
+        doPromiseAllSettled()
     ]);
     console.log('Promise.all is done');
 }))();
