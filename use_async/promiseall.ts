@@ -37,6 +37,10 @@ const doPromiseAll = async () => {
 
 }
 
+const doPromiseAllResolve = async () => {
+  const res = await myPromise(1);
+}
+
 const doPromiseAllSettled = async () => {
   try {
     const res = await Promise.allSettled([
