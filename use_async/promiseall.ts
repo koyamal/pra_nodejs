@@ -40,7 +40,7 @@ const doPromiseAll = async () => {
 const doPromiseAllResolve = async (num: number) => {
   console.log(`${num} is start`);
   const res = await myPromise(num);
-  console.log(res);
+  console.log(`${num} is done: res=${res}`);
 }
 
 const doPromiseAllSettled = async () => {

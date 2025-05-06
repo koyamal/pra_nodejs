@@ -48,6 +48,7 @@ const doPromiseAll = () => __awaiter(void 0, void 0, void 0, function* () {
     }
 });
 const doPromiseAllResolve = (num) => __awaiter(void 0, void 0, void 0, function* () {
+    console.log(`${num} is start`);
     const res = yield myPromise(num);
     console.log(res);
 });
