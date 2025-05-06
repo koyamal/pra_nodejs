@@ -48,8 +48,9 @@ const doPromiseAll = () => __awaiter(void 0, void 0, void 0, function* () {
     }
 });
 const doPromiseAllResolve = (num) => __awaiter(void 0, void 0, void 0, function* () {
+    console.log(`${num} is start`);
     const res = yield myPromise(num);
-    console.log(res);
+    console.log(`${num} is done: res=${res}`);
 });
 const doPromiseAllSettled = () => __awaiter(void 0, void 0, void 0, function* () {
     try {
@@ -77,6 +78,7 @@ const doPromiseAllSettled = () => __awaiter(void 0, void 0, void 0, function* ()
     yield Promise.all([
         doPromiseAllResolve(1),
         doPromiseAllResolve(2),
+        doPromiseAllResolve(3),
         doPromiseAllSettled()
     ]);
     console.log('Promise.all is done');
