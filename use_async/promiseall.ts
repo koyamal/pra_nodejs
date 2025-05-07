@@ -47,6 +47,7 @@ const doPromiseAllSettled = async () => {
   try {
     const res = await Promise.allSettled([
       myPromise(1),
+      myPromise(1),
       myPromise(2),
       myPromiseError(0),
       myPromiseError(1),
