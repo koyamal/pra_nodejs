@@ -67,7 +67,7 @@ const doPromiseAllSettled = () => __awaiter(void 0, void 0, void 0, function* ()
     }
     catch (e) {
         console.log('Promise.allでエラーをキャッチ');
-        console.log(e);
+        console.log(`エラー内容：${e}`);
         console.log('Promise.allのcatchの最終行');
     }
 });
