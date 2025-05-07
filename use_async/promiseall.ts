@@ -57,7 +57,7 @@ const doPromiseAllSettled = async () => {
     console.log(res);
   } catch(e) {
     console.log('Promise.allでエラーをキャッチ');
-    console.log(e);
+    console.log(`エラー内容：${e}`);
     console.log('Promise.allのcatchの最終行');
   }
 
