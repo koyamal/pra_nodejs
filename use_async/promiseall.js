@@ -16,6 +16,13 @@ function myPromise(num) {
         }, 500);
     });
 }
+function myGetPromise(num) {
+    return new Promise(function (resolve) {
+        setTimeout(() => {
+            resolve(num);
+        }, 500);
+    });
+}
 function myPromiseError(num) {
     return new Promise(function (resolve, rejects) {
         setTimeout(() => {
@@ -56,6 +63,7 @@ const doPromiseAllSettled = () => __awaiter(void 0, void 0, void 0, function* ()
     try {
         const res = yield Promise.allSettled([
             myPromise(1),
+            myPromise(1),
             myPromise(2),
             myPromiseError(0),
             myPromiseError(1),
@@ -66,20 +74,19 @@ const doPromiseAllSettled = () => __awaiter(void 0, void 0, void 0, function* ()
     }
     catch (e) {
         console.log('Promise.allでエラーをキャッチ');
-        console.log(e);
+        console.log(`エラー内容：${e}`);
         console.log('Promise.allのcatchの最終行');
     }
 });
-// doPromiseAll();
-// doPromiseAllSettled();
-// doPromiseAll();
 (() => __awaiter(void 0, void 0, void 0, function* () {
     console.log('Promise.all is start');
     yield Promise.all([
         doPromiseAllResolve(1),
         doPromiseAllResolve(2),
         doPromiseAllResolve(3),
-        doPromiseAllSettled()
+        doPromiseAllSettled(),
+        doPromiseAllSettled(),
+        myGetPromise(1)
     ]);
     console.log('Promise.all is done');
 }))();
