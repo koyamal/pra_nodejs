@@ -8,7 +8,8 @@ function myPromise(num: number) {
 
 function myGetPromise(num: number) {
   return new Promise(function(resolve) {
-      setTimeout(() => { 
+      setTimeout(() => {
+        console.log(`myGetPromise ${num}`);
         resolve(num)
       }, 500);
   });
