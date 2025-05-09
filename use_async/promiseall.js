@@ -16,6 +16,13 @@ function myPromise(num) {
         }, 500);
     });
 }
+function myGetPromise(num) {
+    return new Promise(function (resolve) {
+        setTimeout(() => {
+            resolve(num);
+        }, 500);
+    });
+}
 function myPromiseError(num) {
     return new Promise(function (resolve, rejects) {
         setTimeout(() => {
@@ -78,7 +85,8 @@ const doPromiseAllSettled = () => __awaiter(void 0, void 0, void 0, function* ()
         doPromiseAllResolve(2),
         doPromiseAllResolve(3),
         doPromiseAllSettled(),
-        doPromiseAllSettled()
+        doPromiseAllSettled(),
+        myGetPromise(1)
     ]);
     console.log('Promise.all is done');
 }))();
