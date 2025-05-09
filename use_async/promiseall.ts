@@ -6,6 +6,14 @@ function myPromise(num: number) {
   });
 }
 
+function myGetPromise(num: number) {
+  return new Promise(function(resolve) {
+      setTimeout(() => { 
+        resolve(num)
+      }, 500);
+  });
+}
+
 function myPromiseError(num: number) {
   return new Promise(function(resolve, rejects) {
       setTimeout(() => {
@@ -70,7 +78,8 @@ const doPromiseAllSettled = async () => {
     doPromiseAllResolve(2),
     doPromiseAllResolve(3),
     doPromiseAllSettled(),
-    doPromiseAllSettled()
+    doPromiseAllSettled(),
+    myGetPromise(1)
   ]);
   console.log('Promise.all is done');
 })()
