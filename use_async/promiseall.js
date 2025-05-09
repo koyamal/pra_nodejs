@@ -19,6 +19,7 @@ function myPromise(num) {
 function myGetPromise(num) {
     return new Promise(function (resolve) {
         setTimeout(() => {
+            console.log(`myGetPromise ${num}`);
             resolve(num);
         }, 500);
     });
