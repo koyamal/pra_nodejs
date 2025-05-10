@@ -1,14 +1,13 @@
 "use strict";
-const metaTitle = '';
-const checkTypeOf = (metaTitle) => {
-    if (typeof metaTitle === 'string') {
-        console.log('metaTitleのtypeはstringです。');
+const checkTypeOf = (val) => {
+    if (typeof val === 'string') {
+        console.log('typeはstringです。');
         return 'string';
     }
     else {
-        console.log('metaTitleのtypeはstringではありません。');
+        console.log('typeはstringではありません。');
         return 'not string';
     }
 };
-checkTypeOf(metaTitle);
+checkTypeOf('');
 checkTypeOf(undefined);
