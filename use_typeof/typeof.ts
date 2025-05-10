@@ -11,3 +11,5 @@ const checkTypeOf = (val: any) => {
 checkTypeOf('');
 
 checkTypeOf(undefined);
+
+checkTypeOf(2);
