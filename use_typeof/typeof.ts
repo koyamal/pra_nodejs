@@ -1,5 +1,3 @@
-import { type } from "os";
-
 const metaTitle = '';
 
 const checkTypeOf = (metaTitle: any) => {
