@@ -10,4 +10,6 @@ const checkTypeOf = (metaTitle: any) => {
     console.log('metaTitleのtypeはstringではありません。');
     return 'not string';
   }
-} 
+}
+
+checkTypeOf(metaTitle);
