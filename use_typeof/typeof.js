@@ -1,5 +1,4 @@
 "use strict";
-Object.defineProperty(exports, "__esModule", { value: true });
 const metaTitle = '';
 const checkTypeOf = (metaTitle) => {
     if (typeof metaTitle === 'string') {
