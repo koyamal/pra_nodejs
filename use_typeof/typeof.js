@@ -11,3 +11,4 @@ const checkTypeOf = (metaTitle) => {
     }
 };
 checkTypeOf(metaTitle);
+checkTypeOf(undefined);
