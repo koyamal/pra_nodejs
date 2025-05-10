@@ -11,3 +11,4 @@ const checkTypeOf = (metaTitle) => {
         return 'not string';
     }
 };
+checkTypeOf(metaTitle);
