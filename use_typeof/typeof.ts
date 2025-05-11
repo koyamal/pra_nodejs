@@ -4,7 +4,7 @@ const checkTypeOf = (val: any) => {
     return 'string';
   } else {
     console.log('stringではありません。');
-    console.log(`${val}は${typeof val}です。`);
+    console.log(`${val}のtypeは${typeof val}です。`);
     return 'not string';
   }
 }
