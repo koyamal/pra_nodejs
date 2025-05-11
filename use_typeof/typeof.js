@@ -5,7 +5,6 @@ const checkTypeOf = (val) => {
         return 'string';
     }
     else {
-        console.log('stringではありません。');
         console.log(`${val}のtypeは${typeof val}です。`);
         return 'not string';
     }
