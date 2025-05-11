@@ -2,11 +2,11 @@
 const checkTypeOf = (val) => {
     if (typeof val === 'string') {
         console.log('typeはstringです。');
-        return 'string';
+        return true;
     }
     else {
         console.log(`${val}のtypeは${typeof val}です。`);
-        return 'not string';
+        return false;
     }
 };
 checkTypeOf('');
