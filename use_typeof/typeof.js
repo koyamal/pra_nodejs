@@ -1,5 +1,6 @@
 "use strict";
 const checkTypeOf = (val) => {
+    console.log(`${val}のtypeは${typeof val}です。`);
     if (typeof val === 'string') {
         console.log(`${val}のtypeはstringです。`);
         return true;
