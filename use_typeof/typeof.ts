@@ -1,6 +1,6 @@
 const checkTypeOf = (val: any) => {
   if(typeof val === 'string') {
-    console.log('typeはstringです。');
+    console.log(`${val}のtypeはstringです。`);
     return true;
   } else {
     console.log(`${val}のtypeは${typeof val}です。`);
