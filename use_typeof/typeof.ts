@@ -1,4 +1,4 @@
-const checkTypeOf = (val: any) => {
+const checkTypeOf = (val: any): boolean => {
   console.log(`${val}のtypeは${typeof val}です。`);
   return typeof val === 'string';
 }
