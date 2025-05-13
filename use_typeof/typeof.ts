@@ -10,3 +10,5 @@ checkTypeOf(undefined);
 checkTypeOf(2);
 
 checkTypeOf(null);
+
+checkTypeOf(true);
