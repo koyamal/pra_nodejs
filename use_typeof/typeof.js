@@ -9,3 +9,4 @@ checkTypeOf(2);
 checkTypeOf(null);
 checkTypeOf(true);
 checkTypeOf(NaN);
+checkTypeOf({});
