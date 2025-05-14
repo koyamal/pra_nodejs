@@ -14,3 +14,5 @@ checkTypeOf(null);
 checkTypeOf(true);
 
 checkTypeOf(NaN);
+
+checkTypeOf({});
