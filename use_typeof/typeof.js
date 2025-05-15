@@ -11,3 +11,4 @@ checkTypeOf(true);
 checkTypeOf(NaN);
 checkTypeOf({});
 checkTypeOf([]);
+checkTypeOf(() => { });
