@@ -12,3 +12,4 @@ checkTypeOf(NaN);
 checkTypeOf({});
 checkTypeOf([]);
 checkTypeOf(() => { });
+checkTypeOf(() => { console.log('hello'); });
