@@ -3,7 +3,7 @@ const checkTypeOf = (val: any): boolean => {
   return typeof val === 'string';
 }
 
-checkTypeOf('');
+checkTypeOf('') && console.log('hello');
 
 checkTypeOf(undefined);
 
