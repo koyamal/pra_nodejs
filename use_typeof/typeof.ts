@@ -5,7 +5,7 @@ const checkTypeOf = (val: any): boolean => {
 
 checkTypeOf('') && console.log('hello');
 
-checkTypeOf(undefined);
+checkTypeOf(undefined) && console.log('hello');
 
 checkTypeOf(2);
 
