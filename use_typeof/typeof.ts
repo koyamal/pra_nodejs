@@ -9,7 +9,7 @@ checkTypeOf(undefined) && console.log('hello');
 
 checkTypeOf(2) && console.log('hello');
 
-checkTypeOf(null);
+checkTypeOf(null) && console.log('hello');
 
 checkTypeOf(true);
 
