@@ -5,7 +5,7 @@ const checkTypeOf = (val) => {
 };
 checkTypeOf('') && console.log('hello');
 checkTypeOf(undefined) && console.log('hello');
-checkTypeOf(2);
+checkTypeOf(2) && console.log('hello');
 checkTypeOf(null);
 checkTypeOf(true);
 checkTypeOf(NaN);
