@@ -15,7 +15,7 @@ checkTypeOf(true) && console.log('hello');
 
 checkTypeOf(NaN) && console.log('hello');
 
-checkTypeOf({});
+checkTypeOf({}) && console.log('hello');
 
 checkTypeOf([]);
 
