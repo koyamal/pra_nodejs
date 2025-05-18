@@ -11,7 +11,7 @@ checkTypeOf(2) && console.log('hello');
 
 checkTypeOf(null) && console.log('hello');
 
-checkTypeOf(true);
+checkTypeOf(true) && console.log('hello');
 
 checkTypeOf(NaN);
 
