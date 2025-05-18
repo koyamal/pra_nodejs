@@ -13,7 +13,7 @@ checkTypeOf(null) && console.log('hello');
 
 checkTypeOf(true) && console.log('hello');
 
-checkTypeOf(NaN);
+checkTypeOf(NaN) && console.log('hello');
 
 checkTypeOf({});
 
