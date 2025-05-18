@@ -9,7 +9,7 @@ checkTypeOf(2) && console.log('hello');
 checkTypeOf(null) && console.log('hello');
 checkTypeOf(true) && console.log('hello');
 checkTypeOf(NaN) && console.log('hello');
-checkTypeOf({});
+checkTypeOf({}) && console.log('hello');
 checkTypeOf([]);
 checkTypeOf(() => { });
 checkTypeOf(() => { console.log('hello'); });
