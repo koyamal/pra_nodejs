@@ -12,3 +12,13 @@ checkTypeOf(2);
 checkTypeOf(null);
 
 checkTypeOf(true);
+
+checkTypeOf(NaN);
+
+checkTypeOf({});
+
+checkTypeOf([]);
+
+checkTypeOf(() => {});
+
+checkTypeOf(() => {console.log('hello')});
