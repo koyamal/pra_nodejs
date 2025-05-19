@@ -3,19 +3,19 @@ const checkTypeOf = (val: any): boolean => {
   return typeof val === 'string';
 }
 
-checkTypeOf('') && console.log('hello');
+checkTypeOf('');
 
-checkTypeOf(undefined) && console.log('hello');
+checkTypeOf(undefined);
 
-checkTypeOf(2) && console.log('hello');
+checkTypeOf(2);
 
-checkTypeOf(null) && console.log('hello');
+checkTypeOf(null);
 
-checkTypeOf(true) && console.log('hello');
+checkTypeOf(true);
 
-checkTypeOf(NaN) && console.log('hello');
+checkTypeOf(NaN);
 
-checkTypeOf({}) && console.log('hello');
+checkTypeOf({});
 
 checkTypeOf([]);
 
