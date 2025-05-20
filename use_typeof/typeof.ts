@@ -21,4 +21,4 @@ checkTypeOf([]);
 
 checkTypeOf(() => {});
 
-checkTypeOf(() => {console.log('hello')});
+checkTypeOf(() => { return ''});
