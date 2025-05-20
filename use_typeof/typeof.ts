@@ -21,4 +21,4 @@ checkTypeOf([]);
 
 checkTypeOf(() => {});
 
-checkTypeOf(() => { return ''});
+checkTypeOf(() => '');
