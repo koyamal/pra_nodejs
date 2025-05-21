@@ -4,6 +4,7 @@ const checkTypeOf = (val) => {
     return typeof val === 'string';
 };
 checkTypeOf('');
+checkTypeOf('hello');
 checkTypeOf(undefined);
 checkTypeOf(2);
 checkTypeOf(null);
