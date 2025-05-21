@@ -4,12 +4,14 @@ const checkTypeOf = (val) => {
     return typeof val === 'string';
 };
 checkTypeOf('');
+checkTypeOf('hello');
 checkTypeOf(undefined);
 checkTypeOf(2);
 checkTypeOf(null);
 checkTypeOf(true);
+checkTypeOf(false);
 checkTypeOf(NaN);
 checkTypeOf({});
 checkTypeOf([]);
 checkTypeOf(() => { });
-checkTypeOf(() => { console.log('hello'); });
+checkTypeOf(() => '');
