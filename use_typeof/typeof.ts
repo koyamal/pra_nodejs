@@ -8,6 +8,8 @@ checkTypeOf('');
 checkTypeOf('hello');
 
 checkTypeOf(undefined);
+checkTypeOf(null);
+checkTypeOf({undefined});
 
 checkTypeOf(2);
 
