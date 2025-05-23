@@ -6,6 +6,7 @@ const checkTypeOf = (val) => {
 checkTypeOf('');
 checkTypeOf('hello');
 checkTypeOf(undefined);
+checkTypeOf({ undefined });
 checkTypeOf(2);
 checkTypeOf(null);
 checkTypeOf(true);
