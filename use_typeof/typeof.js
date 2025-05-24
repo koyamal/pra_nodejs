@@ -8,6 +8,7 @@ const checkTypeOfIndex = (val) => {
         console.log(key);
     });
 };
+checkTypeOfIndex({ a: 1, b: 2 });
 checkTypeOf('');
 checkTypeOf('hello');
 checkTypeOf(undefined);

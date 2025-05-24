@@ -3,13 +3,13 @@ const checkTypeOf = (val: any): boolean => {
   return typeof val === 'string';
 }
 
-const checkTypeOfIndex = (val: object) => {
+const logKeys = (val: object) => {
   Object.keys(val).map((key) => {
     console.log(key);
   });
 }
 
-checkTypeOfIndex({a: 1, b: 2});
+logKeys({a: 1, b: 2});
 
 checkTypeOf('');
 
