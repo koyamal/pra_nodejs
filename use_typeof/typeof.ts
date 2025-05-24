@@ -9,6 +9,8 @@ const checkTypeOfIndex = (val: object) => {
   });
 }
 
+checkTypeOfIndex({a: 1, b: 2});
+
 checkTypeOf('');
 
 checkTypeOf('hello');
