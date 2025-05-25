@@ -9,7 +9,7 @@ const logKeys = (val: object) => {
   });
 }
 
-logKeys({a: 1, b: 2});
+logKeys({a: 1, b: 2, c: 3});
 
 checkTypeOf('');
 
