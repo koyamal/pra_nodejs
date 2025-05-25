@@ -8,7 +8,7 @@ const logKeys = (val) => {
         console.log(key);
     });
 };
-logKeys({ a: 1, b: 2 });
+logKeys({ a: 1, b: 2, c: 3 });
 checkTypeOf('');
 checkTypeOf('hello');
 checkTypeOf(undefined);
