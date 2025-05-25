@@ -4,7 +4,7 @@ const checkTypeOf = (val: any): boolean => {
 }
 
 const logKeys = (val: object) => {
-  Object.keys(val).forEach((key) => {
+  Object.keys(val).forEach(key => {
     console.log(key);
   });
 }
