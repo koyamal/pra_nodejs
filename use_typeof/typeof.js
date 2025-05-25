@@ -8,6 +8,11 @@ const logKeys = (val) => {
         console.log(key);
     });
 };
+const logValues = (val) => {
+    Object.values(val).forEach(value => {
+        console.log(value);
+    });
+};
 logKeys({ a: 1, b: 2, c: 3, d: "4" });
 checkTypeOf('');
 checkTypeOf('hello');
