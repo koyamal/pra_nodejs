@@ -4,7 +4,7 @@ const checkTypeOf = (val) => {
     return typeof val === 'string';
 };
 const logKeys = (val) => {
-    Object.keys(val).map((key) => {
+    Object.keys(val).forEach(key => {
         console.log(key);
     });
 };
