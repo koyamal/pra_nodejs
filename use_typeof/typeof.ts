@@ -20,8 +20,6 @@ logKeys({a: 1, b: 2, c: 3, d: "4"});
 logKeys({a: 1, b: 2, c: 3, d: "4"});
 logValues({a: 1, b: 2, c: 3, d: "4"});
 
-const obj = {a: 1, b: 2, c: 3, d: "4"}
-obj['a']
 checkTypeOf('');
 
 checkTypeOf('hello');
