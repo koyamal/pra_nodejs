@@ -6,7 +6,7 @@ const checkTypeOf = (val) => {
 const logKeys = (val) => {
     Object.keys(val).forEach(key => {
         console.log(key);
-        console.log(val);
+        console.log(val[key]);
     });
 };
 const logValues = (val) => {
@@ -17,6 +17,8 @@ const logValues = (val) => {
 logKeys({ a: 1, b: 2, c: 3, d: "4" });
 logKeys({ a: 1, b: 2, c: 3, d: "4" });
 logValues({ a: 1, b: 2, c: 3, d: "4" });
+const obj = { a: 1, b: 2, c: 3, d: "4" };
+obj['a'];
 checkTypeOf('');
 checkTypeOf('hello');
 checkTypeOf(undefined);
