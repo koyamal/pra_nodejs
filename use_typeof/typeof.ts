@@ -9,6 +9,12 @@ const logKeys = (val: object) => {
   });
 }
 
+const logKey = (val: object) => {
+  Object.keys(val).forEach(key => {
+    console.log(key, val[key as keyof object]);
+  });
+}
+
 const logValues = (val: object) => {
   Object.values(val).forEach(value => {
     console.log(value);
