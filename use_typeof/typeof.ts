@@ -9,7 +9,7 @@ const logKeys = (val: object) => {
   });
 }
 
-const logKey = (val: object) => {
+const logKeyValue = (val: object) => {
   Object.keys(val).forEach(key => {
     console.log(key, val[key as keyof object]);
   });
@@ -23,6 +23,7 @@ const logValues = (val: object) => {
 
 logKeys({a: 1, b: 2, c: 3, d: "4"});
 logKeys({a: 1, b: 2, c: 3, d: "4"});
+logKeyValue({a: 1, b: 2, c: 3, d: "4"});
 logValues({a: 1, b: 2, c: 3, d: "4"});
 
 checkTypeOf('');
