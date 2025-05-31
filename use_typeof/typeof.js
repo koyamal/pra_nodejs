@@ -9,7 +9,7 @@ const logKeys = (val) => {
     });
 };
 const logKeyAndValue = (val) => {
-    console.log('logkeyvalue');
+    console.log('log key and value');
     Object.keys(val).forEach(key => {
         console.log(key, val[key]);
     });
