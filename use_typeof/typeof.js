@@ -8,7 +8,7 @@ const logKeys = (val) => {
         console.log(key, val[key]);
     });
 };
-const logKeyValue = (val) => {
+const logKeyAndValue = (val) => {
     console.log('logkeyvalue');
     Object.keys(val).forEach(key => {
         console.log(key, val[key]);
