@@ -27,7 +27,8 @@ const logValue = (val: any) => {
     Object.values(val).forEach(value => {
       console.log(value);
     });
-  } 
+  }
+  return val
 }
 
 logKeys({a: 1, b: 2, c: 3, d: "4", e: false, g: null});
