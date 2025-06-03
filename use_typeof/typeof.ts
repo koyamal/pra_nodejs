@@ -22,7 +22,7 @@ const logValues = (val: object) => {
   });
 }
 
-const logValue = (val: object) => {
+const logValue = (val: any) => {
   Object.values(val).forEach(value => {
     console.log(value);
   });
