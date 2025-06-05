@@ -36,7 +36,7 @@ const logObject = (val: any) => {
     Object.values(val).forEach(value => {
       console.log(value);
     });
-    return null;
+    return 0;
   }
   return val
 }
