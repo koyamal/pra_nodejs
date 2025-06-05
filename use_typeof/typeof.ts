@@ -31,12 +31,14 @@ const logValue = (val: any) => {
   return val
 }
 
-const logObject = (val: any) => {
+const logObjectData = (val: any) => {
   if(typeof val === 'object') {
     Object.values(val).forEach(value => {
       console.log(value);
     });
     return 0;
+  } else if (typeof val === 'string'){
+    return '';
   }
   return val
 }
