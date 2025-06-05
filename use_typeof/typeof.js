@@ -27,12 +27,15 @@ const logValue = (val) => {
     }
     return val;
 };
-const logObject = (val) => {
+const logObjectData = (val) => {
     if (typeof val === 'object') {
         Object.values(val).forEach(value => {
             console.log(value);
         });
         return 0;
+    }
+    else if (typeof val === 'string') {
+        return '';
     }
     return val;
 };
