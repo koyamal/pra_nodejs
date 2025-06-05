@@ -32,7 +32,7 @@ const logObject = (val) => {
         Object.values(val).forEach(value => {
             console.log(value);
         });
-        return;
+        return null;
     }
     return val;
 };
