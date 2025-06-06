@@ -40,6 +40,7 @@ const logObjectData = (val) => {
     return val;
 };
 logKeys({ a: 1, b: 2, c: 3, d: "4", e: false, g: null });
+logKeys({ a: 1, c: 2, ce: 3, d: "4", e: false, g: null });
 logKeys({ a: 1, b: 2, c: 3, d: "4" });
 logKeyAndValue({ a: 1, b: 2, c: 3, d: "4" });
 logValues({ a: 1, b: 2, c: 3, d: "4" });
