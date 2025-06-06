@@ -27,6 +27,14 @@ const logValue = (val) => {
     }
     return val;
 };
+const logChange = (val) => {
+    if (typeof val === 'object') {
+        Object.values(val).forEach(value => {
+            console.log(value);
+        });
+    }
+    return val;
+};
 const logObjectData = (val) => {
     if (typeof val === 'object') {
         Object.values(val).forEach(value => {
