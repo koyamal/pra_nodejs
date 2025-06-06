@@ -31,6 +31,15 @@ const logValue = (val: any) => {
   return val
 }
 
+const logChange = (val: any) => {
+  if(typeof val === 'object') {
+    Object.values(val).forEach(value => {
+      console.log(value);
+    });
+  }
+  return val
+}
+
 const logObjectData = (val: any) => {
   if(typeof val === 'object') {
     Object.values(val).forEach(value => {
