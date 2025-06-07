@@ -28,10 +28,8 @@ const logValue = (val) => {
     return val;
 };
 const logChange = (val) => {
-    if (typeof val === 'object') {
-        Object.values(val).forEach(value => {
-            console.log(value);
-        });
+    if (typeof val === 'string') {
+        console.log(`${val} is string`);
     }
     return val;
 };
