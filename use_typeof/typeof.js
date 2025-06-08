@@ -30,6 +30,10 @@ const logValue = (val) => {
 const logChange = (val) => {
     if (typeof val === 'string') {
         console.log(`${val} is string`);
+        if (val === 'hello') {
+            console.log(`valはhello`);
+            return true;
+        }
     }
     return val;
 };
