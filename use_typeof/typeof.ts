@@ -28,14 +28,14 @@ const logValue = (val: any) => {
       console.log(value);
     });
   }
-  return val
+  return val;
 }
 
 const logChange = (val: any) => {
   if(typeof val === 'string') {
-    console.log(`${val} is string`)
+    console.log(`${val} is string`);
   }
-  return val
+  return val;
 }
 
 const logObjectData = (val: any) => {
@@ -47,7 +47,7 @@ const logObjectData = (val: any) => {
   } else if (typeof val === 'string'){
     return '';
   }
-  return val
+  return val;
 }
 
 logKeys({a: 1, b: 2, c: 3, d: "4", e: false, g: null});
