@@ -31,17 +31,6 @@ const logValue = (val: any) => {
   return val;
 }
 
-const logChange = (val: any) => {
-  if(typeof val === 'string') {
-    console.log(`${val} is string`);
-    if(val === 'hello'){
-      console.log(`valはhello`);
-      return true;
-    }
-  }
-  return val;
-}
-
 const logObjectData = (val: any) => {
   if(typeof val === 'object') {
     Object.values(val).forEach(value => {
