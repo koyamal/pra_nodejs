@@ -52,6 +52,7 @@ logValues({a: 1, b: 2, c: 3, d: "4"});
 logValues({a: 1, b: 2, c: 3, d: "4"});
 logValues({a: 1, b: 2, c: 3, d: "4"});
 logValues({a: 1, b: 2, c: 3, d: "4"});
+logValues({d: 1, b: 2, c: 3, dd: "4"});
 
 checkTypeOf('');
 
