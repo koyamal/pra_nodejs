@@ -22,10 +22,8 @@ const logValues = (val: object) => {
   });
 }
 const logValueOut = (val: any) => {
-  if(typeof val === 'object') {
-    Object.values(val).forEach(value => {
-      console.log(value);
-    });
+  if(typeof val !== 'object') {
+    console.log('not object');
   }
   return val;
 }
