@@ -21,7 +21,7 @@ console.log('seeyou');
 console.log({ flag });
 console.log({ flag2 });
 const skipUrls = ['/hello/world', '/good/value'];
-const requestUrl = '/hello/world/good';
+const requestUrl = '/hello/world';
 if (skipUrls.some(url => url.startsWith(requestUrl))) {
     console.log('skip');
 }
