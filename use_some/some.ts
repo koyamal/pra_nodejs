@@ -25,3 +25,5 @@ console.log('seeyou');
 console.log({flag});
 
 console.log({flag2});
+
+const skipUrls = ['/hello/world', '/good/value'];
