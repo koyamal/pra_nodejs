@@ -9,5 +9,6 @@ for(let i = 0; i < 1000; i++) {
   arraybox.push(Math.floor(Math.random() * 100 / 0.392));
 }
 
-console.log(Math.max(...arraybox));
+console.log('min:', Math.min(...arraybox));
+console.log('max:', Math.max(...arraybox));
 export {};
