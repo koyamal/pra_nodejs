@@ -1,7 +1,7 @@
 console.log('=======3.92=======');
 const arraybox392 = [];
 for(let i = 0; i < 16; i++) {
-  console.log(Math.floor(Math.random() * 100 / 3.92));
+  arraybox392.push(Math.floor(Math.random() * 100 / 3.92));
 }
 
 console.log('=======0.392=======');
