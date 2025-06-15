@@ -1,6 +1,6 @@
 console.log('=======3.92=======');
 const arraybox392 = [];
-for(let i = 0; i < 16; i++) {
+for(let i = 0; i < 1000; i++) {
   arraybox392.push(Math.floor(Math.random() * 100 / 3.92));
 }
 console.log('min:', Math.min(...arraybox392));
