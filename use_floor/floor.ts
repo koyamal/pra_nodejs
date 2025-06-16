@@ -17,7 +17,7 @@ console.log('max:', Math.max(...arraybox0392));
 
 console.log('=======0.0392=======');
 const arraybox00392 = [];
-for(let i = 0; i < 1000; i++) {
+for(let i = 0; i < 10000; i++) {
   arraybox00392.push(Math.floor(Math.random() * 100 / 0.0392));
 }
 
