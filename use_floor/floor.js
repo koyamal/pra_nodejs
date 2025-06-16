@@ -14,3 +14,10 @@ for (let i = 0; i < 1000; i++) {
 }
 console.log('min:', Math.min(...arraybox0392));
 console.log('max:', Math.max(...arraybox0392));
+console.log('=======0.0392=======');
+const arraybox00392 = [];
+for (let i = 0; i < 1000; i++) {
+    arraybox0392.push(Math.floor(Math.random() * 100 / 0.0392));
+}
+console.log('min:', Math.min(...arraybox0392));
+console.log('max:', Math.max(...arraybox0392));
