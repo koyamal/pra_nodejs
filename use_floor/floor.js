@@ -20,4 +20,6 @@ for (let i = 0; i < 10000; i++) {
     arraybox00392.push(Math.floor(Math.random() * 100 / 0.0392));
 }
 console.log('min:', Math.min(...arraybox00392));
+console.log('min:', Math.min(...arraybox00392));
+console.log('max:', Math.max(...arraybox00392));
 console.log('max:', Math.max(...arraybox00392));
