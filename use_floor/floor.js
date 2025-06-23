@@ -1,5 +1,12 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
+console.log('=======39.2=======');
+const arraybox3920 = [];
+for (let i = 0; i < 10000; i++) {
+    arraybox3920.push(Math.floor(Math.random() * 100 / 39.2));
+}
+console.log('min:', Math.min(...arraybox3920));
+console.log('max:', Math.max(...arraybox3920));
 console.log('=======3.92=======');
 const arraybox392 = [];
 for (let i = 0; i < 10000; i++) {
