@@ -30,3 +30,5 @@ console.log('min:', Math.min(...arraybox00392));
 console.log('max:', Math.max(...arraybox00392));
 let rand = Math.random();
 console.log(rand);
+let num = Math.floor(Math.random() * 10);
+console.log(num);
