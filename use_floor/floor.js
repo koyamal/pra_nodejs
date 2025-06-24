@@ -34,5 +34,5 @@ let num = Math.floor(Math.random() * 10);
 console.log(num);
 const colors = ['red', 'blue', 'green'];
 const indexColor = Math.floor(Math.random() * colors.length);
-const randomColor = colors[Math.floor(Math.random() * colors.length)];
-console.log(`${Math.floor(Math.random() * colors.length)}: ${randomColor}`);
+const randomColor = colors[indexColor];
+console.log(`${indexColor}: ${randomColor}`);
