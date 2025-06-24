@@ -40,5 +40,5 @@ console.log(num);
 const colors = ['red', 'blue', 'green'];
 const indexColor = Math.floor(Math.random() * colors.length)
 const randomColor = colors[indexColor];
-console.log(`${Math.floor(Math.random() * colors.length)}: ${randomColor}`);
+console.log(`${indexColor}: ${randomColor}`);
 export {};
