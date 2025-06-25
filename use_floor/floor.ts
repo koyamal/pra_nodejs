@@ -41,4 +41,8 @@ const colors = ['red', 'blue', 'green'];
 const indexColor = Math.floor(Math.random() * colors.length)
 const randomColor = colors[indexColor];
 console.log(`${indexColor}: ${randomColor}`);
+
+function getRandomInt(min: number, max: number) {
+  return Math.floor(Math.random() * (max - min + 1)) + min;
+}
 export {};
