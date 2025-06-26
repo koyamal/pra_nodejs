@@ -46,8 +46,6 @@ function getRandomInt(min: number, max: number) {
   return Math.floor(Math.random() * (max - min + 1)) + min;
 }
 
-// for(let i = 0; i < 10; i++) {
-//   console.log(getRandomInt(2, 10));
-// }
+console.log(getRandomInt(10, 13));
 
 export {};
