@@ -56,4 +56,6 @@ function getRandomRGBColor() {
   return `rgb(${r}, ${g}, ${b})`;
 }
 
+console.log(getRandomRGBColor());
+
 export {};
