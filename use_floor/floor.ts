@@ -47,6 +47,6 @@ function getRandomInt(min: number, max: number) {
 }
 
 console.log(getRandomInt(10, 13));
-console.log(getRandomInt(100, 130));
+console.log(getRandomInt(1000, 130));
 
 export {};
