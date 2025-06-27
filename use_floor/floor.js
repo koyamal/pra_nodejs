@@ -40,4 +40,4 @@ function getRandomInt(min, max) {
     return Math.floor(Math.random() * (max - min + 1)) + min;
 }
 console.log(getRandomInt(10, 13));
-console.log(getRandomInt(1000, 130));
+console.log(getRandomInt(100, 130));
