@@ -57,5 +57,5 @@ function getRandomRGBColor() {
 }
 
 console.log(getRandomRGBColor());
-
+console.log(`\x1b[38;2;${10};${10};${10}}mこの文字はRGB色付きです\x1b[0m`);
 export {};
