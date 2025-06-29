@@ -48,4 +48,5 @@ function getRandomRGBColor() {
     return `rgb(${r}, ${g}, ${b})`;
 }
 console.log(getRandomRGBColor());
-console.log(`\x1b[38;2;${10};${10};${10}}mこの文字はRGB色付きです\x1b[0m`);
+const r = 255, g = 100, b = 50;
+console.log(`\x1b[38;2;${r};${g};${b}mこの文字はRGB色付きです\x1b[0m`);
