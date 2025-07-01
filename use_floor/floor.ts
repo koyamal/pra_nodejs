@@ -56,6 +56,10 @@ const  getRandomRGBColor = () => {
   return {r, g, b};
 }
 
+const consoleWithColor = (msg: string, r: number, g: number, b: number) => {
+  
+}
+
 const {r, g, b} = getRandomRGBColor();
 console.log(getRandomRGBColor());
 console.log(`\x1b[38;2;${r};${g};${b}mこの文字はRGB色付きです\x1b[0m`);
