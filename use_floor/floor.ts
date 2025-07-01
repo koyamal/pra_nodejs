@@ -49,7 +49,7 @@ function getRandomInt(min: number, max: number) {
 console.log(getRandomInt(10, 13));
 console.log(getRandomInt(100, 130));
 
-function getRandomRGBColor() {
+const  getRandomRGBColor = () => {
   const r = Math.floor(Math.random() * 256); // 0〜255
   const g = Math.floor(Math.random() * 256);
   const b = Math.floor(Math.random() * 256);
