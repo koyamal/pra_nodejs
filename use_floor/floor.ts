@@ -57,7 +57,7 @@ const  getRandomRGBColor = () => {
 }
 
 const consoleWithColor = (msg: string, r: number, g: number, b: number) => {
-  
+  console.log(`\x1b[38;2;${r};${g};${b}m${msg}\x1b[0m`);
 }
 
 const {r, g, b} = getRandomRGBColor();
