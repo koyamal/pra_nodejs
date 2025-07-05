@@ -41,6 +41,9 @@ function getRandomInt(min, max) {
 }
 console.log(getRandomInt(10, 13));
 console.log(getRandomInt(100, 130));
+function getRandomFloat(min, max) {
+    return Math.random() * (max - min) + min;
+}
 const getRandomRGBColor = () => {
     const r = Math.floor(Math.random() * 256); // 0〜255
     const g = Math.floor(Math.random() * 256);
