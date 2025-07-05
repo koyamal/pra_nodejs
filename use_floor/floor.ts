@@ -49,6 +49,10 @@ function getRandomInt(min: number, max: number) {
 console.log(getRandomInt(10, 13));
 console.log(getRandomInt(100, 130));
 
+function getRandomFloat(min: number, max: number) {
+  return Math.random() * (max - min) + min;
+}
+
 const  getRandomRGBColor = () => {
   const r = Math.floor(Math.random() * 256); // 0〜255
   const g = Math.floor(Math.random() * 256);
@@ -72,4 +76,5 @@ consoleWithColor('何色？', r, g, b);
 
 consoleMsgWithRandomColor('何色？');
 consoleMsgWithRandomColor('これは何色？');
+
 export {};
