@@ -76,5 +76,4 @@ consoleWithColor('何色？', r, g, b);
 
 consoleMsgWithRandomColor('何色？');
 consoleMsgWithRandomColor('これは何色？');
-
 export {};
