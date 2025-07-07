@@ -57,7 +57,7 @@ getRandomFloat(1, 2);
 console.log(getRandomFloat(2, 4));
 
 const  getRandomRGBColor = () => {
-  const r = Math.floor(Math.random() * 256); // 0〜255
+  const r = Math.floor(Math.random() * 256);
   const g = Math.floor(Math.random() * 256);
   const b = Math.floor(Math.random() * 256);
   return {r, g, b};
