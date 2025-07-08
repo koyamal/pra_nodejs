@@ -47,6 +47,8 @@ function getRandomInt(min: number, max: number) {
 }
 
 console.log(getRandomInt(10, 13));
+console.log(getRandomInt(100, 13));
+console.log(getRandomInt(10, 139));
 console.log(getRandomInt(100, 130));
 
 function getRandomFloat(min: number, max: number) {
