@@ -39,6 +39,10 @@ console.log(`${indexColor}: ${randomColor}.`);
 function getRandomInt(min, max) {
     return Math.floor(Math.random() * (max - min + 1)) + min;
 }
+function getRandomInMax(min, max) {
+    const tmpValue = max * (Math.floor(Math.random() * (max - min + 1)) + min);
+    return tmpValue * max;
+}
 console.log(getRandomInt(10, 13));
 console.log(getRandomInt(100, 13));
 console.log(getRandomInt(10, 139));
