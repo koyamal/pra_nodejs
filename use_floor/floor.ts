@@ -46,6 +46,11 @@ function getRandomInt(min: number, max: number) {
   return Math.floor(Math.random() * (max - min + 1)) + min;
 }
 
+function getRandomInMax(min: number, max: number) {
+  const tmpValue = max * (Math.floor(Math.random() * (max - min + 1)) + min);
+  return tmpValue * max;
+}
+
 console.log(getRandomInt(10, 13));
 console.log(getRandomInt(100, 13));
 console.log(getRandomInt(10, 139));
