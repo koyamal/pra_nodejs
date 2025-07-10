@@ -40,7 +40,7 @@ console.log(num);
 const colors = ['red', 'blue', 'green', 'yellow'];
 const indexColor = Math.floor(Math.random() * colors.length)
 const randomColor = colors[indexColor];
-console.log(`${indexColor}: ${randomColor}.`);
+console.log(`${indexColor}: ${randomColor} is selected.`);
 
 function getRandomInt(min: number, max: number) {
   return Math.floor(Math.random() * (max - min + 1)) + min;
