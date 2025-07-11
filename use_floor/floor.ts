@@ -41,9 +41,7 @@ const getRandomInMax = (min: number, max: number) => max * max * (Math.floor(Mat
 console.log(getRandomInt(10, 13));
 console.log(getRandomInMax(100, 130));
 
-function getRandomFloat(min: number, max: number) {
-  return Math.random() * (max - min) + min;
-}
+const getRandomFloat = (min: number, max: number) => Math.random() * (max - min) + min;
 
 getRandomFloat(1, 2);
 console.log(getRandomFloat(2, 4));
