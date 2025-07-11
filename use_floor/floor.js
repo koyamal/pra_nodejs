@@ -31,10 +31,7 @@ console.log('max:', Math.max(...arraybox00392));
 const getRandomInt = (min, max) => {
     return Math.floor(Math.random() * (max - min + 1)) + min;
 };
-const getRandomInMax = (min, max) => {
-    const tmpValue = max * (Math.floor(Math.random() * (max - min + 1)) + min);
-    return tmpValue * max;
-};
+const getRandomInMax = (min, max) => max * max * (Math.floor(Math.random() * (max - min + 1)) + min);
 console.log(getRandomInt(10, 13));
 console.log(getRandomInMax(100, 130));
 function getRandomFloat(min, max) {
