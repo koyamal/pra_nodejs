@@ -44,8 +44,6 @@ function getRandomInMax(min, max) {
     return tmpValue * max;
 }
 console.log(getRandomInt(10, 13));
-console.log(getRandomInt(100, 13));
-console.log(getRandomInt(10, 139));
 console.log(getRandomInMax(100, 130));
 function getRandomFloat(min, max) {
     return Math.random() * (max - min) + min;
