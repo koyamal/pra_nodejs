@@ -28,17 +28,9 @@ for (let i = 0; i < 1000; i++) {
 }
 console.log('min:', Math.min(...arraybox00392));
 console.log('max:', Math.max(...arraybox00392));
-let rand = Math.random();
-console.log(rand);
-let num = Math.floor(Math.random() * 10);
-console.log(num);
-const colors = ['red', 'blue', 'green', 'yellow'];
-const indexColor = Math.floor(Math.random() * colors.length);
-const randomColor = colors[indexColor];
-console.log(`${indexColor}: ${randomColor} is selected.`);
-function getRandomInt(min, max) {
+const getRandomInt = (min, max) => {
     return Math.floor(Math.random() * (max - min + 1)) + min;
-}
+};
 function getRandomInMax(min, max) {
     const tmpValue = max * (Math.floor(Math.random() * (max - min + 1)) + min);
     return tmpValue * max;
