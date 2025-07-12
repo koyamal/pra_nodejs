@@ -2,6 +2,11 @@ const randomCount = 1000;
 
 const createRandomArray = (divValue: number) => {
   const arrayBox = [];
+  for(let i = 0; i < randomCount; i++) {
+    arrayBox.push(Math.floor(Math.random() * 100 / divValue));
+  }
+
+  return arrayBox;
 }
 
 console.log('=======39.2=======');
