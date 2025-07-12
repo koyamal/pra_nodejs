@@ -1,5 +1,9 @@
 const randomCount = 1000;
 
+const createRandomArray = (divValue: number) => {
+  const arrayBox = [];
+}
+
 console.log('=======39.2=======');
 const arraybox3920 = [];
 for(let i = 0; i < randomCount; i++) {
