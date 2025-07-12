@@ -1,6 +1,8 @@
+const randomCount = 1000;
+
 console.log('=======39.2=======');
 const arraybox3920 = [];
-for(let i = 0; i < 1000; i++) {
+for(let i = 0; i < randomCount; i++) {
   arraybox3920.push(Math.floor(Math.random() * 100 / 39.2));
 }
 console.log('min:', Math.min(...arraybox3920));
