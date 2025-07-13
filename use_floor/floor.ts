@@ -24,11 +24,7 @@ console.log('min:', Math.min(...arraybox0392));
 console.log('max:', Math.max(...arraybox0392));
 
 console.log('=======0.0392=======');
-const arraybox00392 = [];
-for(let i = 0; i < randomCount; i++) {
-  arraybox00392.push(Math.floor(Math.random() * 100 / 0.0392));
-}
-
+const arraybox00392 = createRandomArray(0.0392);
 console.log('min:', Math.min(...arraybox00392));
 console.log('max:', Math.max(...arraybox00392));
 
