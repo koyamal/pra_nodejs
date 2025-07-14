@@ -8,6 +8,12 @@ const createRandomArray = (divValue) => {
     }
     return arrayBox;
 };
+const createRandomArrayWithConsole = (divValue) => {
+    console.log(`=======${divValue}=======`);
+    const arrayRandom = createRandomArray(divValue);
+    console.log('min:', Math.min(...arrayRandom));
+    console.log('max:', Math.max(...arrayRandom));
+};
 console.log('=======39.2=======');
 const arraybox3920 = createRandomArray(39.2);
 console.log('min:', Math.min(...arraybox3920));
