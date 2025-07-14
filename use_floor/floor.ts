@@ -17,11 +17,7 @@ const createRandomArrayWithConsole = (divValue: number) => {
 createRandomArrayWithConsole(39.2);
 createRandomArrayWithConsole(3.92);
 createRandomArrayWithConsole(0.392);
-
-console.log('=======0.0392=======');
-const arraybox00392 = createRandomArray(0.0392);
-console.log('min:', Math.min(...arraybox00392));
-console.log('max:', Math.max(...arraybox00392));
+createRandomArrayWithConsole(0.0392);
 
 const getRandomInt = (min: number, max: number) => {
   return Math.floor(Math.random() * (max - min + 1)) + min;
