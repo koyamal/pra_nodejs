@@ -1,23 +1,22 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-const randomCount = 1000;
-const createRandomArray = (divValue) => {
+const createRandomArray = (divValue, randomCount) => {
     const arrayBox = [];
     for (let i = 0; i < randomCount; i++) {
         arrayBox.push(Math.floor(Math.random() * 100 / divValue));
     }
     return arrayBox;
 };
-const createRandomArrayWithConsole = (divValue) => {
+const createRandomArrayWithConsole = (divValue, randomCount) => {
     console.log(`=======${divValue}=======`);
-    const arrayRandom = createRandomArray(divValue);
+    const arrayRandom = createRandomArray(divValue, randomCount);
     console.log('min:', Math.min(...arrayRandom));
     console.log('max:', Math.max(...arrayRandom));
 };
-createRandomArrayWithConsole(39.2);
-createRandomArrayWithConsole(3.92);
-createRandomArrayWithConsole(0.392);
-createRandomArrayWithConsole(0.0392);
+createRandomArrayWithConsole(39.2, 1000);
+createRandomArrayWithConsole(3.92, 1000);
+createRandomArrayWithConsole(0.392, 10000);
+createRandomArrayWithConsole(0.0392, 10000);
 const getRandomInt = (min, max) => {
     return Math.floor(Math.random() * (max - min + 1)) + min;
 };
