@@ -1,6 +1,4 @@
-const randomCount = 1000;
-
-const createRandomArray = (divValue: number) => {
+const createRandomArray = (divValue: number, randomCount: number) => {
   const arrayBox = [];
   for(let i = 0; i < randomCount; i++) {
     arrayBox.push(Math.floor(Math.random() * 100 / divValue));
@@ -8,9 +6,9 @@ const createRandomArray = (divValue: number) => {
   return arrayBox;
 }
 
-const createRandomArrayWithConsole = (divValue: number) => {
+const createRandomArrayWithConsole = (divValue: number, randomCount: number) => {
   console.log(`=======${divValue}=======`);
-  const arrayRandom = createRandomArray(divValue);
+  const arrayRandom = createRandomArray(divValue, randomCount);
   console.log('min:', Math.min(...arrayRandom));
   console.log('max:', Math.max(...arrayRandom));
 }
