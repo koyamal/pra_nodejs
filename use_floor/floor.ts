@@ -16,6 +16,7 @@ createRandomArrayWithConsole(39.2, 1000);
 createRandomArrayWithConsole(3.92, 1000);
 createRandomArrayWithConsole(0.392, 10000);
 createRandomArrayWithConsole(0.0392, 10000);
+createRandomArrayWithConsole(0.00392, 100000);
 
 const getRandomInt = (min: number, max: number) => {
   return Math.floor(Math.random() * (max - min + 1)) + min;
