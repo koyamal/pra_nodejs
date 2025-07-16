@@ -23,7 +23,7 @@ const getRandomInt = (min: number, max: number) => {
 }
 
 const getRandomInMax = (min: number, max: number) => max * max * (Math.floor(Math.random() * (max - min + 1)) + min);
-const getRandomInMaxWithValue = (min: number, max: number) => max * max * (Math.floor(Math.random() * (max - min + 1)) + min);
+const getRandomInMaxWithValue = (min: number, max: number) => max * max * max * (Math.floor(Math.random() * (max - min + 1)) + min);
 
 console.log(getRandomInt(10, 13));
 console.log(getRandomInMax(100, 130));
