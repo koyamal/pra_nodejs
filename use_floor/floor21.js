@@ -25,7 +25,6 @@ const getRandomInMax = (min, max) => max * max * (Math.floor(Math.random() * (ma
 console.log(getRandomInt(10, 13));
 console.log(getRandomInMax(100, 130));
 const getRandomFloat = (min, max) => Math.random() * (max - min) + min;
-const getRandomFloatValue = (min, max) => Math.random() * (max - min) + min;
 getRandomFloat(1, 2);
 console.log(getRandomFloat(2, 4));
 const getRandomRGBColor = () => {
