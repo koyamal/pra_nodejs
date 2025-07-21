@@ -28,7 +28,6 @@ console.log(getRandomInt(10, 13));
 console.log(getRandomInMax(100, 130));
 
 const getRandomFloat = (min: number, max: number) => Math.random() * (max - min) + min;
-const getRandomFloatValue = (min: number, max: number) => Math.random() * (max - min) + min;
 
 getRandomFloat(1, 2);
 console.log(getRandomFloat(2, 4));
