@@ -1,6 +1,6 @@
 const createRandomArray = (divValue: number, randomCount: number) => {
   const arrayBox = [];
-  for(let i = 0; i < randomCount; i++) {
+  for(let i = 0; i < randomCount * divValue; i++) {
     arrayBox.push(Math.floor(Math.random() * 100 / divValue));
   }
   return arrayBox;
