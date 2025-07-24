@@ -12,6 +12,14 @@ const createRandomArrayWithConsole = (divValue: number, randomCount: number) => 
   console.log('min:', Math.min(...arrayRandom));
   console.log('max:', Math.max(...arrayRandom));
 }
+
+const createRandomArrayWithValue = (divValue: number, randomCount: number) => {
+  const arrayBox = [];
+  for(let i = 0; i < randomCount * divValue; i++) {
+    arrayBox.push(Math.floor(Math.random() * 100 / divValue));
+  }
+  return arrayBox;
+}
 createRandomArrayWithConsole(39.2, 1000);
 createRandomArrayWithConsole(3.92, 1000);
 createRandomArrayWithConsole(0.392, 10000);
