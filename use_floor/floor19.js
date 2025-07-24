@@ -20,6 +20,7 @@ const createRandomArrayWithValue = (divValue, randomCount) => {
     }
     return arrayBox;
 };
+createRandomArrayWithValue(1, 2);
 createRandomArrayWithConsole(39.2, 1000);
 createRandomArrayWithConsole(3.92, 1000);
 createRandomArrayWithConsole(0.392, 10000);
